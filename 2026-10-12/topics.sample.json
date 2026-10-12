@@ -1,0 +1,299 @@
+{
+  "meta": {
+    "generated_at": "2026-10-12T08:10:00-04:00",
+    "product": "Ownly China News Feed",
+    "license_note": "Free discovery sample: headlines, short excerpts, and links only. Not full article text. Machine translations.",
+    "get_full_feed": "Apify Store: search China News Feed (Ownly)",
+    "counts": {
+      "feed_en": 50,
+      "feed_zh": 50,
+      "topics": 20,
+      "censored_flags_sample": 15
+    }
+  },
+  "topics": [
+    {
+      "topic_id": "c0003",
+      "label_zh": "铸就社会主义文化新辉煌——习近平文化思想引领文化强国建设迈出坚实步伐",
+      "summary_en": "State/official outlets (CQNews, China Daily Chinese, China National Radio, China Radio International, China Youth Daily, China Youth Net, Guancha, Guangming Daily, Guangzhou Daily, Oeeee, Party History & Literature Institute, People's Daily app, Qiushi, Red Star News, Shenzhen News Net, Sina News, Southern Net, Study Times, The Paper, Workers' Daily, Xinhua, Xinhua Daily, Yangzi Evening News, gov.",
+      "n_items": 26,
+      "distinct_sources": 24,
+      "source_types": [
+        "Party/Gov official",
+        "State media"
+      ],
+      "censored": false,
+      "rank": 303
+    },
+    {
+      "topic_id": "c0006",
+      "label_zh": "大道致远，笃行不怠——记中国元首外交金秋繁忙季",
+      "summary_en": "State/official outlets (Beijing News, CQNews, China Daily Chinese, China News Service, China Radio International, China Youth Daily, Dazhong Daily, Guancha, Guangming Daily, Guangzhou Daily, Oeeee, Qiushi, Red Star News, Shanghai Observer, Shenzhen News Net, Southern Net, Southern Weekly, The Paper, Workers' Daily, Xinhua Daily, Yangzi Evening News) headline it as: \"\". No overseas media coverage m",
+      "n_items": 21,
+      "distinct_sources": 21,
+      "source_types": [
+        "State media"
+      ],
+      "censored": false,
+      "rank": 304
+    },
+    {
+      "topic_id": "c0009",
+      "label_zh": "【新思想引领新征程】守护绿水青山 共绘美丽中国新画卷",
+      "summary_en": "State/official outlets (CQNews, China Daily Chinese, China News Service, China Radio International, China Youth Daily, China Youth Net, Dazhong Daily, Guancha, Guangming Daily, Guangzhou Daily, Oeeee, Red Star News, Shanghai Observer, Shenzhen News Net, Sina News, Southern Net, The Paper, UCcLK3j-XWdGBnt5bR9NJHaQ, Workers' Daily, Xinhua Daily) headline it as: \"\". No overseas media coverage matched",
+      "n_items": 20,
+      "distinct_sources": 20,
+      "source_types": [
+        "State media"
+      ],
+      "censored": false,
+      "rank": 305
+    },
+    {
+      "topic_id": "c0004",
+      "label_zh": "2026诺贝尔经济学奖公布",
+      "summary_en": "Trending on Baidu, Kuaishou, Toutiao, Zhihu (best rank #6 on Kuaishou). State/official outlets (36Kr, Huxiu, Jiemian, Securities Times, Shanghai Observer, Yicai) headline it as: \"\". Overseas outlets (8world News 8视界, Central News Agency Taiwan, China Times, Sing Tao Daily Canada, Sing Tao Headline, Storm Media, United Daily News, World Journal) headline it as: \"\".",
+      "n_items": 22,
+      "distinct_sources": 19,
+      "source_types": [
+        "Commercial platform",
+        "Overseas independent",
+        "State media"
+      ],
+      "censored": false,
+      "rank": 53
+    },
+    {
+      "topic_id": "c0000",
+      "label_zh": "新皇岗口岸有哪些创新",
+      "summary_en": "Trending on Toutiao (best rank #43 on Toutiao). State/official outlets (CCTV programmes incl. Xinwen Lianbo, China Daily Chinese, China News Service, Guangming Daily, People's Daily app, People's Daily+, Shenzhen News Net, Southern Net, Ta Kung Pao, UCpbfXQsYBJTwq5lCkwGIeuQ, Wen Wei Po, Yangcheng Evening News) headline it as: \"\". Overseas outlets (Hong Kong Economic Times, Ming Pao) headline it as",
+      "n_items": 37,
+      "distinct_sources": 15,
+      "source_types": [
+        "Commercial platform",
+        "Overseas independent",
+        "State media"
+      ],
+      "censored": false,
+      "rank": 67
+    },
+    {
+      "topic_id": "c0007",
+      "label_zh": "泽连斯基回应特朗普让换总统",
+      "summary_en": "[Likely censored] Pulled from Bilibili (peak #8) after about 10 min on the list. No hard evidence yet. Trending on Bilibili, Kuaishou (best rank #10 on Bilibili). State/official outlets (CCTV News, China Radio International, Jiemian, Kankan News, NetEase News, People's Daily+, Reference News, Tencent News, UCpbfXQsYBJTwq5lCkwGIeuQ, Wen Wei Po) headline it as: \"\". Overseas outlets (DW, RFI Chinese,",
+      "n_items": 20,
+      "distinct_sources": 16,
+      "source_types": [
+        "Commercial platform",
+        "Overseas independent",
+        "State media"
+      ],
+      "censored": true,
+      "censorship_status": "likely_censored",
+      "rank": 44
+    },
+    {
+      "topic_id": "c0012",
+      "label_zh": "未来5年卫生健康领域将迎这些发展",
+      "summary_en": "Trending on Toutiao (best rank #3 on Toutiao). State/official outlets (CQNews, China Daily Chinese, China National Radio, China News Service, China Youth Net, Dazhong Daily, Guangming Daily, Huanqiu/Global Times, MFA, People's Daily+, Qiushi, Red Star News, Shanghai Observer, Southern Weekly, The Paper) headline it as: \"\". No overseas media coverage matched in this run.",
+      "n_items": 16,
+      "distinct_sources": 16,
+      "source_types": [
+        "Commercial platform",
+        "Party/Gov official",
+        "State media"
+      ],
+      "censored": false,
+      "rank": 76
+    },
+    {
+      "topic_id": "c0013",
+      "label_zh": "财政部将下调新能源汽车出口退税率",
+      "summary_en": "Trending on Toutiao (best rank #46 on Toutiao). State/official outlets (Beijing News, CCTV News, Cailian Press, China National Radio, China News Service, China Youth Net, Guangming Daily, Huanqiu/Global Times, IT Home IT之家, Kankan News, National Business Daily, Securities Times, Shenzhen News Net, Sina News) headline it as: \"\". No overseas media coverage matched in this run.",
+      "n_items": 15,
+      "distinct_sources": 15,
+      "source_types": [
+        "Commercial platform",
+        "State media"
+      ],
+      "censored": false,
+      "rank": 153
+    },
+    {
+      "topic_id": "c0005",
+      "label_zh": "新质生产力发展有了清晰路线图",
+      "summary_en": "Trending on Baidu, Toutiao (best rank #3 on Baidu). State/official outlets (CAC, CCDI, Caixin, China National Radio, China Youth Net, Dazhong Daily, People's Daily app, People's Daily+, Red Star News, The Paper, Workers' Daily, gov.cn) headline it as: \"\". No overseas media coverage matched in this run.",
+      "n_items": 21,
+      "distinct_sources": 14,
+      "source_types": [
+        "Commercial platform",
+        "Party/Gov official",
+        "State media"
+      ],
+      "censored": false,
+      "rank": 61
+    },
+    {
+      "topic_id": "c0011",
+      "label_zh": "特朗普：俄乌双方同意“能源停火”",
+      "summary_en": "Trending on Toutiao (best rank #10 on Toutiao). State/official outlets (NetEase News, People's Daily+, Yicai) headline it as: \"\". Overseas outlets (Epoch Times Chinese, European Times, Lianhe Zaobao, NTD, RFI Chinese, Sin Chew Daily, UCwb7avxK-L5vPjMC1ZIGayw, World Journal, ghot_daily, rfi_cn) headline it as: \"\".",
+      "n_items": 17,
+      "distinct_sources": 14,
+      "source_types": [
+        "Commercial platform",
+        "Dissident",
+        "Overseas independent",
+        "State media"
+      ],
+      "censored": false,
+      "rank": 55
+    },
+    {
+      "topic_id": "c0008",
+      "label_zh": "胡塞武装称已“关闭利雅得机场”",
+      "summary_en": "[Censored] Pulled from Baidu (peak #1) after about 423 min on the list. Hard evidence: cdt_match. Trending on Baidu, Bilibili (best rank #6 on Baidu). State/official outlets (CCTV News, People's Daily+, Tencent News, XHNews) headline it as: \"\". Overseas outlets (DW, RFI Chinese, Sing Tao Daily Europe, UCk89pEd76qutMB08hVSY49Q, rfi_cn, zaobaosg) headline it as: \"\". Censorship trackers (Weibo trendi",
+      "n_items": 20,
+      "distinct_sources": 13,
+      "source_types": [
+        "Censorship tracker",
+        "Commercial platform",
+        "Dissident",
+        "Overseas independent",
+        "State media"
+      ],
+      "censored": true,
+      "censorship_status": "censored",
+      "rank": 1
+    },
+    {
+      "topic_id": "c0002",
+      "label_zh": "霸王茶姬就崩了致歉：急急急",
+      "summary_en": "[Censored] Pulled from Baidu (peak #1) after about 156 min on the list. Hard evidence: cdt_match, cdt_match, cdt_match, cdt_match. Provisional until the 24-hour recheck. Trending on Baidu, Kuaishou, Toutiao, Weibo, Zhihu (best rank #1 on Baidu). State/official outlets (Kankan News, Phoenix, Securities Times, Sina News) headline it as: \"\". Overseas outlets (NTD) headline it as: \"\". Censorship track",
+      "n_items": 26,
+      "distinct_sources": 12,
+      "source_types": [
+        "Censorship tracker",
+        "Commercial platform",
+        "Dissident",
+        "State media"
+      ],
+      "censored": true,
+      "censorship_status": "censored",
+      "rank": 4
+    },
+    {
+      "topic_id": "c0019",
+      "label_zh": "商务部新闻发言人就中欧混动汽车、电动汽车磋商共识答记者问",
+      "summary_en": "State/official outlets (CCTV News, Cailian Press, China Radio International, Guangming Daily, People's Daily+, Southern Net, Xuexi Qiangguo) headline it as: \"\". Overseas outlets (DW, European Times, NYT Chinese, zaobaosg) headline it as: \"\".",
+      "n_items": 11,
+      "distinct_sources": 11,
+      "source_types": [
+        "Overseas independent",
+        "State media"
+      ],
+      "censored": false,
+      "rank": 97
+    },
+    {
+      "topic_id": "c0017",
+      "label_zh": "创造历史！郑钦文中网夺冠",
+      "summary_en": "[Censored] Pulled from Baidu (peak #1) after about 606 min on the list. Hard evidence: cdt_match, cdt_match. Provisional until the 24-hour recheck. Trending on Baidu, Toutiao (best rank #2 on Baidu). State/official outlets (NetEase News, People's Daily app, People's Daily+, Sina News, Tencent News, UCpbfXQsYBJTwq5lCkwGIeuQ) headline it as: \"\". Overseas outlets (NZ Chinese Herald) headline it as: \"",
+      "n_items": 12,
+      "distinct_sources": 10,
+      "source_types": [
+        "Commercial platform",
+        "Overseas independent",
+        "State media"
+      ],
+      "censored": true,
+      "censorship_status": "censored",
+      "rank": 2
+    },
+    {
+      "topic_id": "c0023",
+      "label_zh": "第三轮第七批中央生态环保督察启动",
+      "summary_en": "Trending on Toutiao (best rank #30 on Toutiao). State/official outlets (Beijing Daily, CCTV News, China National Radio, China Youth Net, Huanqiu/Global Times, Jiemian, Kankan News, Workers' Daily, Xuexi Qiangguo) headline it as: \"\". No overseas media coverage matched in this run.",
+      "n_items": 10,
+      "distinct_sources": 10,
+      "source_types": [
+        "Commercial platform",
+        "State media"
+      ],
+      "censored": false,
+      "rank": 100
+    },
+    {
+      "topic_id": "c0015",
+      "label_zh": "警方回应梅艳芳骨灰被盗",
+      "summary_en": "[Likely censored] Pulled from Toutiao (peak #2) after about 245 min on the list. No hard evidence yet. Trending on Baidu, Bilibili, Toutiao, Weibo, Zhihu (best rank #2 on Toutiao). State/official outlets (Tencent News, UCpbfXQsYBJTwq5lCkwGIeuQ) headline it as: \"\". Overseas outlets (Hong Kong Economic Times, NZ Chinese Herald) headline it as: \"\". Still visible on: Hong Kong Economic Times 香港經濟日報 (H",
+      "n_items": 14,
+      "distinct_sources": 9,
+      "source_types": [
+        "Commercial platform",
+        "Overseas independent",
+        "State media"
+      ],
+      "censored": true,
+      "censorship_status": "likely_censored",
+      "rank": 21
+    },
+    {
+      "topic_id": "c0016",
+      "label_zh": "郑钦文回应夺冠后唱歌",
+      "summary_en": "[Censored] Pulled from Baidu (peak #2) after about 93 min on the list. Hard evidence: cdt_match, cdt_match. Provisional until the 24-hour recheck. Trending on Baidu, Bilibili, Toutiao (best rank #2 on Baidu). State/official outlets (NetEase News, People's Daily app, UCpbfXQsYBJTwq5lCkwGIeuQ) headline it as: \"\". Censorship trackers (Weibo trending history) headline it as: \"\". No overseas media cove",
+      "n_items": 13,
+      "distinct_sources": 9,
+      "source_types": [
+        "Censorship tracker",
+        "Commercial platform",
+        "State media"
+      ],
+      "censored": true,
+      "censorship_status": "censored",
+      "rank": 6
+    },
+    {
+      "topic_id": "c0022",
+      "label_zh": "央视曝投资1.2亿项目仅建5个棚",
+      "summary_en": "[Censored] Pulled from Baidu (peak #4) after about 462 min on the list. Hard evidence: cdt_match, cdt_match. Provisional until the 24-hour recheck. Trending on Baidu, Toutiao (best rank #15 on Toutiao). State/official outlets (CCTV News, Jiemian, NetEase News) headline it as: \"\". Overseas outlets (International Daily News) headline it as: \"\". Censorship trackers (Weibo trending history) headline i",
+      "n_items": 10,
+      "distinct_sources": 8,
+      "source_types": [
+        "Censorship tracker",
+        "Commercial platform",
+        "Overseas independent",
+        "State media"
+      ],
+      "censored": true,
+      "censorship_status": "censored",
+      "rank": 8
+    },
+    {
+      "topic_id": "c0018",
+      "label_zh": "【我们的长征路】习言道丨每一代人都要走好自己的长征路",
+      "summary_en": "State/official outlets (China Daily Chinese, China News Service, Dazhong Daily, People's Daily+, Red Star News, Shenzhen News Net, Xinhua) headline it as: \"\". Censorship trackers (Weibo trending history) headline it as: \"\". No overseas media coverage matched in this run.",
+      "n_items": 11,
+      "distinct_sources": 8,
+      "source_types": [
+        "Censorship tracker",
+        "State media"
+      ],
+      "censored": false,
+      "rank": 96
+    },
+    {
+      "topic_id": "c0025",
+      "label_zh": "乌美谈判因美俄柴油协议提前结束",
+      "summary_en": "State/official outlets (Reference News, UCnAsZ46UTeFEgwOEwMezngQ) headline it as: \"\". Overseas outlets (DW, FT Chinese FT中文网, RFI Chinese, Sing Tao Daily Canada, UCwb7avxK-L5vPjMC1ZIGayw, rfi_cn) headline it as: \"\".",
+      "n_items": 10,
+      "distinct_sources": 8,
+      "source_types": [
+        "Dissident",
+        "Overseas independent",
+        "State media"
+      ],
+      "censored": false,
+      "rank": 60
+    }
+  ]
+}
