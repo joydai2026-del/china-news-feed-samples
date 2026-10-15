@@ -23,3 +23,9 @@ Generated from the live pipeline on 2026-10-12 at about 08:10 ET.
 ## Full product
 Language choice (Chinese, English, or both) and the optional deletion-watch add-on are on the Apify listing:
 https://apify.com/china.unofficial/china-news-feed
+
+## Related links
+
+- Hugging Face dataset (same sample, loadable with `datasets`): https://huggingface.co/datasets/freedom-press/china-news-feed-sample
+- MCP server for Claude Desktop, Cursor and other MCP clients: https://github.com/joydai2026-del/china-news-feed-mcp
+- Apify actor (full feed, $8 per 1,000 rows): https://apify.com/china.unofficial/china-news-feed
