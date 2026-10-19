@@ -1,5 +1,5 @@
 {
- "generated_at_et": "2026-10-19 14:11 ET",
+ "generated_at_et": "2026-10-19 15:18 ET",
  "window_hours": 24,
  "label": "dropped off (likely censored when there is hard evidence)",
  "note": "Left a hot list from the top 10 without sliding, early for that list, still gone 1 h later. A signal, not proof. Items with hard evidence are labeled Likely censored; the rest Dropped off.",
@@ -12,8 +12,8 @@
   "slid down before leaving": 2,
   "on the list a normal length of time": 22,
   "inside the list's normal rotation": 8,
-  "still on another hot list": 4,
-  "left with other flagged topics (batch drop)": 4,
+  "still on another hot list": 5,
+  "left with other flagged topics (batch drop)": 3,
   "retitled": 3,
   "topic still on the list": 4,
   "same story as a kept item": 2,
@@ -39,13 +39,7 @@
    "evidence": [
     "Dropped off while hot 热度高时突然消失: peak #1, last ranks #1 → #1 → #1 → #1 → #1 → #1",
     "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:05 AM ET",
-    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:52 AM ET",
-    {
-     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
-     "source": "Weibo 微博 trending history 热搜历史 (GitHub, justjavac)",
-     "url": "https://s.weibo.com//weibo?q=%E7%BB%B5%E9%98%B3%E5%9C%B0%E9%9C%87&t=31&band_rank=6&Refer=top",
-     "published": "2026-10-19"
-    }
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:52 AM ET"
    ]
   },
   {
