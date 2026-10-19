@@ -2,10 +2,14 @@
 """Build the "Deleted today / 今日被删" GitHub Pages page from the live censored.json.
 
 Usage: build_deleted_today.py <censored.json> <out_dir> [--hours 24] [--feed-en feed_en.json]
+                              [--history history.sqlite] [--all-flags]
 Writes <out_dir>/index.html and <out_dir>/deleted-today.json.
 Every item is labeled "Likely censored / 疑似被删". Hot-list headlines and public links only; no user data.
+
+Only abrupt exits are shown, not ordinary list churn (see why_cut). --history, when given, is opened
+read-only and adds the retitle / topic-still-on-the-list checks. --all-flags shows every flag (old behavior).
 """
-import argparse, html, json, re, sys
+import argparse, html, json, re, sqlite3, sys
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
@@ -112,11 +116,134 @@ def load_en(path):
     return by_id, by_t
 
 
-def select(data, hours, by_id, by_t):
+# ---- Stricter cut: keep abrupt removals, drop ordinary churn (audit of 2026-10-19) ----
+MIN_GONE_MIN = 60        # still gone an hour after it left
+MAX_DROP_RANK = 10       # was in the top 10 when it left
+SLIDE_RANKS = 3          # left within 3 ranks of its best recent rank (not sliding down)
+MIN_ON_MIN = 30          # was on the list at least 30 min (not a flash entry)
+# Median minutes a top-10 topic stays on each list (history, 3 days to 2026-10-19). "Left early" = under half.
+MEDIAN_TOP10_MIN = {"baidu": 333, "toutiao": 271, "bilibili": 204, "zhihu": 642, "weibo": 195}
+# Bilibili rotates its hot search about hourly: 40 of 209 top-10 topics lived 45-75 min.
+ROTATION_BAND_MIN = {"bilibili": (45, 75)}
+RETITLE_WINDOW_MIN = 20  # a near-identical headline appeared on the same list within 20 min
+TOPIC_WINDOW_MIN = 60    # history check window after the drop
+TOPIC_MAX_RANK = 30
+STOP_BIGRAMS = {"什么", "为什", "怎么", "如何", "发生", "已经", "还要", "还得", "一个", "中国", "今年", "全年", "有望",
+                "回应", "宣布", "官方", "网友", "最新", "多少", "是否", "可以", "不是", "没有", "这样", "我们", "你们"}
+CJK2 = re.compile(r"^[\u3400-\u9fff]{2}$")
+
+
+def bigrams(t):
+    t = "".join(ch for ch in (t or "") if not ch.isspace())
+    return {t[i:i + 2] for i in range(len(t) - 1)}
+
+
+def topic_terms(t):
+    return {b for b in bigrams(t) if CJK2.match(b)} - STOP_BIGRAMS
+
+
+def is_retitle(a, b):
+    """Same headline, edited: one contains the other, or 60% of the shorter one's bigrams are shared."""
+    if not a or not b or a == b:
+        return False
+    if a in b or b in a:
+        return True
+    x, y = bigrams(a), bigrams(b)
+    return bool(x and y) and len(x & y) / min(len(x), len(y)) >= 0.6
+
+
+def same_event(a, b):
+    """Two kept items that are one story: 2+ shared topic bigrams, or 1 shared and gone within 30 min of each other."""
+    shared = topic_terms(a["title"]) & topic_terms(b["title"])
+    near = abs((a["_gone"] - b["_gone"]).total_seconds()) <= 30 * 60
+    return len(shared) >= 2 or (len(shared) >= 1 and near)
+
+
+def _minutes(a, b):
+    return (a - b).total_seconds() / 60 if a and b else None
+
+
+def open_history(path):
+    """Open history.sqlite read-only. Returns None (and the cut runs without history checks) on any error."""
+    if not path:
+        return None
+    try:
+        conn = sqlite3.connect(f"file:{path}?mode=ro", uri=True)
+        conn.execute("select 1 from snapshots limit 1")
+        return conn
+    except sqlite3.Error as exc:
+        print(f"warning: history not usable ({exc}); skipping retitle/topic checks", file=sys.stderr)
+        return None
+
+
+def history_titles(conn, lst, start, minutes):
+    t0 = int(start.timestamp())
+    q = ("select h.title from hot_items h join snapshots s on s.id = h.snapshot_id "
+         "where s.list = ? and s.ok = 1 and s.ts >= ? and s.ts <= ? and h.rank <= ?")
+    return {t for (t,) in conn.execute(q, (lst, t0, t0 + minutes * 60, TOPIC_MAX_RANK))}
+
+
+CUT_ORDER = ["came back once before", "gone under 60 min", "not in the top 10 when it left",
+             "slid down before leaving", "on the list a normal length of time", "inside the list's normal rotation",
+             "still on another hot list", "left with other flagged topics (batch drop)", "retitled",
+             "topic still on the list", "same story as a kept item"]
+
+
+def why_cut(f, gone, gen, flags, history=None):
+    """Return the reason a flag is ordinary churn, or None to keep it."""
+    trail = [r for r in (f.get("rank_trail") or []) if isinstance(r, int)]
+    on = (f.get("time_on_list") or {}).get("minutes")
+    lst, title = f.get("list"), f.get("title") or ""
+    if any(e.get("signal") == "returned" for e in f.get("evidence") or []):
+        return "came back once before"
+    if (_minutes(gen, gone) or 0) < MIN_GONE_MIN:
+        return "gone under 60 min"
+    if not trail or trail[-1] > MAX_DROP_RANK:
+        return "not in the top 10 when it left"
+    if trail[-1] > min(trail) + SLIDE_RANKS:
+        return "slid down before leaving"
+    if on is None or on < MIN_ON_MIN or on >= MEDIAN_TOP10_MIN.get(lst, 0) / 2:
+        return "on the list a normal length of time"
+    lo, hi = ROTATION_BAND_MIN.get(lst, (1, 0))
+    if lo <= on <= hi:
+        return "inside the list's normal rotation"
+    if any((s.get("where") in PLATFORMS) for s in f.get("survived_on") or []):
+        return "still on another hot list"
+    miss = (f.get("censored_at") or {}).get("first_missing")
+    batch = [g for g in flags if g is not f and g.get("list") == lst and miss
+             and (g.get("censored_at") or {}).get("first_missing") == miss]
+    # Topics that left in the same snapshot: a list refresh, unless they are all one story and none came back.
+    terms = topic_terms(title)
+    if batch and not all(g.get("status") != "returned" and terms & topic_terms(g.get("title")) for g in batch):
+        return "left with other flagged topics (batch drop)"
+    for g in flags:
+        if g is f or g.get("list") != lst:
+            continue
+        if not is_retitle(title, g.get("title")):
+            continue
+        g_in, g_out = parse_z(g.get("first_seen_at")), parse_z(g.get("last_seen_at"))
+        appeared = _minutes(g_in, gone)
+        if (appeared is not None and abs(appeared) <= RETITLE_WINDOW_MIN) or (g_in and g_out and g_in <= gone <= g_out):
+            return "retitled"  # the edited headline appeared, or was already on the list, when this one left
+    if history is not None:
+        try:
+            later = history_titles(history, lst, gone, TOPIC_WINDOW_MIN) - {title}
+        except sqlite3.Error as exc:
+            print(f"warning: history query failed ({exc})", file=sys.stderr)
+            later = set()
+        if any(is_retitle(title, t) for t in later):
+            return "retitled"
+        if any(len(terms & topic_terms(t)) >= 2 for t in later):
+            return "topic still on the list"
+    return None
+
+
+def select(data, hours, by_id, by_t, history=None, strict=True, funnel=None):
     gen = parse_z(data.get("meta", {}).get("generated_at")) or datetime.now(timezone.utc)
     cutoff = gen - timedelta(hours=hours)
+    flags = data.get("flags", [])
     rows = []
-    for f in data.get("flags", []):
+    for f in flags:
         if f.get("status") not in ("likely_censored", "censored"):
             continue  # "returned" items came back, so they are not shown
         gone = parse_z((f.get("censored_at") or {}).get("first_missing")) or parse_z(f.get("last_seen_at"))
@@ -125,6 +252,14 @@ def select(data, hours, by_id, by_t):
         title = f.get("title") or ""
         if PII.search(title):
             continue
+        if funnel is not None:
+            funnel["flagged"] = funnel.get("flagged", 0) + 1
+        if strict:
+            reason = why_cut(f, gone, gen, flags, history)
+            if reason:
+                if funnel is not None:
+                    funnel[reason] = funnel.get(reason, 0) + 1
+                continue
         en = f.get("title_en") or by_id.get(f.get("item_id")) or by_t.get(title) or ""
         rows.append({
             "platform": f.get("list"),
@@ -146,6 +281,24 @@ def select(data, hours, by_id, by_t):
             "_gone": gone,
         })
     rows.sort(key=lambda r: (r["peak_rank"] or 99, -r["_gone"].timestamp()))
+    if strict:
+        kept = []
+        for r in rows:
+            r["title"] = r["title_zh"]
+            if any(same_event(r, k) for k in kept):
+                if funnel is not None:
+                    funnel["same story as a kept item"] = funnel.get("same story as a kept item", 0) + 1
+            else:
+                kept.append(r)
+        for r in rows:
+            r.pop("title", None)
+        rows = kept
+    if funnel is not None:
+        funnel["kept"] = len(rows)
+        order = ["flagged"] + CUT_ORDER + ["kept"]
+        ordered = {k: funnel.get(k, 0) for k in order}
+        funnel.clear()
+        funnel.update(ordered)
     return gen, rows
 
 
@@ -226,7 +379,7 @@ def render(gen, rows, hours):
 <p class="sub">Topics that vanished from Chinese hot lists while still trending, in the {hours} hours to {e(et(gen, '%a %b %-d, %Y, %-I:%M %p ET'))}. 热榜上仍在热议却突然消失的话题。</p>
 <div class="stats"><div class="stat"><b>{len(rows)}</b><small>Likely censored 疑似被删</small></div>{stats}</div></div></header>
 <main class="wrap">
-<div class="note"><b>How to read this 说明:</b> each topic left a hot list abruptly while ranked high and was still gone at our 10-minute re-check. That is a signal, not proof: lists also churn for ordinary reasons. Every item is labeled <b>likely censored 疑似被删</b>. Open "Evidence" for the timeline, link re-checks and any matching tracker entry. Hot-list headlines and public links only; no user data. Times are US Eastern (ET).</div>
+<div class="note"><b>How to read this 说明:</b> each topic left a hot list from the top 10 without sliding down first, well before topics on that list usually drop off, and was still gone an hour later. Retitled headlines, topics still on the list or on another hot list, and batch drops are left out. That is a signal, not proof: lists also churn for ordinary reasons. Every item is labeled <b>likely censored 疑似被删</b>. Open "Evidence" for the timeline, link re-checks and any matching tracker entry. Hot-list headlines and public links only; no user data. Times are US Eastern (ET).</div>
 <div class="filters">{''.join(btns)}</div>
 <section class="grid">{body}</section>
 <div class="links">
@@ -245,10 +398,16 @@ def main():
     ap.add_argument("out_dir")
     ap.add_argument("--hours", type=int, default=24)
     ap.add_argument("--feed-en")
+    ap.add_argument("--history", help="history.sqlite, opened read-only, for the retitle / topic checks")
+    ap.add_argument("--all-flags", action="store_true", help="skip the stricter cut and show every flag")
     a = ap.parse_args()
     data = json.load(open(a.censored))
     by_id, by_t = load_en(a.feed_en)
-    gen, rows = select(data, a.hours, by_id, by_t)
+    hist = open_history(a.history)
+    funnel = {}
+    gen, rows = select(data, a.hours, by_id, by_t, history=hist, strict=not a.all_flags, funnel=funnel)
+    if hist is not None:
+        hist.close()
     import os
     os.makedirs(a.out_dir, exist_ok=True)
     open(os.path.join(a.out_dir, "index.html"), "w").write(render(gen, rows, a.hours))
@@ -260,10 +419,10 @@ def main():
         r["evidence"] = [x if isinstance(x, str) else {"type": x[0], "source": x[1], "url": x[2], "published": x[3]} for x in r["evidence"]]
         out.append(r)
     json.dump({"generated_at_et": et(gen, "%Y-%m-%d %H:%M ET"), "window_hours": a.hours, "label": "likely censored",
-               "note": "Abrupt exit from a hot list while ranked high, still gone at T+10 min. A signal, not proof.",
-               "count": len(out), "items": out}, open(os.path.join(a.out_dir, "deleted-today.json"), "w"), ensure_ascii=False, indent=1)
+               "note": "Left a hot list from the top 10 without sliding, early for that list, still gone 1 h later. A signal, not proof.",
+               "count": len(out), "cut": funnel, "items": out}, open(os.path.join(a.out_dir, "deleted-today.json"), "w"), ensure_ascii=False, indent=1)
     open(os.path.join(a.out_dir, ".nojekyll"), "w").close()
-    print(f"built {len(rows)} items, window ends {et(gen)}")
+    print(f"built {len(rows)} items from {funnel.get('flagged', 0)} flags, window ends {et(gen)}")
 
 
 if __name__ == "__main__":
