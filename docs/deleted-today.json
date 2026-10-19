@@ -1,0 +1,2324 @@
+{
+ "generated_at_et": "2026-10-19 10:10 ET",
+ "window_hours": 24,
+ "label": "likely censored",
+ "note": "Abrupt exit from a hot list while ranked high, still gone at T+10 min. A signal, not proof.",
+ "count": 84,
+ "items": [
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "绵阳地震",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "stronger",
+   "peak_rank": 1,
+   "first_seen_et": "Oct 19, 7:19 AM ET",
+   "last_seen_et": "Oct 19, 8:45 AM ET",
+   "first_missing_et": "Oct 19, 8:50 AM ET",
+   "minutes_on_list": 86,
+   "url": "https://www.baidu.com/s?wd=%E7%BB%B5%E9%98%B3%E5%9C%B0%E9%9C%87",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #1, last ranks #1 → #1 → #1 → #1 → #1 → #1",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:05 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:52 AM ET",
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "Weibo 微博 trending history 热搜历史 (GitHub, justjavac)",
+     "url": "https://s.weibo.com//weibo?q=%E7%BB%B5%E9%98%B3%E5%9C%B0%E9%9C%87&t=31&band_rank=6&Refer=top",
+     "published": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "四川北川县发生4.1级地震",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 1,
+   "first_seen_et": "Oct 19, 7:09 AM ET",
+   "last_seen_et": "Oct 19, 8:40 AM ET",
+   "first_missing_et": "Oct 19, 8:45 AM ET",
+   "minutes_on_list": 91,
+   "url": "https://www.toutiao.com/trending/7698331635720192063/",
+   "official_line": {
+    "source": "CCTV News 央视新闻 (news.cctv.com)",
+    "title": "四川绵阳市北川县发生4.1级地震，震源深度11千米",
+    "url": "https://news.cctv.com/2026/10/19/ARTIQDicBEfQZtRN1u2NAlvU261019.shtml",
+    "published": "2026-10-19 19:21:22"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #1, last ranks #2 → #2 → #2 → #2 → #2 → #2",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 8:58 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:48 AM ET",
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "Telegram: 竹新社 (@tnews365)",
+     "url": "https://t.me/tnews365/35711",
+     "published": null
+    }
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "大额存单重出江湖",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 1,
+   "first_seen_et": "Oct 19, 2:19 AM ET",
+   "last_seen_et": "Oct 19, 8:14 AM ET",
+   "first_missing_et": "Oct 19, 8:19 AM ET",
+   "minutes_on_list": 355,
+   "url": "https://www.baidu.com/s?wd=%E5%A4%A7%E9%A2%9D%E5%AD%98%E5%8D%95%E9%87%8D%E5%87%BA%E6%B1%9F%E6%B9%96",
+   "official_line": {
+    "source": "Guangming Daily 光明网",
+    "title": "调查：大额存单缘何回归？受到哪些投资者青睐？",
+    "url": "https://politics.gmw.cn/2026-10/19/content_39052561.htm",
+    "published": "2026-10-19"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #1, last ranks #4 → #4 → #4 → #4 → #4 → #4",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 8:30 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:23 AM ET",
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "China Digital Times 中国数字时代",
+     "url": "https://chinadigitaltimes.net/chinese/732951.html",
+     "published": "2026-10-16T05:55:30Z"
+    }
+   ]
+  },
+  {
+   "platform": "bilibili",
+   "platform_name": "Bilibili 哔哩哔哩",
+   "title_zh": "S16全赛区数据一览之LCK",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 1,
+   "first_seen_et": "Oct 19, 3:35 AM ET",
+   "last_seen_et": "Oct 19, 3:40 AM ET",
+   "first_missing_et": "Oct 19, 3:45 AM ET",
+   "minutes_on_list": 5,
+   "url": "https://search.bilibili.com/all?keyword=S16%E5%85%A8%E8%B5%9B%E5%8C%BA%E6%95%B0%E6%8D%AE%E4%B8%80%E8%A7%88%E4%B9%8BLCK",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #1, last ranks #1 → #1",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 3:57 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 4:49 AM ET"
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "马克龙：法国人怎么能这样对待法国",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 1,
+   "first_seen_et": "Oct 19, 12:02 AM ET",
+   "last_seen_et": "Oct 19, 2:25 AM ET",
+   "first_missing_et": "Oct 19, 2:30 AM ET",
+   "minutes_on_list": 143,
+   "url": "https://www.baidu.com/s?wd=%E9%A9%AC%E5%85%8B%E9%BE%99%EF%BC%9A%E6%B3%95%E5%9B%BD%E4%BA%BA%E6%80%8E%E4%B9%88%E8%83%BD%E8%BF%99%E6%A0%B7%E5%AF%B9%E5%BE%85%E6%B3%95%E5%9B%BD",
+   "official_line": {
+    "source": "NetEase News 网易新闻",
+    "title": "马克龙：无法忍受暴力行为 法国人怎么能这样对待法国",
+    "url": "https://www.163.com/dy/article/L9JJDL780514R9OJ.html",
+    "published": "2026-10-19 10:14:47"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #1, last ranks #1 → #1 → #1 → #1 → #1 → #1",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 2:42 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 3:36 AM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "法国公共债务总额占GDP比重为119%",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 1,
+   "first_seen_et": "Oct 18, 7:39 PM ET",
+   "last_seen_et": "Oct 18, 8:19 PM ET",
+   "first_missing_et": "Oct 18, 8:25 PM ET",
+   "minutes_on_list": 40,
+   "url": "https://www.toutiao.com/trending/7697758701436043306/",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #1, last ranks #18 → #1 → #1 → #1 → #1 → #1",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 8:50 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 9:40 PM ET",
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "China Digital Times 中国数字时代",
+     "url": "https://chinadigitaltimes.net/chinese/732941.html",
+     "published": "2026-10-16T05:55:11Z"
+    }
+   ]
+  },
+  {
+   "platform": "bilibili",
+   "platform_name": "Bilibili 哔哩哔哩",
+   "title_zh": "KC vs MVK S16",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 1,
+   "first_seen_et": "Oct 16, 1:50 PM ET",
+   "last_seen_et": "Oct 18, 4:19 PM ET",
+   "first_missing_et": "Oct 18, 4:24 PM ET",
+   "minutes_on_list": 3029,
+   "url": "https://search.bilibili.com/all?keyword=KC%20MVK",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #1, last ranks #1 → #1 → #1 → #1 → #1 → #1",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 16, 6:01 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 16, 6:01 PM ET",
+    "Re-check after 24 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 17, 5:06 PM ET"
+   ]
+  },
+  {
+   "platform": "bilibili",
+   "platform_name": "Bilibili 哔哩哔哩",
+   "title_zh": "B站办了个未来大会",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 2,
+   "first_seen_et": "Oct 19, 5:48 AM ET",
+   "last_seen_et": "Oct 19, 9:42 AM ET",
+   "first_missing_et": "Oct 19, 9:47 AM ET",
+   "minutes_on_list": 233,
+   "url": "https://search.bilibili.com/all?keyword=B%E7%AB%99%E5%8A%9E%E4%BA%86%E4%B8%AA%E6%9C%AA%E6%9D%A5%E5%A4%A7%E4%BC%9A",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #2, last ranks #7 → #5 → #5 → #5 → #5 → #5",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:58 AM ET"
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "李小冉宣布去年已离婚",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 2,
+   "first_seen_et": "Oct 19, 7:54 AM ET",
+   "last_seen_et": "Oct 19, 9:15 AM ET",
+   "first_missing_et": "Oct 19, 9:18 AM ET",
+   "minutes_on_list": 81,
+   "url": "https://www.baidu.com/s?wd=%E6%9D%8E%E5%B0%8F%E5%86%89%E5%AE%A3%E5%B8%83%E5%8E%BB%E5%B9%B4%E5%B7%B2%E7%A6%BB%E5%A9%9A",
+   "official_line": {
+    "source": "Tencent News 腾讯网",
+    "title": "李小冉宣布去年已离婚！原因有财务风险说和丁克说，前夫被执行2111万",
+    "url": "https://new.qq.com/rain/a/20261019A0DQJ100",
+    "published": "2026-10-19 21:38:24"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #2, last ranks #6 → #6 → #6 → #6 → #2 → #2",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:28 AM ET",
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "Weibo 微博 trending history 热搜历史 (GitHub, justjavac)",
+     "url": "https://s.weibo.com//weibo?q=%E6%9D%8E%E5%B0%8F%E5%86%89%E7%A6%BB%E5%A9%9A&t=31&band_rank=8&Refer=top",
+     "published": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "platform": "bilibili",
+   "platform_name": "Bilibili 哔哩哔哩",
+   "title_zh": "B站足球进入西蒙尼时代",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 2,
+   "first_seen_et": "Oct 19, 8:04 AM ET",
+   "last_seen_et": "Oct 19, 9:03 AM ET",
+   "first_missing_et": "Oct 19, 9:08 AM ET",
+   "minutes_on_list": 60,
+   "url": "https://search.bilibili.com/all?keyword=B%E7%AB%99%E8%B6%B3%E7%90%83%E8%BF%9B%E5%85%A5%E8%A5%BF%E8%92%99%E5%B0%BC%E6%97%B6%E4%BB%A3",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #2, last ranks #2 → #3 → #7 → #17 → #10 → #10",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:19 AM ET",
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "NZ Chinese Herald 新西兰中文先驱报",
+     "url": "https://www.chineseherald.co.nz/news/lifestyle/bushaoxin/",
+     "published": null
+    }
+   ]
+  },
+  {
+   "platform": "bilibili",
+   "platform_name": "Bilibili 哔哩哔哩",
+   "title_zh": "皇萨迎德比 维尼修斯陷迷局",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 2,
+   "first_seen_et": "Oct 19, 6:49 AM ET",
+   "last_seen_et": "Oct 19, 7:24 AM ET",
+   "first_missing_et": "Oct 19, 7:29 AM ET",
+   "minutes_on_list": 35,
+   "url": "https://search.bilibili.com/all?keyword=%E7%9A%87%E8%90%A8%E8%BF%8E%E5%BE%B7%E6%AF%94%20%E7%BB%B4%E5%B0%BC%E4%BF%AE%E6%96%AF%E9%99%B7%E8%BF%B7%E5%B1%80",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #2, last ranks #2 → #2 → #2 → #8 → #7 → #7",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 7:50 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 8:30 AM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "韩国养老金一天亏掉一个“小国GDP”",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 2,
+   "first_seen_et": "Oct 19, 5:03 AM ET",
+   "last_seen_et": "Oct 19, 5:48 AM ET",
+   "first_missing_et": "Oct 19, 5:53 AM ET",
+   "minutes_on_list": 45,
+   "url": "https://www.toutiao.com/trending/7698287766290828851/",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #2, last ranks #6 → #2 → #2 → #2 → #2 → #2",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 6:07 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 6:55 AM ET",
+    {
+     "type": "Still on another hot list 仍在其他热榜",
+     "source": "Baidu 百度",
+     "url": "https://www.baidu.com/s?wd=%E9%9F%A9%E5%9B%BD%E5%85%BB%E8%80%81%E9%87%91%E2%80%9C%E8%A1%80%E4%BA%8F%E2%80%9D%E4%B8%80%E4%B8%87%E4%BA%BF",
+     "published": null
+    }
+   ]
+  },
+  {
+   "platform": "bilibili",
+   "platform_name": "Bilibili 哔哩哔哩",
+   "title_zh": "古代食物造假有多离谱",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 2,
+   "first_seen_et": "Oct 19, 5:20 AM ET",
+   "last_seen_et": "Oct 19, 5:48 AM ET",
+   "first_missing_et": "Oct 19, 5:53 AM ET",
+   "minutes_on_list": 28,
+   "url": "https://search.bilibili.com/all?keyword=%E5%8F%A4%E4%BB%A3%E9%A3%9F%E7%89%A9%E9%80%A0%E5%81%87%E6%9C%89%E5%A4%9A%E7%A6%BB%E8%B0%B1",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #2, last ranks #2 → #7 → #5",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 6:07 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 6:55 AM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "动乱之际马克龙夫妇被拍到看演唱会",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 2,
+   "first_seen_et": "Oct 18, 7:28 PM ET",
+   "last_seen_et": "Oct 18, 8:14 PM ET",
+   "first_missing_et": "Oct 18, 8:19 PM ET",
+   "minutes_on_list": 46,
+   "url": "https://www.toutiao.com/trending/7697995945359261715/",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #2, last ranks #2 → #2 → #4 → #4 → #4 → #4",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 8:37 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 9:23 PM ET",
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "Sing Tao Daily Europe 星島日報 (歐洲版)",
+     "url": "https://www.singtao.co.uk/2026-10-18/%e6%b3%95%e5%9c%8b%e6%9a%b4%e4%ba%82%ef%bd%9c%e5%85%a8%e5%9c%8b%e9%a8%b7%e4%ba%82%e4%b9%8b%e9%9a%9b-%e9%a6%ac%e5%85%8b%e9%be%8d%e5%a4%ab%e5%a9%a6%e6%bc%94%e5%94%b1%e6%9c%83%e4%b8%8a%e8%b7%b3%e8%88%9e/4764002",
+     "published": null
+    }
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "全年粮食有望再获丰收",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 3,
+   "first_seen_et": "Oct 19, 2:55 AM ET",
+   "last_seen_et": "Oct 19, 8:50 AM ET",
+   "first_missing_et": "Oct 19, 8:57 AM ET",
+   "minutes_on_list": 355,
+   "url": "https://www.baidu.com/s?wd=%E5%85%A8%E5%B9%B4%E7%B2%AE%E9%A3%9F%E6%9C%89%E6%9C%9B%E5%86%8D%E8%8E%B7%E4%B8%B0%E6%94%B6",
+   "official_line": {
+    "source": "China National Radio 央广网 (cnr.cn)",
+    "title": "全年粮食有望再获丰收",
+    "url": "https://www.cnr.cn/newscenter/native/gd/20261019/t20261019_527846441.shtml?sign=ABZ0cnNfd2NtX3ByZXZpZXdfYWNjZXNzAAAH6gAAAAkAAAATAAAACgAAABkAAAAK",
+    "published": "2026-10-19"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #3, last ranks #3 → #3 → #3 → #3 → #3 → #3",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 4:13 AM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "何以中国当惊世界殊",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 3,
+   "first_seen_et": "Oct 19, 2:55 AM ET",
+   "last_seen_et": "Oct 19, 8:50 AM ET",
+   "first_missing_et": "Oct 19, 8:57 AM ET",
+   "minutes_on_list": 355,
+   "url": "https://www.toutiao.com/article/7697978278069502474",
+   "official_line": {
+    "source": "The Paper 澎湃新闻",
+    "title": "何以中国·当惊世界殊丨他没等到的高峡平湖，我们替他看见了",
+    "url": "https://www.thepaper.cn/newsDetail_forward_34282278",
+    "published": "2026-10-19 19:39:52"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #3, last ranks #3 → #3 → #3 → #3 → #3 → #3",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:09 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:58 AM ET"
+   ]
+  },
+  {
+   "platform": "bilibili",
+   "platform_name": "Bilibili 哔哩哔哩",
+   "title_zh": "巴基斯坦官兵用中国枪是啥体验",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 3,
+   "first_seen_et": "Oct 19, 3:50 AM ET",
+   "last_seen_et": "Oct 19, 4:48 AM ET",
+   "first_missing_et": "Oct 19, 4:53 AM ET",
+   "minutes_on_list": 58,
+   "url": "https://search.bilibili.com/all?keyword=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E5%AE%98%E5%85%B5%E7%94%A8%E4%B8%AD%E5%9B%BD%E6%9E%AA%E6%98%AF%E5%95%A5%E4%BD%93%E9%AA%8C",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #3, last ranks #3 → #3 → #3 → #3 → #3 → #5",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 5:04 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 5:54 AM ET"
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "国家统计局：全年粮食有望再获丰收",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 3,
+   "first_seen_et": "Oct 19, 4:00 AM ET",
+   "last_seen_et": "Oct 19, 4:38 AM ET",
+   "first_missing_et": "Oct 19, 4:43 AM ET",
+   "minutes_on_list": 38,
+   "url": "https://www.baidu.com/s?wd=%E5%9B%BD%E5%AE%B6%E7%BB%9F%E8%AE%A1%E5%B1%80%EF%BC%9A%E5%85%A8%E5%B9%B4%E7%B2%AE%E9%A3%9F%E6%9C%89%E6%9C%9B%E5%86%8D%E8%8E%B7%E4%B8%B0%E6%94%B6",
+   "official_line": {
+    "source": "China National Radio 央广网 (cnr.cn)",
+    "title": "全年粮食有望再获丰收",
+    "url": "https://www.cnr.cn/newscenter/native/gd/20261019/t20261019_527846441.shtml?sign=ABZ0cnNfd2NtX3ByZXZpZXdfYWNjZXNzAAAH6gAAAAkAAAATAAAACgAAABkAAAAK",
+    "published": "2026-10-19"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #3, last ranks #3 → #3 → #3 → #3 → #3 → #3",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 4:54 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 5:49 AM ET"
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "“China Haul”火到广交会",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "stronger",
+   "peak_rank": 3,
+   "first_seen_et": "Oct 18, 10:10 PM ET",
+   "last_seen_et": "Oct 19, 2:50 AM ET",
+   "first_missing_et": "Oct 19, 2:55 AM ET",
+   "minutes_on_list": 280,
+   "url": "https://www.baidu.com/s?wd=%E2%80%9CChina+Haul%E2%80%9D%E7%81%AB%E5%88%B0%E5%B9%BF%E4%BA%A4%E4%BC%9A",
+   "official_line": {
+    "source": "People's Daily app 人民日报客户端 (peopleapp.com)",
+    "title": "“China Haul”爆火，“柴”该怎么加？",
+    "url": "https://www.peopleapp.com/column/30053371569-500007746717",
+    "published": "2026-10-19T01:07:21Z"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #3, last ranks #3 → #3 → #3 → #3 → #3 → #3",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 3:06 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 3:57 AM ET",
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "China Digital Times 中国数字时代 (English)",
+     "url": "https://chinadigitaltimes.net/2026/10/translation-why-isnt-it-foreign-interference-when-they-praise-china/",
+     "published": "2026-10-19T06:17:04Z"
+    },
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "China Digital Times 中国数字时代 (English)",
+     "url": "https://cyberscoop.com/volexity-uta0565-china-exploit-chain-chrome-microsoft/#new_tab",
+     "published": "2026-09-30T14:49:11Z"
+    },
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "China Digital Times 中国数字时代 (English)",
+     "url": "https://safeguarddefenders.com/en/publications/cgtn-see-difference-chinas-party-state-media-focus#new_tab",
+     "published": "2026-09-30T14:45:27Z"
+    },
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "China Digital Times 中国数字时代 (English)",
+     "url": "https://chinadigitaltimes.net/2026/09/journalist-and-metoo-activist-sophia-huang-xueqin-released-from-prison-after-five-years/",
+     "published": "2026-09-21T21:58:55Z"
+    },
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "China Media Project 中国传媒研究计划",
+     "url": "https://chinamediaproject.org/2026/10/02/national-security-of-the-silver-screen/",
+     "published": "2026-10-02T02:16:46Z"
+    }
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "第五届亚残运开幕",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 3,
+   "first_seen_et": "Oct 18, 10:05 PM ET",
+   "last_seen_et": "Oct 19, 2:50 AM ET",
+   "first_missing_et": "Oct 19, 2:55 AM ET",
+   "minutes_on_list": 285,
+   "url": "https://www.toutiao.com/article/7697946034852364827",
+   "official_line": {
+    "source": "Guangming Daily 光明网",
+    "title": "第五届亚洲残疾人运动会开幕式举行",
+    "url": "https://politics.gmw.cn/2026-10/19/content_39052732.htm",
+    "published": "2026-10-19"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #3, last ranks #3 → #3 → #3 → #3 → #3 → #3",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 3:06 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 3:57 AM ET",
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "Ming Pao 明報",
+     "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxNU0NnQ3BVc0RCdEFrU0RMa3ZkUUp2LU5ISEMzbV95bTMxRTRqR0xxR09XTkRHaFlaNFM1djVGQ1NScTVTYWQ5WkxFZFRuYXQwMmwxc0hGRHpEbzJzR19mODNUejBfbng1QVpIcXRHTGxIblloU3VvcVd6WWhRZnl6RnlMRUhEOS1IeWQxbnNqZnBEVTBvME4zQW02Y283aUNaaVBINkoyRGJJZG1SNkRaM0ZtQzZqVWdqOVlsbHM0YTRTNTVCRkF6LUFlR3R3RGxlSmZHYklJNW9rbXJNZExGTklmZlMzZmJpblVXYUR2enE5bWwxTXNqVVFTajZOeHhQcm94UUtfWnhZdUE2TnJSR2NpOEZvZkg5RmlaWm1BdXNsdkpZQjl5a3g3M0FwX2xvTlNYQ3hqQ1g?oc=5",
+     "published": null
+    }
+   ]
+  },
+  {
+   "platform": "bilibili",
+   "platform_name": "Bilibili 哔哩哔哩",
+   "title_zh": "NBA新赛季谁能冲出西部",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 3,
+   "first_seen_et": "Oct 18, 9:49 PM ET",
+   "last_seen_et": "Oct 18, 10:45 PM ET",
+   "first_missing_et": "Oct 18, 10:50 PM ET",
+   "minutes_on_list": 56,
+   "url": "https://search.bilibili.com/all?keyword=NBA%E6%96%B0%E8%B5%9B%E5%AD%A3%E8%B0%81%E8%83%BD%E5%86%B2%E5%87%BA%E8%A5%BF%E9%83%A8",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #3, last ranks #8 → #8 → #10 → #9 → #4 → #3",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 11:07 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 11:59 PM ET"
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "广交会见证中国制造硬核升级",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 3,
+   "first_seen_et": "Oct 18, 9:20 AM ET",
+   "last_seen_et": "Oct 18, 10:05 PM ET",
+   "first_missing_et": "Oct 18, 10:10 PM ET",
+   "minutes_on_list": 765,
+   "url": "https://www.baidu.com/s?wd=%E5%B9%BF%E4%BA%A4%E4%BC%9A%E8%A7%81%E8%AF%81%E4%B8%AD%E5%9B%BD%E5%88%B6%E9%80%A0%E7%A1%AC%E6%A0%B8%E5%8D%87%E7%BA%A7",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #3, last ranks #3 → #3 → #3 → #3 → #3 → #3",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 10:22 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 11:14 PM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "中国外贸风向标 创多项历史新高",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 3,
+   "first_seen_et": "Oct 18, 9:15 AM ET",
+   "last_seen_et": "Oct 18, 10:00 PM ET",
+   "first_missing_et": "Oct 18, 10:05 PM ET",
+   "minutes_on_list": 765,
+   "url": "https://www.toutiao.com/article/7697879290448282175",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #3, last ranks #3 → #3 → #3 → #3 → #3 → #3",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 10:21 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 11:07 PM ET"
+   ]
+  },
+  {
+   "platform": "bilibili",
+   "platform_name": "Bilibili 哔哩哔哩",
+   "title_zh": "部分研究生不用写传统学位论文",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 4,
+   "first_seen_et": "Oct 19, 5:53 AM ET",
+   "last_seen_et": "Oct 19, 9:18 AM ET",
+   "first_missing_et": "Oct 19, 9:22 AM ET",
+   "minutes_on_list": 204,
+   "url": "https://search.bilibili.com/all?keyword=%E9%83%A8%E5%88%86%E7%A0%94%E7%A9%B6%E7%94%9F%E4%B8%8D%E7%94%A8%E5%86%99%E4%BC%A0%E7%BB%9F%E5%AD%A6%E4%BD%8D%E8%AE%BA%E6%96%87",
+   "official_line": {
+    "source": "China News Service 中国新闻网",
+    "title": "以实践成果申请学位 5个专业学位研究生类别先行先试",
+    "url": "https://www.chinanews.com.cn/edu/2026/10-19/10717193.shtml",
+    "published": "2026-10-19"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #4, last ranks #4 → #4 → #4 → #5 → #4 → #5",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:33 AM ET",
+    {
+     "type": "Still on another hot list 仍在其他热榜",
+     "source": "Baidu 百度",
+     "url": "https://www.baidu.com/s?wd=%E9%83%A8%E5%88%86%E7%A0%94%E7%A9%B6%E7%94%9F%E4%B8%8D%E7%94%A8%E6%92%B0%E5%86%99%E5%AD%A6%E4%BD%8D%E8%AE%BA%E6%96%87",
+     "published": null
+    }
+   ]
+  },
+  {
+   "platform": "bilibili",
+   "platform_name": "Bilibili 哔哩哔哩",
+   "title_zh": "105岁老红军最后的军礼",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 4,
+   "first_seen_et": "Oct 19, 2:30 AM ET",
+   "last_seen_et": "Oct 19, 3:23 AM ET",
+   "first_missing_et": "Oct 19, 3:28 AM ET",
+   "minutes_on_list": 52,
+   "url": "https://search.bilibili.com/all?keyword=105%E5%B2%81%E8%80%81%E7%BA%A2%E5%86%9B%E6%9C%80%E5%90%8E%E7%9A%84%E5%86%9B%E7%A4%BC",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #4, last ranks #5 → #4 → #6 → #7 → #6 → #7",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 3:42 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 4:29 AM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "留学生披旭日旗岂能一句道歉就翻篇",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "stronger",
+   "peak_rank": 4,
+   "first_seen_et": "Oct 18, 7:39 PM ET",
+   "last_seen_et": "Oct 18, 9:16 PM ET",
+   "first_missing_et": "Oct 18, 9:20 PM ET",
+   "minutes_on_list": 97,
+   "url": "https://www.toutiao.com/trending/7698154013367520777/",
+   "official_line": {
+    "source": "YouTube: 中国新闻社 China News Service",
+    "title": "“中国留学生身披旭日旗” 钧正平发声：无论身处哪个国家为军国主义张目，都是对人类良知的公然冒犯！",
+    "url": "https://www.youtube.com/shorts/aY30SaDd4p8",
+    "published": "2026-10-19T02:15:16+00:00"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #4, last ranks #5 → #4 → #4 → #4 → #4 → #4",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 9:31 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 10:21 PM ET",
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "Weibo 微博 trending history 热搜历史 (GitHub, bhwa233)",
+     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26t%3D10%26q%3D%23%E8%BA%AB%E6%8A%AB%E6%97%AD%E6%97%A5%E6%97%97%E7%95%99%E5%AD%A6%E7%94%9F%E8%BF%98%E6%94%AF%E6%8C%81%E5%8F%B0%E7%8B%AC%23&stream_entry_id=31&isnewpage=1&extparam=seat%3D1%26dgr%3D0%26filter_type%3Drealtimehot%26c_type%3D31%26realpos%3D13%26cate%3D5001%26lcate%3D5001%26stream_entry_id%3D31%26band_rank%3D13%26q%3D%2523%25E8%25BA%25AB%25E6%258A%25AB%25E6%2597%25AD%25E6%2597%25A5%25E6%2597%2597%25E7%2595%2599%25E5%25AD%25A6%25E7%2594%259F%25E8%25BF%2598%25E6%2594%25AF%25E6%258C%2581%25E5%258F%25B0%25E7%258B%25AC%2523%26pos%3D12%26flag%3D2%26display_time%3D1792372160%26pre_seqid%3D17923721600440104473&launchid=10000360-page_H5",
+     "published": "2026-10-19"
+    },
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "Weibo 微博 trending history 热搜历史 (GitHub, justjavac)",
+     "url": "https://s.weibo.com//weibo?q=%23%E8%BA%AB%E6%8A%AB%E6%97%AD%E6%97%A5%E6%97%97%E4%B8%AD%E5%9B%BD%E7%95%99%E5%AD%A6%E7%94%9F%E6%88%96%E8%A2%AB%E5%BC%80%E9%99%A4%E9%81%A3%E8%BF%94%23&t=31&band_rank=1&Refer=top",
+     "published": "2026-10-19"
+    },
+    {
+     "type": "Still on another hot list 仍在其他热榜",
+     "source": "Weibo 微博",
+     "url": null,
+     "published": null
+    },
+    {
+     "type": "Still on another hot list 仍在其他热榜",
+     "source": "Baidu 百度",
+     "url": null,
+     "published": null
+    },
+    {
+     "type": "Still on another hot list 仍在其他热榜",
+     "source": "Zhihu 知乎",
+     "url": "https://www.zhihu.com/question/2094350166518249285",
+     "published": null
+    }
+   ]
+  },
+  {
+   "platform": "bilibili",
+   "platform_name": "Bilibili 哔哩哔哩",
+   "title_zh": "DeepSeek V4.1最新前端实测",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 5,
+   "first_seen_et": "Oct 19, 6:33 AM ET",
+   "last_seen_et": "Oct 19, 7:29 AM ET",
+   "first_missing_et": "Oct 19, 7:34 AM ET",
+   "minutes_on_list": 56,
+   "url": "https://search.bilibili.com/all?keyword=DeepSeek%20V4.1%E6%9C%80%E6%96%B0%E5%89%8D%E7%AB%AF%E5%AE%9E%E6%B5%8B",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #5, last ranks #8 → #9 → #9 → #17 → #18 → #10",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 7:50 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 8:36 AM ET"
+   ]
+  },
+  {
+   "platform": "bilibili",
+   "platform_name": "Bilibili 哔哩哔哩",
+   "title_zh": "为何诗人都学杜甫而不是李白",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 5,
+   "first_seen_et": "Oct 19, 5:20 AM ET",
+   "last_seen_et": "Oct 19, 6:25 AM ET",
+   "first_missing_et": "Oct 19, 6:33 AM ET",
+   "minutes_on_list": 65,
+   "url": "https://search.bilibili.com/all?keyword=%E4%B8%BA%E4%BD%95%E8%AF%97%E4%BA%BA%E9%83%BD%E5%AD%A6%E6%9D%9C%E7%94%AB%E8%80%8C%E4%B8%8D%E6%98%AF%E6%9D%8E%E7%99%BD",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #5, last ranks #9 → #8 → #10 → #9 → #5 → #5",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 6:50 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 7:44 AM ET"
+   ]
+  },
+  {
+   "platform": "bilibili",
+   "platform_name": "Bilibili 哔哩哔哩",
+   "title_zh": "王俊杰NCAA狂砍31分",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 5,
+   "first_seen_et": "Oct 19, 3:28 AM ET",
+   "last_seen_et": "Oct 19, 4:22 AM ET",
+   "first_missing_et": "Oct 19, 4:28 AM ET",
+   "minutes_on_list": 54,
+   "url": "https://search.bilibili.com/all?keyword=%E7%8E%8B%E4%BF%8A%E6%9D%B0NCAA%E7%8B%82%E7%A0%8D31%E5%88%86",
+   "official_line": {
+    "source": "Yangzi Evening News 扬子晚报",
+    "title": "31分创NCAA生涯新高，王俊杰：回到大学打球更轻松",
+    "url": "https://www.yangtse.com/news/ty/202610/t20261019_404354.html",
+    "published": "2026-10-19"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #5, last ranks #5 → #8 → #6 → #8 → #10 → #6",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 4:39 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 5:35 AM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "美国物价上涨为何特朗普迁怒乌克兰",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 5,
+   "first_seen_et": "Oct 18, 11:36 PM ET",
+   "last_seen_et": "Oct 19, 12:32 AM ET",
+   "first_missing_et": "Oct 19, 12:38 AM ET",
+   "minutes_on_list": 56,
+   "url": "https://www.toutiao.com/trending/7698209881555209766/",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #5, last ranks #6 → #6 → #6 → #6 → #6 → #9",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 12:50 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 1:42 AM ET"
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "孕妇被快递员找上门吓到先兆流产",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "stronger",
+   "peak_rank": 5,
+   "first_seen_et": "Oct 18, 7:44 PM ET",
+   "last_seen_et": "Oct 18, 10:20 PM ET",
+   "first_missing_et": "Oct 18, 10:27 PM ET",
+   "minutes_on_list": 157,
+   "url": "https://www.baidu.com/s?wd=%E5%AD%95%E5%A6%87%E8%A2%AB%E5%BF%AB%E9%80%92%E5%91%98%E6%89%BE%E4%B8%8A%E9%97%A8%E5%90%93%E5%88%B0%E5%85%88%E5%85%86%E6%B5%81%E4%BA%A7",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #5, last ranks #13 → #13 → #13 → #7 → #5 → #5",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 10:41 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 11:36 PM ET",
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "Weibo 微博 trending history 热搜历史 (GitHub, bhwa233)",
+     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26t%3D10%26q%3D%23%E5%AD%95%E5%A6%87%E8%A2%AB%E5%BF%AB%E9%80%92%E5%91%98%E6%89%BE%E4%B8%8A%E9%97%A8%E5%90%93%E5%88%B0%E5%85%88%E5%85%86%E6%B5%81%E4%BA%A7%23&stream_entry_id=31&isnewpage=1&extparam=seat%3D1%26c_type%3D31%26cate%3D5001%26band_rank%3D11%26flag%3D2%26lcate%3D5001%26stream_entry_id%3D31%26q%3D%2523%25E5%25AD%2595%25E5%25A6%2587%25E8%25A2%25AB%25E5%25BF%25AB%25E9%2580%2592%25E5%2591%2598%25E6%2589%25BE%25E4%25B8%258A%25E9%2597%25A8%25E5%2590%2593%25E5%2588%25B0%25E5%2585%2588%25E5%2585%2586%25E6%25B5%2581%25E4%25BA%25A7%2523%26pos%3D11%26dgr%3D0%26filter_type%3Drealtimehot%26realpos%3D11%26display_time%3D1792355856%26pre_seqid%3D17923558564220253050507&launchid=10000360-page_H5",
+     "published": "2026-10-19"
+    },
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "Weibo 微博 trending history 热搜历史 (GitHub, bhwa233)",
+     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26t%3D10%26q%3D%23%E5%9C%86%E9%80%9A%E5%9B%9E%E5%BA%94%E5%BF%AB%E9%80%92%E5%91%98%E4%B8%8A%E9%97%A8%E8%87%B4%E5%A5%B3%E5%AD%90%E5%85%88%E5%85%86%E6%B5%81%E4%BA%A7%23&stream_entry_id=31&isnewpage=1&extparam=seat%3D1%26dgr%3D0%26filter_type%3Drealtimehot%26c_type%3D31%26realpos%3D10%26cate%3D5001%26lcate%3D5001%26stream_entry_id%3D31%26band_rank%3D10%26q%3D%2523%25E5%259C%2586%25E9%2580%259A%25E5%259B%259E%25E5%25BA%2594%25E5%25BF%25AB%25E9%2580%2592%25E5%2591%2598%25E4%25B8%258A%25E9%2597%25A8%25E8%2587%25B4%25E5%25A5%25B3%25E5%25AD%2590%25E5%2585%2588%25E5%2585%2586%25E6%25B5%2581%25E4%25BA%25A7%2523%26pos%3D9%26flag%3D1%26display_time%3D1792372160%26pre_seqid%3D17923721600440104473&launchid=10000360-page_H5",
+     "published": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "律师解读欠薪345万却送孩子韩国出道",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 5,
+   "first_seen_et": "Oct 18, 10:10 AM ET",
+   "last_seen_et": "Oct 18, 10:10 PM ET",
+   "first_missing_et": "Oct 18, 10:15 PM ET",
+   "minutes_on_list": 721,
+   "url": "https://www.baidu.com/s?wd=%E5%BE%8B%E5%B8%88%E8%A7%A3%E8%AF%BB%E6%AC%A0%E8%96%AA345%E4%B8%87%E5%8D%B4%E9%80%81%E5%AD%A9%E5%AD%90%E9%9F%A9%E5%9B%BD%E5%87%BA%E9%81%93",
+   "official_line": {
+    "source": "Tencent News 腾讯网",
+    "title": "演员吴越被“AI盗脸”！律师解读如何维权",
+    "url": "https://new.qq.com/rain/a/20261019A0D05100",
+    "published": "2026-10-19 20:15:30"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #5, last ranks #5 → #5 → #5 → #5 → #5 → #5",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 10:28 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 11:19 PM ET"
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "特朗普：法国在燃烧 你们快关闭边境",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 5,
+   "first_seen_et": "Oct 18, 8:02 PM ET",
+   "last_seen_et": "Oct 18, 8:19 PM ET",
+   "first_missing_et": "Oct 18, 8:25 PM ET",
+   "minutes_on_list": 17,
+   "url": "https://www.baidu.com/s?wd=%E7%89%B9%E6%9C%97%E6%99%AE%EF%BC%9A%E6%B3%95%E5%9B%BD%E5%9C%A8%E7%87%83%E7%83%A7+%E4%BD%A0%E4%BB%AC%E5%BF%AB%E5%85%B3%E9%97%AD%E8%BE%B9%E5%A2%83",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #5, last ranks #43 → #44 → #29 → #26 → #5",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 8:50 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 9:40 PM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "抗议引发“打砸抢” 法国发生什么了",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 5,
+   "first_seen_et": "Oct 18, 7:44 PM ET",
+   "last_seen_et": "Oct 18, 8:19 PM ET",
+   "first_missing_et": "Oct 18, 8:25 PM ET",
+   "minutes_on_list": 35,
+   "url": "https://www.toutiao.com/trending/7698053022487678491/",
+   "official_line": {
+    "source": "NetEase News 网易新闻",
+    "title": "数十万法国人抗议引发＂打砸抢＂ 仅巴黎就有11万人参与",
+    "url": "https://www.163.com/dy/article/L9IEN8U40534A4SC.html",
+    "published": "2026-10-19 07:57:03"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #5, last ranks #8 → #8 → #7 → #7 → #7 → #5",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 8:50 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 9:40 PM ET"
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "没有桥板 那就“飞”过去",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 6,
+   "first_seen_et": "Oct 19, 4:25 AM ET",
+   "last_seen_et": "Oct 19, 9:15 AM ET",
+   "first_missing_et": "Oct 19, 9:18 AM ET",
+   "minutes_on_list": 290,
+   "url": "https://www.baidu.com/s?wd=%E6%B2%A1%E6%9C%89%E6%A1%A5%E6%9D%BF+%E9%82%A3%E5%B0%B1%E2%80%9C%E9%A3%9E%E2%80%9D%E8%BF%87%E5%8E%BB",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #6, last ranks #10 → #10 → #10 → #10 → #10 → #10",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:28 AM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "李小冉发文证实离婚：去年已离",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "stronger",
+   "peak_rank": 6,
+   "first_seen_et": "Oct 19, 7:54 AM ET",
+   "last_seen_et": "Oct 19, 8:09 AM ET",
+   "first_missing_et": "Oct 19, 8:14 AM ET",
+   "minutes_on_list": 15,
+   "url": "https://www.toutiao.com/trending/7698255028959645203/",
+   "official_line": {
+    "source": "Tencent News 腾讯网",
+    "title": "李小冉宣布去年已离婚！原因有财务风险说和丁克说，前夫被执行2111万",
+    "url": "https://new.qq.com/rain/a/20261019A0DQJ100",
+    "published": "2026-10-19 21:38:24"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #6, last ranks #6 → #6 → #6 → #6",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 8:25 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:19 AM ET",
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "Weibo 微博 trending history 热搜历史 (GitHub, justjavac)",
+     "url": "https://s.weibo.com//weibo?q=%E6%9D%8E%E5%B0%8F%E5%86%89%E7%A6%BB%E5%A9%9A&t=31&band_rank=8&Refer=top",
+     "published": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "泽连斯基：特朗普正逼迫乌向俄投降",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 6,
+   "first_seen_et": "Oct 18, 10:50 PM ET",
+   "last_seen_et": "Oct 19, 12:32 AM ET",
+   "first_missing_et": "Oct 19, 12:38 AM ET",
+   "minutes_on_list": 102,
+   "url": "https://www.toutiao.com/trending/7697602627101655059/",
+   "official_line": {
+    "source": "Phoenix 凤凰网",
+    "title": "特朗普：你不愿结束战争，泽连斯基：你逼乌克兰投降",
+    "url": "https://news.ifeng.com/c/8xLGtqVJ3MX",
+    "published": "2026-10-19 09:23:58"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #6, last ranks #9 → #9 → #9 → #9 → #9 → #6",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 12:50 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 1:42 AM ET",
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "RFI Chinese 法广",
+     "url": "https://www.rfi.fr/cn/%E5%9B%BD%E9%99%85/20261019-%E6%B3%BD%E8%BF%9E%E6%96%AF%E5%9F%BA-%E6%88%91%E7%9B%B8%E4%BF%A1%E5%B7%B2%E9%87%87%E5%8F%96%E6%AD%A5%E9%AA%A4%EF%BC%8C%E6%97%A8%E5%9C%A8%E8%AF%B4%E6%9C%8D%E4%B9%8C%E5%85%8B%E5%85%B0%E6%8A%95%E9%99%8D",
+     "published": null
+    }
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "法国近2400人在抗议活动中被捕",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 7,
+   "first_seen_et": "Oct 19, 8:14 AM ET",
+   "last_seen_et": "Oct 19, 8:45 AM ET",
+   "first_missing_et": "Oct 19, 8:50 AM ET",
+   "minutes_on_list": 31,
+   "url": "https://www.toutiao.com/trending/7698225171433292315/",
+   "official_line": {
+    "source": "YouTube: 中国新闻社 China News Service",
+    "title": "超2000人被捕！马克龙谴责抗议暴力行为：愤怒、羞耻、无法忍受！",
+    "url": "https://www.youtube.com/shorts/fnhBW5dhsoI",
+    "published": "2026-10-19T04:23:44+00:00"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #7, last ranks #12 → #13 → #8 → #8 → #7 → #7",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:05 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:53 AM ET"
+   ]
+  },
+  {
+   "platform": "bilibili",
+   "platform_name": "Bilibili 哔哩哔哩",
+   "title_zh": "369回归战打Zeus",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 7,
+   "first_seen_et": "Oct 19, 3:40 AM ET",
+   "last_seen_et": "Oct 19, 4:38 AM ET",
+   "first_missing_et": "Oct 19, 4:43 AM ET",
+   "minutes_on_list": 58,
+   "url": "https://search.bilibili.com/all?keyword=369%E5%9B%9E%E5%BD%92%E6%88%98%E6%89%93Zeus",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #7, last ranks #23 → #35 → #33 → #15 → #14 → #10",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 4:54 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 5:49 AM ET"
+   ]
+  },
+  {
+   "platform": "zhihu",
+   "platform_name": "Zhihu 知乎",
+   "title_zh": "如果要在《西游记》的猪八戒、孙悟空、唐僧和沙和尚四人组中选一位当领导，你愿意跟随谁？为啥？",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 7,
+   "first_seen_et": "Oct 19, 2:35 AM ET",
+   "last_seen_et": "Oct 19, 3:00 AM ET",
+   "first_missing_et": "Oct 19, 3:06 AM ET",
+   "minutes_on_list": 25,
+   "url": "https://www.zhihu.com/question/2084329691708485878",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #7, last ranks #7 → #7 → #7 → #7 → #7 → #7",
+    "Re-check after 10 min 复查: still gone from the list; link check inconclusive at Oct 19, 3:17 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; link check inconclusive at Oct 19, 4:06 AM ET"
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "金鸡奖提名名单",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "stronger",
+   "peak_rank": 7,
+   "first_seen_et": "Oct 18, 11:50 PM ET",
+   "last_seen_et": "Oct 19, 1:31 AM ET",
+   "first_missing_et": "Oct 19, 1:35 AM ET",
+   "minutes_on_list": 100,
+   "url": "https://www.baidu.com/s?wd=%E9%87%91%E9%B8%A1%E5%A5%96%E6%8F%90%E5%90%8D%E5%90%8D%E5%8D%95",
+   "official_line": {
+    "source": "People's Daily+ 人民网+ app",
+    "title": "第39届中国电影金鸡奖提名名单公布",
+    "url": "https://app.people.cn/h5/detail/normal/7055561899525120",
+    "published": "2026-10-19T11:13:35Z"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #7, last ranks #7 → #7 → #7 → #7 → #7 → #7",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 1:47 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 2:37 AM ET",
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "Weibo 微博 trending history 热搜历史 (GitHub, bhwa233)",
+     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26t%3D10%26q%3D%E9%87%91%E9%B8%A1%E5%A5%96%E6%8F%90%E5%90%8D&stream_entry_id=31&isnewpage=1&extparam=seat%3D1%26q%3D%25E9%2587%2591%25E9%25B8%25A1%25E5%25A5%2596%25E6%258F%2590%25E5%2590%258D%26stream_entry_id%3D31%26realpos%3D9%26pos%3D9%26band_rank%3D9%26filter_type%3Drealtimehot%26dgr%3D0%26flag%3D16%26lcate%3D5001%26c_type%3D31%26cate%3D5001%26display_time%3D1792395789%26pre_seqid%3D1792395789934055324565&launchid=10000360-page_H5",
+     "published": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "姆巴佩“双响” 皇马重返积分榜前三",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 7,
+   "first_seen_et": "Oct 18, 9:44 PM ET",
+   "last_seen_et": "Oct 18, 10:05 PM ET",
+   "first_missing_et": "Oct 18, 10:10 PM ET",
+   "minutes_on_list": 21,
+   "url": "https://www.baidu.com/s?wd=%E5%A7%86%E5%B7%B4%E4%BD%A9%E2%80%9C%E5%8F%8C%E5%93%8D%E2%80%9D+%E7%9A%87%E9%A9%AC%E9%87%8D%E8%BF%94%E7%A7%AF%E5%88%86%E6%A6%9C%E5%89%8D%E4%B8%89",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #7, last ranks #7 → #7 → #7 → #7 → #7",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 10:22 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 11:14 PM ET",
+    {
+     "type": "Still on another hot list 仍在其他热榜",
+     "source": "Toutiao 今日头条",
+     "url": "https://www.toutiao.com/trending/7698097561344819750/",
+     "published": null
+    }
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "知情人讲述“精日”留学生处置全程",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 7,
+   "first_seen_et": "Oct 18, 8:36 PM ET",
+   "last_seen_et": "Oct 18, 8:56 PM ET",
+   "first_missing_et": "Oct 18, 9:00 PM ET",
+   "minutes_on_list": 20,
+   "url": "https://www.toutiao.com/trending/7697845658950159913/",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #7, last ranks #7 → #8 → #8 → #8 → #7 → #10",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 9:12 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 10:05 PM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "名嘴：解放军“四海联动”盯住美日",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 8,
+   "first_seen_et": "Oct 19, 9:08 AM ET",
+   "last_seen_et": "Oct 19, 9:22 AM ET",
+   "first_missing_et": "Oct 19, 9:25 AM ET",
+   "minutes_on_list": 14,
+   "url": "https://www.toutiao.com/trending/7698349872352690698/",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #8, last ranks #44 → #24 → #10 → #8",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:38 AM ET",
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "Lianhe Zaobao 联合早报",
+     "url": "https://www.zaobao.com.sg/news/china/story20261019-9861765",
+     "published": null
+    }
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "中国人民银行宣布将出台多项政策举措",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 8,
+   "first_seen_et": "Oct 19, 6:09 AM ET",
+   "last_seen_et": "Oct 19, 6:33 AM ET",
+   "first_missing_et": "Oct 19, 6:40 AM ET",
+   "minutes_on_list": 24,
+   "url": "https://www.toutiao.com/trending/7698301769432056330/",
+   "official_line": {
+    "source": "People's Daily+ 人民网+ app",
+    "title": "中国人民银行宣布将出台多项政策举措",
+    "url": "https://app.people.cn/h5/detail/normal/7055699563332608",
+    "published": "2026-10-19T08:44:10Z"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #8, last ranks #29 → #25 → #25 → #19 → #8 → #10",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 6:55 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 7:50 AM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "乌军对俄发动罕见规模袭击有何意图",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 8,
+   "first_seen_et": "Oct 19, 2:55 AM ET",
+   "last_seen_et": "Oct 19, 3:23 AM ET",
+   "first_missing_et": "Oct 19, 3:28 AM ET",
+   "minutes_on_list": 27,
+   "url": "https://www.toutiao.com/trending/7698261900550737449/",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #8, last ranks #29 → #19 → #9 → #9 → #9 → #8",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 3:42 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 4:29 AM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "邵永灵：特朗普已为中期选举找战犯",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 8,
+   "first_seen_et": "Oct 19, 2:25 AM ET",
+   "last_seen_et": "Oct 19, 3:16 AM ET",
+   "first_missing_et": "Oct 19, 3:23 AM ET",
+   "minutes_on_list": 51,
+   "url": "https://www.toutiao.com/trending/7698253231079558675/",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #8, last ranks #19 → #14 → #8 → #10 → #10 → #10",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 3:36 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 4:23 AM ET",
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "BBC News Chinese BBC中文",
+     "url": "https://www.bbc.com/zhongwen/articles/c6lyezge4xywo/trad?at_medium=RSS&at_campaign=rss",
+     "published": null
+    },
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "YouTube: 美国之音中文网 VOA Chinese",
+     "url": "https://www.youtube.com/watch?v=yC5mVXnf18g",
+     "published": null
+    },
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "YouTube: 大紀元新聞網 Epoch Times Chinese",
+     "url": "https://www.youtube.com/watch?v=hSgjIL-C6ws",
+     "published": null
+    },
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "YouTube: 新唐人 NTD Chinese",
+     "url": "https://www.youtube.com/watch?v=0ij9jQDhUAs",
+     "published": null
+    },
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "YouTube: 希望之聲TV Sound of Hope",
+     "url": "https://www.youtube.com/watch?v=AGyRm8LdsSc",
+     "published": null
+    },
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "Telegram: 联合早报 zaobao.sg",
+     "url": "https://t.me/zaobaosg/56658",
+     "published": null
+    }
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "S16瑞士轮：IG首战GEN TES直面HLE",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 8,
+   "first_seen_et": "Oct 18, 8:02 PM ET",
+   "last_seen_et": "Oct 18, 9:01 PM ET",
+   "first_missing_et": "Oct 18, 9:05 PM ET",
+   "minutes_on_list": 59,
+   "url": "https://www.baidu.com/s?wd=S16%E7%91%9E%E5%A3%AB%E8%BD%AE%EF%BC%9AIG%E9%A6%96%E6%88%98GEN+TES%E7%9B%B4%E9%9D%A2HLE",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #8, last ranks #10 → #10 → #10 → #10 → #10 → #10",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 9:17 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 10:06 PM ET"
+   ]
+  },
+  {
+   "platform": "zhihu",
+   "platform_name": "Zhihu 知乎",
+   "title_zh": "谷歌将 TPU 送上太空却因散热难题停机，太空算力中心前景如何？",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 8,
+   "first_seen_et": "Oct 18, 7:53 PM ET",
+   "last_seen_et": "Oct 18, 8:36 PM ET",
+   "first_missing_et": "Oct 18, 8:41 PM ET",
+   "minutes_on_list": 43,
+   "url": "https://www.zhihu.com/question/2094251044960211894",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #8, last ranks #14 → #14 → #14 → #14 → #14 → #14",
+    "Re-check after 10 min 复查: still gone from the list; link check inconclusive at Oct 18, 8:52 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; link check inconclusive at Oct 18, 9:45 PM ET"
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "S16瑞士轮抽签：IG首战GEN TES直面HLE",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 8,
+   "first_seen_et": "Oct 18, 7:08 PM ET",
+   "last_seen_et": "Oct 18, 7:53 PM ET",
+   "first_missing_et": "Oct 18, 8:02 PM ET",
+   "minutes_on_list": 45,
+   "url": "https://www.baidu.com/s?wd=S16%E7%91%9E%E5%A3%AB%E8%BD%AE%E6%8A%BD%E7%AD%BE%EF%BC%9AIG%E9%A6%96%E6%88%98GEN+TES%E7%9B%B4%E9%9D%A2HLE",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #8, last ranks #8 → #8 → #8 → #8 → #8 → #8",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 8:13 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 9:02 PM ET",
+    {
+     "type": "Still on another hot list 仍在其他热榜",
+     "source": "Bilibili 哔哩哔哩",
+     "url": null,
+     "published": null
+    }
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "A股还要跌多久才能见底",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 9,
+   "first_seen_et": "Oct 19, 7:59 AM ET",
+   "last_seen_et": "Oct 19, 8:30 AM ET",
+   "first_missing_et": "Oct 19, 8:35 AM ET",
+   "minutes_on_list": 31,
+   "url": "https://www.toutiao.com/trending/7698321177999052326/",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #9, last ranks #49 → #42 → #20 → #20 → #16 → #9",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 8:46 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:38 AM ET"
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "帅气小伙倒追脑瘫女孩半年成功求婚",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 9,
+   "first_seen_et": "Oct 19, 7:19 AM ET",
+   "last_seen_et": "Oct 19, 8:19 AM ET",
+   "first_missing_et": "Oct 19, 8:24 AM ET",
+   "minutes_on_list": 60,
+   "url": "https://www.baidu.com/s?wd=%E5%B8%85%E6%B0%94%E5%B0%8F%E4%BC%99%E5%80%92%E8%BF%BD%E8%84%91%E7%98%AB%E5%A5%B3%E5%AD%A9%E5%8D%8A%E5%B9%B4%E6%88%90%E5%8A%9F%E6%B1%82%E5%A9%9A",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #9, last ranks #18 → #18 → #14 → #14 → #14 → #9",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 8:36 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:28 AM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "马斯克称将向全美儿童赠送SpaceX股票",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "stronger",
+   "peak_rank": 9,
+   "first_seen_et": "Oct 19, 4:43 AM ET",
+   "last_seen_et": "Oct 19, 5:10 AM ET",
+   "first_missing_et": "Oct 19, 5:15 AM ET",
+   "minutes_on_list": 27,
+   "url": "https://www.toutiao.com/trending/7697655010490384426/",
+   "official_line": {
+    "source": "YouTube: 中国新闻社 China News Service",
+    "title": "马斯克宣布将赠送每名美国儿童一股SpaceX股票",
+    "url": "https://www.youtube.com/shorts/W0Q5mBiukyQ",
+    "published": "2026-10-19T12:23:44+00:00"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #9, last ranks #9 → #9 → #9 → #9 → #9 → #9",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 5:27 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 6:16 AM ET",
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "Weibo 微博 trending history 热搜历史 (GitHub, justjavac)",
+     "url": "https://s.weibo.com//weibo?q=%23%E9%A9%AC%E6%96%AF%E5%85%8B%E8%8E%B71583.6%E4%BA%BF%E7%BE%8E%E5%85%83%E8%82%A1%E7%A5%A8%E5%A5%96%E5%8A%B1%23&t=31&band_rank=5&Refer=top",
+     "published": "2026-10-19"
+    },
+    {
+     "type": "Still on another hot list 仍在其他热榜",
+     "source": "Weibo 微博",
+     "url": null,
+     "published": null
+    },
+    {
+     "type": "Still on another hot list 仍在其他热榜",
+     "source": "Baidu 百度",
+     "url": null,
+     "published": null
+    },
+    {
+     "type": "Still on another hot list 仍在其他热榜",
+     "source": "Zhihu 知乎",
+     "url": "https://www.zhihu.com/question/2094694840407519249",
+     "published": null
+    },
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "Epoch Times Chinese 大纪元",
+     "url": "https://www.epochtimes.com/b5/26/10/19/n14872644.htm",
+     "published": null
+    },
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "China Times 中時新聞網",
+     "url": "https://www.chinatimes.com/realtimenews/20261019003999-260410?ctrack=mo_main_recmd_p08",
+     "published": null
+    },
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "Nanyang Siang Pau 南洋商报 (e南洋)",
+     "url": "https://www.enanyang.my/news/20261019/Finance/1420112",
+     "published": null
+    },
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "Lianhe Zaobao 联合早报",
+     "url": "https://www.zaobao.com.sg/news/world/story20261019-9861023?ref=today-news-section-card-5",
+     "published": null
+    },
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "8world News 8视界",
+     "url": "https://www.8world.com/world/musk-says-will-give-spacex-share-to-every-kid-in-us-3314376",
+     "published": null
+    },
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "World Journal 世界日報 (US)",
+     "url": "https://www.worldjournal.com/wj/story/121172/9824688",
+     "published": null
+    }
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "A股下一轮行情还得看科技吗",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 9,
+   "first_seen_et": "Oct 19, 2:35 AM ET",
+   "last_seen_et": "Oct 19, 3:35 AM ET",
+   "first_missing_et": "Oct 19, 3:40 AM ET",
+   "minutes_on_list": 60,
+   "url": "https://www.toutiao.com/trending/7698253404258192923/",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #9, last ranks #14 → #14 → #14 → #14 → #9 → #10",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 3:51 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 4:44 AM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "证监会主席：将完善违规减持处罚规则",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 10,
+   "first_seen_et": "Oct 19, 8:04 AM ET",
+   "last_seen_et": "Oct 19, 8:35 AM ET",
+   "first_missing_et": "Oct 19, 8:40 AM ET",
+   "minutes_on_list": 31,
+   "url": "https://www.toutiao.com/trending/7698311039393284159/",
+   "official_line": {
+    "source": "Global Times Chinese / Huanqiu 环球网",
+    "title": "规范“违规转让证券”的认定、处罚 证监会发布实施规则",
+    "url": "https://china.huanqiu.com/article/4Tg4UX0dxad",
+    "published": "2026-10-19 20:02:45"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #10, last ranks #37 → #34 → #29 → #14 → #17 → #10",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 8:51 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:43 AM ET"
+   ]
+  },
+  {
+   "platform": "bilibili",
+   "platform_name": "Bilibili 哔哩哔哩",
+   "title_zh": "WSBK SSP组车手伤情通告",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 10,
+   "first_seen_et": "Oct 18, 10:50 PM ET",
+   "last_seen_et": "Oct 19, 1:35 AM ET",
+   "first_missing_et": "Oct 19, 1:41 AM ET",
+   "minutes_on_list": 165,
+   "url": "https://search.bilibili.com/all?keyword=WSBK%20SSP%E7%BB%84%E8%BD%A6%E6%89%8B%E4%BC%A4%E6%83%85%E9%80%9A%E5%91%8A",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #10, last ranks #29 → #27 → #25 → #29 → #29 → #25",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 1:52 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 2:42 AM ET"
+   ]
+  },
+  {
+   "platform": "zhihu",
+   "platform_name": "Zhihu 知乎",
+   "title_zh": "为什么不建议在简历上撒谎？",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 10,
+   "first_seen_et": "Oct 18, 8:06 PM ET",
+   "last_seen_et": "Oct 18, 11:50 PM ET",
+   "first_missing_et": "Oct 18, 11:57 PM ET",
+   "minutes_on_list": 224,
+   "url": "https://www.zhihu.com/question/562524801",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #10, last ranks #10 → #10 → #10 → #10 → #10 → #10",
+    "Re-check after 10 min 复查: still gone from the list; link check inconclusive at Oct 19, 12:08 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; link check inconclusive at Oct 19, 12:59 AM ET"
+   ]
+  },
+  {
+   "platform": "bilibili",
+   "platform_name": "Bilibili 哔哩哔哩",
+   "title_zh": "宁波网球公开赛",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 11,
+   "first_seen_et": "Oct 19, 2:19 AM ET",
+   "last_seen_et": "Oct 19, 9:42 AM ET",
+   "first_missing_et": "Oct 19, 9:47 AM ET",
+   "minutes_on_list": 442,
+   "url": "https://search.bilibili.com/all?keyword=%E5%AE%81%E6%B3%A2%E7%BD%91%E7%90%83%E5%85%AC%E5%BC%80%E8%B5%9B",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #11, last ranks #15 → #16 → #16 → #16 → #15 → #15",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:58 AM ET"
+   ]
+  },
+  {
+   "platform": "weibo",
+   "platform_name": "Weibo 微博",
+   "title_zh": "崔秀彬粉丝澄清网传照片",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 11,
+   "first_seen_et": "Oct 19, 6:20 AM ET",
+   "last_seen_et": "Oct 19, 7:49 AM ET",
+   "first_missing_et": "Oct 19, 7:54 AM ET",
+   "minutes_on_list": 89,
+   "url": "https://s.weibo.com/weibo?q=%23%E5%B4%94%E7%A7%80%E5%BD%AC%E7%B2%89%E4%B8%9D%E6%BE%84%E6%B8%85%E7%BD%91%E4%BC%A0%E7%85%A7%E7%89%87%23&t=31&band_rank=15",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #11, last ranks #11 → #11 → #13 → #15 → #48 → #15",
+    "Re-check after 10 min 复查: still gone from the list; link check inconclusive at Oct 19, 8:05 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; link check inconclusive at Oct 19, 8:58 AM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "梅艳芳骨灰被偷运至东南亚？不实",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 11,
+   "first_seen_et": "Oct 18, 10:27 PM ET",
+   "last_seen_et": "Oct 19, 6:54 AM ET",
+   "first_missing_et": "Oct 19, 6:59 AM ET",
+   "minutes_on_list": 507,
+   "url": "https://www.toutiao.com/trending/7697439342582664767/",
+   "official_line": {
+    "source": "Phoenix 凤凰网",
+    "title": "曝梅艳芳骨灰被盗案新进展！疑似被寺庙工作人员盗走？",
+    "url": "https://ent.ifeng.com/c/8xLOV02HbaN",
+    "published": "2026-10-19 09:22:54"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #11, last ranks #11 → #11 → #11 → #11 → #11 → #11",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 7:11 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 8:00 AM ET"
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "“肖战演唱会前排门票25万”系谣言",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 11,
+   "first_seen_et": "Oct 18, 10:10 PM ET",
+   "last_seen_et": "Oct 19, 5:53 AM ET",
+   "first_missing_et": "Oct 19, 5:59 AM ET",
+   "minutes_on_list": 463,
+   "url": "https://www.baidu.com/s?wd=%E2%80%9C%E8%82%96%E6%88%98%E6%BC%94%E5%94%B1%E4%BC%9A%E5%89%8D%E6%8E%92%E9%97%A8%E7%A5%A825%E4%B8%87%E2%80%9D%E7%B3%BB%E8%B0%A3%E8%A8%80",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #11, last ranks #11 → #11 → #11 → #11 → #11 → #11",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 6:10 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 7:01 AM ET",
+    {
+     "type": "Still on another hot list 仍在其他热榜",
+     "source": "Toutiao 今日头条",
+     "url": "https://www.toutiao.com/trending/7696782550337113643/",
+     "published": null
+    }
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "梅艳芳骨灰或流向东南亚",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 11,
+   "first_seen_et": "Oct 18, 8:36 PM ET",
+   "last_seen_et": "Oct 18, 10:10 PM ET",
+   "first_missing_et": "Oct 18, 10:15 PM ET",
+   "minutes_on_list": 94,
+   "url": "https://www.toutiao.com/trending/7697428073096036395/",
+   "official_line": {
+    "source": "Phoenix 凤凰网",
+    "title": "曝梅艳芳骨灰被盗案新进展！疑似被寺庙工作人员盗走？",
+    "url": "https://ent.ifeng.com/c/8xLOV02HbaN",
+    "published": "2026-10-19 09:22:54"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #11, last ranks #11 → #11 → #13 → #13 → #13 → #13",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 10:28 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 11:19 PM ET"
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "郑州警方辟谣“一家五口烧炭自杀”",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 11,
+   "first_seen_et": "Oct 18, 6:10 AM ET",
+   "last_seen_et": "Oct 18, 10:05 PM ET",
+   "first_missing_et": "Oct 18, 10:10 PM ET",
+   "minutes_on_list": 955,
+   "url": "https://www.baidu.com/s?wd=%E9%83%91%E5%B7%9E%E8%AD%A6%E6%96%B9%E8%BE%9F%E8%B0%A3%E2%80%9C%E4%B8%80%E5%AE%B6%E4%BA%94%E5%8F%A3%E7%83%A7%E7%82%AD%E8%87%AA%E6%9D%80%E2%80%9D",
+   "official_line": {
+    "source": "Sina News 新浪新闻",
+    "title": "郑州中原警方辟谣“一家五口烧炭自杀”",
+    "url": "https://news.sina.com.cn/2026-10-18/doc-inivrrfp7834160.shtml",
+    "published": "2026-10-18"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #11, last ranks #11 → #11 → #11 → #11 → #11 → #11",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 10:21 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 11:14 PM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "早上喝盐水可以排毒？误导",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 11,
+   "first_seen_et": "Oct 18, 2:25 AM ET",
+   "last_seen_et": "Oct 18, 9:06 PM ET",
+   "first_missing_et": "Oct 18, 9:10 PM ET",
+   "minutes_on_list": 1121,
+   "url": "https://www.toutiao.com/trending/7697886688630587401/",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #11, last ranks #11 → #11 → #11 → #11 → #11 → #11",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 9:23 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 10:21 PM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "工信部：加快AI电脑、手机等产品普及",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 12,
+   "first_seen_et": "Oct 19, 6:15 AM ET",
+   "last_seen_et": "Oct 19, 6:40 AM ET",
+   "first_missing_et": "Oct 19, 6:45 AM ET",
+   "minutes_on_list": 25,
+   "url": "https://www.toutiao.com/trending/7698300945130635803/",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #12, last ranks #46 → #46 → #15 → #14 → #12",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 7:00 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 7:50 AM ET"
+   ]
+  },
+  {
+   "platform": "bilibili",
+   "platform_name": "Bilibili 哔哩哔哩",
+   "title_zh": "比利时是如何诞生的",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 12,
+   "first_seen_et": "Oct 19, 3:16 AM ET",
+   "last_seen_et": "Oct 19, 4:05 AM ET",
+   "first_missing_et": "Oct 19, 4:11 AM ET",
+   "minutes_on_list": 49,
+   "url": "https://search.bilibili.com/all?keyword=%E6%AF%94%E5%88%A9%E6%97%B6%E6%98%AF%E5%A6%82%E4%BD%95%E8%AF%9E%E7%94%9F%E7%9A%84",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #12, last ranks #21 → #18 → #16 → #14 → #20 → #17",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 4:23 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 5:16 AM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "郑州警方辟谣“一家五口烧炭自杀”",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 12,
+   "first_seen_et": "Oct 18, 9:10 PM ET",
+   "last_seen_et": "Oct 18, 10:27 PM ET",
+   "first_missing_et": "Oct 18, 10:30 PM ET",
+   "minutes_on_list": 77,
+   "url": "https://www.toutiao.com/trending/7697903238653526070/",
+   "official_line": {
+    "source": "Sina News 新浪新闻",
+    "title": "郑州中原警方辟谣“一家五口烧炭自杀”",
+    "url": "https://news.sina.com.cn/2026-10-18/doc-inivrrfp7834160.shtml",
+    "published": "2026-10-18"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #12, last ranks #12 → #12 → #12 → #12 → #12 → #12",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 10:41 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 11:36 PM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "法国超市遭洗劫 女子大声阻止遭起哄",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 12,
+   "first_seen_et": "Oct 18, 8:02 PM ET",
+   "last_seen_et": "Oct 18, 8:19 PM ET",
+   "first_missing_et": "Oct 18, 8:25 PM ET",
+   "minutes_on_list": 17,
+   "url": "https://www.toutiao.com/trending/7697653084130377769/",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #12, last ranks #22 → #17 → #15 → #13 → #12",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 8:50 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 9:40 PM ET"
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "创业板指、科创50双双跌逾2%",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 13,
+   "first_seen_et": "Oct 18, 10:30 PM ET",
+   "last_seen_et": "Oct 18, 10:45 PM ET",
+   "first_missing_et": "Oct 18, 10:50 PM ET",
+   "minutes_on_list": 15,
+   "url": "https://www.baidu.com/s?wd=%E5%88%9B%E4%B8%9A%E6%9D%BF%E6%8C%87%E3%80%81%E7%A7%91%E5%88%9B50%E5%8F%8C%E5%8F%8C%E8%B7%8C%E9%80%BE2%25",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #13, last ranks #13 → #13 → #13 → #13",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 11:07 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 11:58 PM ET"
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "创业板指跌逾1% 下跌个股近3800只",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 14,
+   "first_seen_et": "Oct 18, 10:00 PM ET",
+   "last_seen_et": "Oct 18, 10:20 PM ET",
+   "first_missing_et": "Oct 18, 10:27 PM ET",
+   "minutes_on_list": 20,
+   "url": "https://www.baidu.com/s?wd=%E5%88%9B%E4%B8%9A%E6%9D%BF%E6%8C%87%E8%B7%8C%E9%80%BE1%25+%E4%B8%8B%E8%B7%8C%E4%B8%AA%E8%82%A1%E8%BF%913800%E5%8F%AA",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #14, last ranks #14 → #14 → #14 → #14 → #14",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 10:41 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 11:36 PM ET"
+   ]
+  },
+  {
+   "platform": "zhihu",
+   "platform_name": "Zhihu 知乎",
+   "title_zh": "同样大小的伤口，为什么有的几天就愈合，有的却一直好不了？",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 15,
+   "first_seen_et": "Oct 18, 11:24 PM ET",
+   "last_seen_et": "Oct 19, 6:25 AM ET",
+   "first_missing_et": "Oct 19, 6:30 AM ET",
+   "minutes_on_list": 421,
+   "url": "https://www.zhihu.com/question/2078484653460276011",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #15, last ranks #15 → #15 → #15 → #15 → #15 → #15",
+    "Re-check after 10 min 复查: still gone from the list; link check inconclusive at Oct 19, 6:50 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; link check inconclusive at Oct 19, 7:44 AM ET"
+   ]
+  },
+  {
+   "platform": "zhihu",
+   "platform_name": "Zhihu 知乎",
+   "title_zh": "泽连斯基称星链仅在乌克兰境内限速，已掌握证据，美国国务卿鲁比奥却说白宫没下令，该怎么理解？",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 15,
+   "first_seen_et": "Oct 18, 10:10 PM ET",
+   "last_seen_et": "Oct 18, 10:15 PM ET",
+   "first_missing_et": "Oct 18, 10:20 PM ET",
+   "minutes_on_list": 5,
+   "url": "https://www.zhihu.com/question/2095085937164285700",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #15, last ranks #18 → #15",
+    "Re-check after 10 min 复查: still gone from the list; link check inconclusive at Oct 18, 10:41 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; link check inconclusive at Oct 18, 11:25 PM ET",
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "Telegram: 联合早报 zaobao.sg",
+     "url": "https://t.me/zaobaosg/56671",
+     "published": null
+    },
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "Telegram: RFI 华语",
+     "url": "https://t.me/RFI_Cn/38523",
+     "published": null
+    },
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "Telegram: RFI 华语",
+     "url": "https://t.me/RFI_Cn/38536",
+     "published": null
+    }
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "披旭日旗留学生道歉：喜欢日本文化",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "stronger",
+   "peak_rank": 15,
+   "first_seen_et": "Oct 18, 7:15 PM ET",
+   "last_seen_et": "Oct 18, 7:28 PM ET",
+   "first_missing_et": "Oct 18, 7:33 PM ET",
+   "minutes_on_list": 13,
+   "url": "https://www.baidu.com/s?wd=%E6%8A%AB%E6%97%AD%E6%97%A5%E6%97%97%E7%95%99%E5%AD%A6%E7%94%9F%E9%81%93%E6%AD%89%EF%BC%9A%E5%96%9C%E6%AC%A2%E6%97%A5%E6%9C%AC%E6%96%87%E5%8C%96",
+   "official_line": {
+    "source": "YouTube: 中国新闻社 China News Service",
+    "title": "“中国留学生身披旭日旗” 钧正平发声：无论身处哪个国家为军国主义张目，都是对人类良知的公然冒犯！",
+    "url": "https://www.youtube.com/shorts/aY30SaDd4p8",
+    "published": "2026-10-19T02:15:16+00:00"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #15, last ranks #45 → #49 → #28 → #15",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 7:45 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 8:37 PM ET",
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "Weibo 微博 trending history 热搜历史 (GitHub, bhwa233)",
+     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26t%3D10%26q%3D%23%E8%BA%AB%E6%8A%AB%E6%97%AD%E6%97%A5%E6%97%97%E7%95%99%E5%AD%A6%E7%94%9F%E8%BF%98%E6%94%AF%E6%8C%81%E5%8F%B0%E7%8B%AC%23&stream_entry_id=31&isnewpage=1&extparam=seat%3D1%26dgr%3D0%26filter_type%3Drealtimehot%26c_type%3D31%26realpos%3D13%26cate%3D5001%26lcate%3D5001%26stream_entry_id%3D31%26band_rank%3D13%26q%3D%2523%25E8%25BA%25AB%25E6%258A%25AB%25E6%2597%25AD%25E6%2597%25A5%25E6%2597%2597%25E7%2595%2599%25E5%25AD%25A6%25E7%2594%259F%25E8%25BF%2598%25E6%2594%25AF%25E6%258C%2581%25E5%258F%25B0%25E7%258B%25AC%2523%26pos%3D12%26flag%3D2%26display_time%3D1792372160%26pre_seqid%3D17923721600440104473&launchid=10000360-page_H5",
+     "published": "2026-10-19"
+    },
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "Weibo 微博 trending history 热搜历史 (GitHub, justjavac)",
+     "url": "https://s.weibo.com//weibo?q=%23%E8%BA%AB%E6%8A%AB%E6%97%AD%E6%97%A5%E6%97%97%E4%B8%AD%E5%9B%BD%E7%95%99%E5%AD%A6%E7%94%9F%E6%88%96%E8%A2%AB%E5%BC%80%E9%99%A4%E9%81%A3%E8%BF%94%23&t=31&band_rank=1&Refer=top",
+     "published": "2026-10-19"
+    },
+    {
+     "type": "Still on another hot list 仍在其他热榜",
+     "source": "Weibo 微博",
+     "url": null,
+     "published": null
+    },
+    {
+     "type": "Still on another hot list 仍在其他热榜",
+     "source": "Toutiao 今日头条",
+     "url": null,
+     "published": null
+    },
+    {
+     "type": "Still on another hot list 仍在其他热榜",
+     "source": "Zhihu 知乎",
+     "url": "https://www.zhihu.com/question/2094350166518249285",
+     "published": null
+    }
+   ]
+  },
+  {
+   "platform": "zhihu",
+   "platform_name": "Zhihu 知乎",
+   "title_zh": "“懒得管人”的领导，为什么团队执行力反而更强？",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 15,
+   "first_seen_et": "Oct 17, 12:00 AM ET",
+   "last_seen_et": "Oct 18, 7:23 PM ET",
+   "first_missing_et": "Oct 18, 7:28 PM ET",
+   "minutes_on_list": 2603,
+   "url": "https://www.zhihu.com/question/2071344922704327226",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #15, last ranks #29 → #29 → #27 → #24 → #23 → #20",
+    "Re-check after 10 min 复查: still gone from the list; link check inconclusive at Oct 18, 7:42 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; link check inconclusive at Oct 18, 8:37 PM ET"
+   ]
+  },
+  {
+   "platform": "zhihu",
+   "platform_name": "Zhihu 知乎",
+   "title_zh": "我们看到的夜空，会不会有些星星其实早就不存在了？",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 17,
+   "first_seen_et": "Oct 17, 6:40 AM ET",
+   "last_seen_et": "Oct 18, 7:33 PM ET",
+   "first_missing_et": "Oct 18, 7:39 PM ET",
+   "minutes_on_list": 2213,
+   "url": "https://www.zhihu.com/question/2092579826779567395",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #17, last ranks #30 → #28 → #28 → #29 → #22 → #17",
+    "Re-check after 10 min 复查: still gone from the list; link check inconclusive at Oct 18, 7:04 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; link check inconclusive at Oct 18, 7:04 AM ET"
+   ]
+  },
+  {
+   "platform": "zhihu",
+   "platform_name": "Zhihu 知乎",
+   "title_zh": "学历史有什么用？",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 18,
+   "first_seen_et": "Oct 17, 10:55 AM ET",
+   "last_seen_et": "Oct 18, 7:39 PM ET",
+   "first_missing_et": "Oct 18, 7:44 PM ET",
+   "minutes_on_list": 1964,
+   "url": "https://www.zhihu.com/question/20338058",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #18, last ranks #29 → #29 → #29 → #30 → #28 → #24",
+    "Re-check after 10 min 复查: still gone from the list; link check inconclusive at Oct 17, 8:50 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; link check inconclusive at Oct 17, 8:51 PM ET"
+   ]
+  },
+  {
+   "platform": "zhihu",
+   "platform_name": "Zhihu 知乎",
+   "title_zh": "孩子每年生日都想要礼物、要办聚会，你们是怎么安排的？",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 18,
+   "first_seen_et": "Oct 17, 8:35 PM ET",
+   "last_seen_et": "Oct 18, 6:55 PM ET",
+   "first_missing_et": "Oct 18, 6:58 PM ET",
+   "minutes_on_list": 1340,
+   "url": "https://www.zhihu.com/question/2094394800376133000",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #18, last ranks #28 → #30 → #29 → #29 → #28 → #25",
+    "Re-check after 10 min 复查: still gone from the list; link check inconclusive at Oct 18, 7:09 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; link check inconclusive at Oct 18, 8:03 PM ET"
+   ]
+  },
+  {
+   "platform": "zhihu",
+   "platform_name": "Zhihu 知乎",
+   "title_zh": "你看好《明日方舟：终末地》这款游戏的未来吗？",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 18,
+   "first_seen_et": "Oct 17, 9:40 AM ET",
+   "last_seen_et": "Oct 18, 12:08 PM ET",
+   "first_missing_et": "Oct 18, 12:14 PM ET",
+   "minutes_on_list": 1588,
+   "url": "https://www.zhihu.com/question/2094726414910100343",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #18, last ranks #30 → #30 → #30 → #30 → #28 → #25",
+    "Re-check after 10 min 复查: still gone from the list; link check inconclusive at Oct 18, 12:24 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; link check inconclusive at Oct 18, 1:18 PM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "外交部回应台当局“驱离”大陆渔船",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 19,
+   "first_seen_et": "Oct 19, 4:16 AM ET",
+   "last_seen_et": "Oct 19, 4:20 AM ET",
+   "first_missing_et": "Oct 19, 4:22 AM ET",
+   "minutes_on_list": 4,
+   "url": "https://www.toutiao.com/trending/7698174638152728630/",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #19, last ranks #31 → #19",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 4:34 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 5:27 AM ET"
+   ]
+  },
+  {
+   "platform": "zhihu",
+   "platform_name": "Zhihu 知乎",
+   "title_zh": "2627赛季西甲联赛西甲第9轮皇家马德里 4:1 塞维利亚，如何评价这场比赛？",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 23,
+   "first_seen_et": "Oct 19, 3:30 AM ET",
+   "last_seen_et": "Oct 19, 9:22 AM ET",
+   "first_missing_et": "Oct 19, 9:27 AM ET",
+   "minutes_on_list": 352,
+   "url": "https://www.zhihu.com/question/2095349853115118381",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #23, last ranks #26 → #29 → #30 → #29 → #29 → #26",
+    "Re-check after 10 min 复查: still gone from the list; link check inconclusive at Oct 19, 9:38 AM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "媒体：莫把ETF当作短炒工具",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 24,
+   "first_seen_et": "Oct 19, 9:22 AM ET",
+   "last_seen_et": "Oct 19, 9:27 AM ET",
+   "first_missing_et": "Oct 19, 9:32 AM ET",
+   "minutes_on_list": 5,
+   "url": "https://www.toutiao.com/trending/7697819763015286803/",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #24, last ranks #26 → #27 → #24",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:43 AM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "如何看待前三季度经济数据",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 28,
+   "first_seen_et": "Oct 19, 9:47 AM ET",
+   "last_seen_et": "Oct 19, 9:52 AM ET",
+   "first_missing_et": "Oct 19, 9:56 AM ET",
+   "minutes_on_list": 5,
+   "url": "https://www.toutiao.com/trending/7698333529750375987/",
+   "official_line": {
+    "source": "The Paper 澎湃新闻",
+    "title": "视频丨经济运行向上、向新、向优 前三季度数据传递积极信号",
+    "url": "https://www.thepaper.cn/newsDetail_forward_34282275",
+    "published": "2026-10-19 19:39:18"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #28, last ranks #34 → #28",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 10:06 AM ET",
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "China Digital Times 中国数字时代",
+     "url": "https://chinadigitaltimes.net/chinese/732941.html",
+     "published": "2026-10-16T05:55:11Z"
+    },
+    {
+     "type": "Still on another hot list 仍在其他热榜",
+     "source": "Bilibili 哔哩哔哩",
+     "url": null,
+     "published": null
+    }
+   ]
+  },
+  {
+   "platform": "weibo",
+   "platform_name": "Weibo 微博",
+   "title_zh": "李小冉前夫",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 29,
+   "first_seen_et": "Oct 19, 8:04 AM ET",
+   "last_seen_et": "Oct 19, 8:19 AM ET",
+   "first_missing_et": "Oct 19, 8:24 AM ET",
+   "minutes_on_list": 15,
+   "url": "https://s.weibo.com/weibo?q=%E6%9D%8E%E5%B0%8F%E5%86%89%E5%89%8D%E5%A4%AB&t=31&band_rank=29",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #29, last ranks #37 → #29",
+    "Re-check after 10 min 复查: still gone from the list; link check inconclusive at Oct 19, 8:36 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; link check inconclusive at Oct 19, 9:28 AM ET",
+    {
+     "type": "Still on another hot list 仍在其他热榜",
+     "source": "Baidu 百度",
+     "url": null,
+     "published": null
+    },
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "China Times 中時新聞網",
+     "url": "https://www.chinatimes.com/realtimenews/20261019003942-260404?ctrack=mo_main_alert_p02",
+     "published": null
+    }
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "33岁女子南太行徒步失联已超24小时",
+   "title_en": "",
+   "label": "Likely censored",
+   "label_zh": "疑似被删",
+   "evidence_strength": "standard",
+   "peak_rank": 29,
+   "first_seen_et": "Oct 19, 2:50 AM ET",
+   "last_seen_et": "Oct 19, 5:20 AM ET",
+   "first_missing_et": "Oct 19, 5:25 AM ET",
+   "minutes_on_list": 150,
+   "url": "https://www.baidu.com/s?wd=33%E5%B2%81%E5%A5%B3%E5%AD%90%E5%8D%97%E5%A4%AA%E8%A1%8C%E5%BE%92%E6%AD%A5%E5%A4%B1%E8%81%94%E5%B7%B2%E8%B6%8524%E5%B0%8F%E6%97%B6",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #29, last ranks #33 → #31 → #33 → #31 → #32 → #29",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 5:49 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 6:26 AM ET"
+   ]
+  }
+ ]
+}

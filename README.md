@@ -24,6 +24,9 @@ Generated from the live pipeline on 2026-10-12 at about 08:10 ET.
 Language choice (Chinese, English, or both) and the optional deletion-watch add-on are on the Apify listing:
 https://apify.com/china.unofficial/china-news-feed
 
+## Deleted today / 今日被删 (live page)
+https://joydai2026-del.github.io/china-news-feed-samples/ lists hot-list topics that vanished while still trending in the last 24 hours, each labeled **likely censored 疑似被删** with its evidence (timeline in ET, link re-checks, tracker matches). It's rebuilt daily from the live pipeline by `tools/publish_deleted_today.sh`, and the same data is at `docs/deleted-today.json`. It contains hot-list headlines and public links only, no user data.
+
 ## Related links
 
 - Hugging Face dataset (same sample, loadable with `datasets`): https://huggingface.co/datasets/freedom-press/china-news-feed-sample
