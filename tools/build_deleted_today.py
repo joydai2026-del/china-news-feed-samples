@@ -4,7 +4,7 @@
 Usage: build_deleted_today.py <censored.json> <out_dir> [--hours 24] [--feed-en feed_en.json]
                               [--history history.sqlite] [--all-flags]
 Writes <out_dir>/index.html and <out_dir>/deleted-today.json (URL, filename and JSON keys are unchanged).
-A card with evidence (a non-empty hard_evidence list, or tier "high") is labeled "Likely censored 疑似被删";
+A card with evidence (a non-empty hard_evidence list; tier alone does not count) is labeled "Likely censored 疑似被删";
 every other card is labeled "Dropped off 已下榜". Hot-list headlines and public links only; no user data.
 
 Only abrupt exits are shown, not ordinary list churn (see why_cut). --history, when given, is opened
@@ -46,6 +46,9 @@ SUBTITLE_EN = "Topics that left a hot list abruptly and didn't return. Some may 
 SUBTITLE_ZH = "今日突然从热榜消失且未再出现的话题。部分可能属于正常轮换。"
 LABEL_EVIDENCE = ("Likely censored", "疑似被删")
 LABEL_NO_EVIDENCE = ("Dropped off", "已下榜")
+# One line shown above the cards when zero cards are "Likely censored" (Product Scope, 2026-10-19).
+# Hidden when one or more cards are Likely censored; an empty string renders nothing.
+NO_EVIDENCE_LINE = 'No topic met our evidence bar for "likely censored" today. The topics below dropped off abruptly, which is a signal, not proof. 今日没有话题达到"疑似被删"的证据标准。以下话题突然下榜，仅为信号，并非证据。'
 TIME_LINE = "Dropped off at: {time} 下榜时间：{time}"
 HARD_EVIDENCE_TEXT = {
     "url_dead": "the topic link returns 404/410 链接已失效",
@@ -56,9 +59,10 @@ HARD_EVIDENCE_TEXT = {
 
 
 def has_evidence(f):
-    """A flag has evidence when it carries a non-empty hard_evidence list or tier == "high"."""
+    """A flag has evidence only when it carries a non-empty hard_evidence list (404/410, a removal notice, or a
+    tracker entry). tier == "high" on its own does not count."""
     he = f.get("hard_evidence")
-    return bool(isinstance(he, (list, tuple)) and len(he) > 0) or f.get("tier") == "high"
+    return bool(isinstance(he, (list, tuple)) and len(he) > 0)
 
 
 def card_label(evidence):
@@ -357,6 +361,7 @@ h1{margin:0 0 6px;font-size:34px;letter-spacing:-.5px}h1 span{color:#ff6b6b}
 .grid{display:grid;gap:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
 .top{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13px}
 .plat{color:#fff;border-radius:6px;padding:2px 8px;font-weight:600}.lab{background:var(--chip);color:var(--accent);border-radius:6px;padding:2px 8px;font-weight:600}
+.no-evidence{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:24px 0 0;font-size:14.5px}
 .lab.off{background:#eeeef0;color:#3a3a3f}.rank{margin-left:auto;font-weight:700;font-size:15px}
 .zh{font-size:20px;font-weight:650;margin:10px 0 2px}.en{color:var(--muted);margin:0 0 10px}.en.pending{font-style:italic;font-size:14px}
 .times{font-size:14px;color:#3a3a3f;margin-bottom:8px}details{font-size:14px}summary{cursor:pointer;color:#1a5fb4}
@@ -417,10 +422,12 @@ def render(gen, rows, hours):
     n_ev = sum(1 for r in rows if r["evidence_strength"] == "stronger")
     label_stats = (f'<div class="stat"><b>{n_ev}</b><small>{e(" ".join(LABEL_EVIDENCE))}</small></div>'
                    f'<div class="stat"><b>{len(rows) - n_ev}</b><small>{e(" ".join(LABEL_NO_EVIDENCE))}</small></div>')
+    no_ev_line = (f'<p class="no-evidence" id="no-evidence">{e(NO_EVIDENCE_LINE, quote=False)}</p>\n'
+                  if n_ev == 0 and NO_EVIDENCE_LINE else "")
     body = "\n".join(cards) if cards else '<div class="empty">No hot-list topics dropped off in this window. 本时段暂无下榜话题。</div>'
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(HEADING_EN)} · {e(HEADING_ZH)} | China hot-list watch</title>
-<meta name="description" content="Topics that left Chinese hot lists (Weibo 微博, Baidu 百度, Zhihu 知乎, Toutiao 今日头条, Bilibili 哔哩哔哩) abruptly and didn't return. Some may be normal rotation. Labeled likely censored when there is hard evidence, otherwise dropped off. Updated daily.">
+<meta name="description" content="Topics that left Chinese hot lists (Weibo 微博, Baidu 百度, Zhihu 知乎, Toutiao 今日头条, Bilibili 哔哩哔哩) abruptly and didn't return. Some may be normal rotation. Labeled likely censored when there is hard evidence, otherwise dropped off. Updated hourly.">
 <style>{CSS}</style></head><body>
 <header><div class="wrap"><h1>{e(HEADING_EN)} <span>{e(HEADING_ZH)}</span></h1>
 <p class="sub" id="sub-en">{e(SUBTITLE_EN, quote=False)}</p>
@@ -428,7 +435,7 @@ def render(gen, rows, hours):
 <p class="sub win">The {hours} hours to {e(et(gen, '%a %b %-d, %Y, %-I:%M %p ET'))}.</p>
 <div class="stats">{label_stats}{stats}</div></div></header>
 <main class="wrap">
-<div class="note"><b>How to read this 说明:</b> each topic left a hot list from the top 10 without sliding down first, well before topics on that list usually drop off, and was still gone an hour later. Retitled headlines, topics still on the list or on another hot list, and batch drops are left out. That is a signal, not proof: lists also churn for ordinary reasons. A topic with hard evidence (the link returns 404/410, the platform shows a removal notice, or a censorship tracker has a dated entry) is labeled <b>Likely censored 疑似被删</b>; every other topic is labeled <b>Dropped off 已下榜</b>. Open "Evidence" for the timeline, link re-checks and any matching tracker entry. Hot-list headlines and public links only; no user data. Times are US Eastern (ET).</div>
+{no_ev_line}<div class="note"><b>How to read this 说明:</b> each topic left a hot list from the top 10 without sliding down first, well before topics on that list usually drop off, and was still gone an hour later. Retitled headlines, topics still on the list or on another hot list, and batch drops are left out. That is a signal, not proof: lists also churn for ordinary reasons. A topic with hard evidence (the link returns 404/410, the platform shows a removal notice, or a censorship tracker has a dated entry) is labeled <b>Likely censored 疑似被删</b>; every other topic is labeled <b>Dropped off 已下榜</b>. Open "Evidence" for the timeline, link re-checks and any matching tracker entry. Hot-list headlines and public links only; no user data. Times are US Eastern (ET).</div>
 <div class="filters">{''.join(btns)}</div>
 <section class="grid">{body}</section>
 <div class="links">
@@ -470,7 +477,7 @@ def main():
     json.dump({"generated_at_et": et(gen, "%Y-%m-%d %H:%M ET"), "window_hours": a.hours,
                "label": "dropped off (likely censored when there is hard evidence)",
                "note": "Left a hot list from the top 10 without sliding, early for that list, still gone 1 h later. A signal, not proof. "
-                       "Items with hard evidence or tier high are labeled Likely censored; the rest Dropped off.",
+                       "Items with hard evidence are labeled Likely censored; the rest Dropped off.",
                "count": len(out), "cut": funnel, "items": out}, open(os.path.join(a.out_dir, "deleted-today.json"), "w"), ensure_ascii=False, indent=1)
     open(os.path.join(a.out_dir, ".nojekyll"), "w").close()
     print(f"built {len(rows)} items from {funnel.get('flagged', 0)} flags, window ends {et(gen)}")

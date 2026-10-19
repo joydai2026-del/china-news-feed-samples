@@ -26,7 +26,7 @@ Language choice (Chinese, English, or both) and the deletion watch are on the Ap
 https://apify.com/china.unofficial/china-news-feed
 
 ## Dropped off today / 今日下榜 (live page)
-https://joydai2026-del.github.io/china-news-feed-samples/ lists hot-list topics that left a list abruptly in the last 24 hours and didn't return (some may be normal rotation). A topic with hard evidence is labeled **Likely censored 疑似被删**; the rest are labeled **Dropped off 已下榜**. Each card shows its evidence (timeline in ET, link re-checks, tracker matches). It's rebuilt daily from the live pipeline by `tools/publish_deleted_today.sh`, and the same data is at `docs/deleted-today.json`. It contains hot-list headlines and public links only, no user data.
+https://joydai2026-del.github.io/china-news-feed-samples/ lists hot-list topics that left a list abruptly in the last 24 hours and didn't return (some may be normal rotation). A topic with hard evidence is labeled **Likely censored 疑似被删**; the rest are labeled **Dropped off 已下榜**. Each card shows its evidence (timeline in ET, link re-checks, tracker matches). It's rebuilt hourly from the live pipeline by `tools/publish_deleted_today.sh`, and the same data is at `docs/deleted-today.json`. It contains hot-list headlines and public links only, no user data.
 
 ## Related links
 
