@@ -3,19 +3,24 @@
 # Usage: tools/publish_deleted_today.sh   (env: CMF_OUTPUT, PAGES_REPO_DIR, WINDOW_HOURS, CMF_HISTORY)
 # CMF_HISTORY (default: history.sqlite next to CMF_OUTPUT) is opened read-only for the retitle / topic checks;
 # if it is missing or unreadable the build still runs, without those two checks.
+# The whole body lives in main() so bash parses the entire file before running anything: the
+# git reset below can rewrite this file mid-run, and bash otherwise keeps reading it incrementally.
+main() {
 set -euo pipefail
-OUT="${CMF_OUTPUT:-/workspace/china-feed-run/output}"
-REPO="${PAGES_REPO_DIR:-/workspace/cmf-growth/pages-repo}"
-HOURS="${WINDOW_HOURS:-24}"
-HIST="${CMF_HISTORY:-$(dirname "$OUT")/history.sqlite}"
-HIST_ARGS=()
-if [ -f "$HIST" ]; then HIST_ARGS=(--history "$HIST"); fi
-if [ ! -d "$REPO/.git" ]; then gh repo clone joydai2026-del/china-news-feed-samples "$REPO" -- -q; fi
-cd "$REPO"
-git fetch -q origin main && git checkout -q main && git reset -q --hard origin/main
-python3 tools/build_deleted_today.py "$OUT/censored.json" docs --hours "$HOURS" --feed-en "$OUT/feed_en.json" "${HIST_ARGS[@]}"
-git add docs
-if git diff --cached --quiet; then echo "no change"; exit 0; fi
-git commit -q -m "Deleted today: rebuild $(TZ=America/New_York date '+%Y-%m-%d %H:%M ET')"
-git push -q origin main
-echo "pushed: https://joydai2026-del.github.io/china-news-feed-samples/"
+  OUT="${CMF_OUTPUT:-/workspace/china-feed-run/output}"
+  REPO="${PAGES_REPO_DIR:-/workspace/cmf-growth/pages-repo}"
+  HOURS="${WINDOW_HOURS:-24}"
+  HIST="${CMF_HISTORY:-$(dirname "$OUT")/history.sqlite}"
+  HIST_ARGS=()
+  if [ -f "$HIST" ]; then HIST_ARGS=(--history "$HIST"); fi
+  if [ ! -d "$REPO/.git" ]; then gh repo clone joydai2026-del/china-news-feed-samples "$REPO" -- -q; fi
+  cd "$REPO"
+  git fetch -q origin main && git checkout -q main && git reset -q --hard origin/main
+  python3 tools/build_deleted_today.py "$OUT/censored.json" docs --hours "$HOURS" --feed-en "$OUT/feed_en.json" "${HIST_ARGS[@]}"
+  git add docs
+  if git diff --cached --quiet; then echo "no change"; exit 0; fi
+  git commit -q -m "Deleted today: rebuild $(TZ=America/New_York date '+%Y-%m-%d %H:%M ET')"
+  git push -q origin main
+  echo "pushed: https://joydai2026-del.github.io/china-news-feed-samples/"
+}
+main "$@"; exit
