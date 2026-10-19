@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Build the "Deleted today / 今日被删" GitHub Pages page from the live censored.json.
+"""Build the "Dropped off today / 今日下榜" GitHub Pages page from the live censored.json.
 
 Usage: build_deleted_today.py <censored.json> <out_dir> [--hours 24] [--feed-en feed_en.json]
                               [--history history.sqlite] [--all-flags]
-Writes <out_dir>/index.html and <out_dir>/deleted-today.json.
-Every item is labeled "Likely censored / 疑似被删". Hot-list headlines and public links only; no user data.
+Writes <out_dir>/index.html and <out_dir>/deleted-today.json (URL, filename and JSON keys are unchanged).
+A card with evidence (a non-empty hard_evidence list, or tier "high") is labeled "Likely censored 疑似被删";
+every other card is labeled "Dropped off 已下榜". Hot-list headlines and public links only; no user data.
 
 Only abrupt exits are shown, not ordinary list churn (see why_cut). --history, when given, is opened
 read-only and adds the retitle / topic-still-on-the-list checks. --all-flags shows every flag (old behavior).
@@ -38,6 +39,37 @@ OUTLET_ZH = {
     "YouTube: BBC News 中文": "YouTube: BBC News 中文",
 }
 CJK = re.compile(r"[\u3400-\u9fff]")
+
+# Visible copy (Product Scope, 2026-10-19). The word "Deleted" must not appear in visible text.
+HEADING_EN, HEADING_ZH = "Dropped off today", "今日下榜"
+SUBTITLE_EN = "Topics that left a hot list abruptly and didn't return. Some may be normal rotation."
+SUBTITLE_ZH = "今日突然从热榜消失且未再出现的话题。部分可能属于正常轮换。"
+LABEL_EVIDENCE = ("Likely censored", "疑似被删")
+LABEL_NO_EVIDENCE = ("Dropped off", "已下榜")
+TIME_LINE = "Dropped off at: {time} 下榜时间：{time}"
+HARD_EVIDENCE_TEXT = {
+    "url_dead": "the topic link returns 404/410 链接已失效",
+    "censor_notice": "the platform shows a removal notice 平台显示屏蔽提示",
+    "cdt_match": "a censorship tracker has a dated entry 审查追踪记录有对应条目",
+    "deleted (not found)": "the platform reports it removed 平台显示已移除",
+}
+
+
+def has_evidence(f):
+    """A flag has evidence when it carries a non-empty hard_evidence list or tier == "high"."""
+    he = f.get("hard_evidence")
+    return bool(isinstance(he, (list, tuple)) and len(he) > 0) or f.get("tier") == "high"
+
+
+def card_label(evidence):
+    return LABEL_EVIDENCE if evidence else LABEL_NO_EVIDENCE
+
+
+def hard_evidence_text(code):
+    t = HARD_EVIDENCE_TEXT.get(code)
+    if t:
+        return t
+    return "other hard evidence 其他确凿证据" if re.search(r"delet", str(code), re.I) else str(code)
 # Drop anything that looks like personal data (phone, ID card, email, @handle).
 PII = re.compile(r"(\b1[3-9]\d{9}\b|\b\d{17}[\dXx]\b|[\w.+-]+@[\w-]+\.[\w.]+|@\w{3,})")
 
@@ -76,6 +108,9 @@ def mins(m):
 
 def evidence_lines(f):
     out = []
+    he = f.get("hard_evidence")
+    if isinstance(he, (list, tuple)) and he:
+        out.append("Hard evidence 确凿证据: " + "; ".join(hard_evidence_text(c) for c in he))
     trail = f.get("rank_trail") or []
     out.append(f"Dropped off while hot 热度高时突然消失: peak #{f.get('peak_rank')}"
                + (f", last ranks {' → '.join('#'+str(r) for r in trail[-6:])}" if trail else ""))
@@ -261,14 +296,15 @@ def select(data, hours, by_id, by_t, history=None, strict=True, funnel=None):
                     funnel[reason] = funnel.get(reason, 0) + 1
                 continue
         en = f.get("title_en") or by_id.get(f.get("item_id")) or by_t.get(title) or ""
+        ev = has_evidence(f)
         rows.append({
             "platform": f.get("list"),
             "platform_name": PLATFORMS.get(f.get("list"), f.get("list")),
             "title_zh": title,
             "title_en": en,
-            "label": "Likely censored",
-            "label_zh": "疑似被删",
-            "evidence_strength": "stronger" if f.get("tier") == "high" else "standard",
+            "label": card_label(ev)[0],
+            "label_zh": card_label(ev)[1],
+            "evidence_strength": "stronger" if ev else "standard",
             "peak_rank": f.get("peak_rank"),
             "first_seen_et": et(parse_z(f.get("first_seen_at"))),
             "last_seen_et": et(parse_z(f.get("last_seen_at"))),
@@ -285,7 +321,12 @@ def select(data, hours, by_id, by_t, history=None, strict=True, funnel=None):
         kept = []
         for r in rows:
             r["title"] = r["title_zh"]
-            if any(same_event(r, k) for k in kept):
+            match = next((k for k in kept if same_event(r, k)), None)
+            if match is not None:
+                # Merged into the kept card: the card has evidence if any member does.
+                if r["evidence_strength"] == "stronger" and match["evidence_strength"] != "stronger":
+                    match["evidence_strength"] = "stronger"
+                    match["label"], match["label_zh"] = LABEL_EVIDENCE
                 if funnel is not None:
                     funnel["same story as a kept item"] = funnel.get("same story as a kept item", 0) + 1
             else:
@@ -316,7 +357,7 @@ h1{margin:0 0 6px;font-size:34px;letter-spacing:-.5px}h1 span{color:#ff6b6b}
 .grid{display:grid;gap:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
 .top{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13px}
 .plat{color:#fff;border-radius:6px;padding:2px 8px;font-weight:600}.lab{background:var(--chip);color:var(--accent);border-radius:6px;padding:2px 8px;font-weight:600}
-.str{color:var(--muted)}.rank{margin-left:auto;font-weight:700;font-size:15px}
+.lab.off{background:#eeeef0;color:#3a3a3f}.rank{margin-left:auto;font-weight:700;font-size:15px}
 .zh{font-size:20px;font-weight:650;margin:10px 0 2px}.en{color:var(--muted);margin:0 0 10px}.en.pending{font-style:italic;font-size:14px}
 .times{font-size:14px;color:#3a3a3f;margin-bottom:8px}details{font-size:14px}summary{cursor:pointer;color:#1a5fb4}
 details ul{margin:8px 0 0;padding-left:20px}details li{margin:3px 0}
@@ -360,26 +401,34 @@ def render(gen, rows, hours):
         en = (f'<p class="en">{e(r["title_en"])}</p>' if r["title_en"]
               else '<p class="en pending">English translation pending · 英文翻译待补</p>')
         color = PLATFORM_COLORS.get(r["platform"], "#555")
-        strength = "Stronger evidence 证据较强 (provisional)" if r["evidence_strength"] == "stronger" else "Standard evidence 一般证据"
-        cards.append(f"""<article class="card" data-p="{e(r['platform'] or '')}">
-<div class="top"><span class="plat" style="background:{color}">{e(r['platform_name'])}</span><span class="lab">Likely censored · 疑似被删</span><span class="str">{strength}</span><span class="rank">peak #{e(str(r['peak_rank']))}</span></div>
+        evid = r["evidence_strength"] == "stronger"
+        lab_en, lab_zh = card_label(evid)
+        ev.insert(0, f"<li>On the list 上榜 {e(r['first_seen_et'])} → last seen 最后出现 {e(r['last_seen_et'])} · "
+                     f"{e(mins(r['minutes_on_list']))} on list 在榜时长</li>")
+        cards.append(f"""<article class="card" data-p="{e(r['platform'] or '')}" data-evidence="{'yes' if evid else 'no'}">
+<div class="top"><span class="plat" style="background:{color}">{e(r['platform_name'])}</span><span class="lab{'' if evid else ' off'}">{e(lab_en)} {e(lab_zh)}</span><span class="rank">peak #{e(str(r['peak_rank']))}</span></div>
 <p class="zh">{e(r['title_zh'])}</p>{en}
-<div class="times">On the list 上榜 {e(r['first_seen_et'])} → last seen 最后出现 {e(r['last_seen_et'])} · gone by 消失于 {e(r['first_missing_et'])} · {e(mins(r['minutes_on_list']))} on list</div>
+<div class="times">{e(TIME_LINE.format(time=r['first_missing_et']))}</div>
 <details><summary>Evidence 证据 ({len(ev)})</summary><ul>{''.join(ev)}</ul></details></article>""")
     order = [p for p in PLATFORMS if p in counts]
     btns = ['<button class="on" data-p="all">All 全部 (%d)</button>' % len(rows)] + [
         f'<button data-p="{p}">{e(PLATFORMS[p])} ({counts[p]})</button>' for p in order]
     stats = "".join(f'<div class="stat"><b>{counts[p]}</b><small>{e(PLATFORMS[p])}</small></div>' for p in order)
-    body = "\n".join(cards) if cards else '<div class="empty">No hot-list topics vanished in this window. 本时段暂无疑似被删话题。</div>'
+    n_ev = sum(1 for r in rows if r["evidence_strength"] == "stronger")
+    label_stats = (f'<div class="stat"><b>{n_ev}</b><small>{e(" ".join(LABEL_EVIDENCE))}</small></div>'
+                   f'<div class="stat"><b>{len(rows) - n_ev}</b><small>{e(" ".join(LABEL_NO_EVIDENCE))}</small></div>')
+    body = "\n".join(cards) if cards else '<div class="empty">No hot-list topics dropped off in this window. 本时段暂无下榜话题。</div>'
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Deleted today · 今日被删 | China hot-list deletion watch</title>
-<meta name="description" content="Topics that vanished from Chinese hot lists (Weibo 微博, Baidu 百度, Zhihu 知乎, Toutiao 今日头条, Bilibili 哔哩哔哩) while still trending, labeled likely censored, with evidence. Updated daily.">
+<title>{e(HEADING_EN)} · {e(HEADING_ZH)} | China hot-list watch</title>
+<meta name="description" content="Topics that left Chinese hot lists (Weibo 微博, Baidu 百度, Zhihu 知乎, Toutiao 今日头条, Bilibili 哔哩哔哩) abruptly and didn't return. Some may be normal rotation. Labeled likely censored when there is hard evidence, otherwise dropped off. Updated daily.">
 <style>{CSS}</style></head><body>
-<header><div class="wrap"><h1>Deleted today <span>今日被删</span></h1>
-<p class="sub">Topics that vanished from Chinese hot lists while still trending, in the {hours} hours to {e(et(gen, '%a %b %-d, %Y, %-I:%M %p ET'))}. 热榜上仍在热议却突然消失的话题。</p>
-<div class="stats"><div class="stat"><b>{len(rows)}</b><small>Likely censored 疑似被删</small></div>{stats}</div></div></header>
+<header><div class="wrap"><h1>{e(HEADING_EN)} <span>{e(HEADING_ZH)}</span></h1>
+<p class="sub" id="sub-en">{e(SUBTITLE_EN, quote=False)}</p>
+<p class="sub" id="sub-zh" lang="zh">{e(SUBTITLE_ZH)}</p>
+<p class="sub win">The {hours} hours to {e(et(gen, '%a %b %-d, %Y, %-I:%M %p ET'))}.</p>
+<div class="stats">{label_stats}{stats}</div></div></header>
 <main class="wrap">
-<div class="note"><b>How to read this 说明:</b> each topic left a hot list from the top 10 without sliding down first, well before topics on that list usually drop off, and was still gone an hour later. Retitled headlines, topics still on the list or on another hot list, and batch drops are left out. That is a signal, not proof: lists also churn for ordinary reasons. Every item is labeled <b>likely censored 疑似被删</b>. Open "Evidence" for the timeline, link re-checks and any matching tracker entry. Hot-list headlines and public links only; no user data. Times are US Eastern (ET).</div>
+<div class="note"><b>How to read this 说明:</b> each topic left a hot list from the top 10 without sliding down first, well before topics on that list usually drop off, and was still gone an hour later. Retitled headlines, topics still on the list or on another hot list, and batch drops are left out. That is a signal, not proof: lists also churn for ordinary reasons. A topic with hard evidence (the link returns 404/410, the platform shows a removal notice, or a censorship tracker has a dated entry) is labeled <b>Likely censored 疑似被删</b>; every other topic is labeled <b>Dropped off 已下榜</b>. Open "Evidence" for the timeline, link re-checks and any matching tracker entry. Hot-list headlines and public links only; no user data. Times are US Eastern (ET).</div>
 <div class="filters">{''.join(btns)}</div>
 <section class="grid">{body}</section>
 <div class="links">
@@ -418,8 +467,10 @@ def main():
             r["official_line"] = {k: r["official_line"].get(k) for k in ("source", "title", "url", "published")}
         r["evidence"] = [x if isinstance(x, str) else {"type": x[0], "source": x[1], "url": x[2], "published": x[3]} for x in r["evidence"]]
         out.append(r)
-    json.dump({"generated_at_et": et(gen, "%Y-%m-%d %H:%M ET"), "window_hours": a.hours, "label": "likely censored",
-               "note": "Left a hot list from the top 10 without sliding, early for that list, still gone 1 h later. A signal, not proof.",
+    json.dump({"generated_at_et": et(gen, "%Y-%m-%d %H:%M ET"), "window_hours": a.hours,
+               "label": "dropped off (likely censored when there is hard evidence)",
+               "note": "Left a hot list from the top 10 without sliding, early for that list, still gone 1 h later. A signal, not proof. "
+                       "Items with hard evidence or tier high are labeled Likely censored; the rest Dropped off.",
                "count": len(out), "cut": funnel, "items": out}, open(os.path.join(a.out_dir, "deleted-today.json"), "w"), ensure_ascii=False, indent=1)
     open(os.path.join(a.out_dir, ".nojekyll"), "w").close()
     print(f"built {len(rows)} items from {funnel.get('flagged', 0)} flags, window ends {et(gen)}")

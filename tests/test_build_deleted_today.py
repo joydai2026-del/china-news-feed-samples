@@ -148,6 +148,142 @@ def test_cli_writes_funnel_and_labels(tmp_path):
                    check=True, capture_output=True, text=True)
     d = json.loads((out / "deleted-today.json").read_text())
     assert d["count"] == 1 and d["cut"]["flagged"] == 2 and d["cut"]["kept"] == 1
-    assert all(i["label"] == "Likely censored" for i in d["items"])
+    assert all(i["label"] == "Dropped off" and i["label_zh"] == "已下榜" for i in d["items"])  # no hard evidence
     page = (out / "index.html").read_text()
     assert "某地突发事件通报" in page and "长期在榜话题" not in page and ">Censored<" not in page
+
+
+# ---- Copy: "Dropped off today 今日下榜" (Product Scope, 2026-10-19) ----
+from html.parser import HTMLParser  # noqa: E402
+
+
+class _Visible(HTMLParser):
+    """Text a reader can see or a crawler/share card can show: body text, <title>, meta content, alt/title/aria."""
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.parts, self._skip = [], 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in ("script", "style"):
+            self._skip += 1
+        a = dict(attrs)
+        if tag == "meta" and a.get("content"):
+            self.parts.append(a["content"])
+        for k in ("alt", "title", "aria-label", "placeholder"):
+            if a.get(k):
+                self.parts.append(a[k])
+
+    def handle_endtag(self, tag):
+        if tag in ("script", "style"):
+            self._skip -= 1
+
+    def handle_data(self, data):
+        if not self._skip:
+            self.parts.append(data)
+
+
+def visible(page):
+    v = _Visible()
+    v.feed(page)
+    return " ".join(" ".join(v.parts).split())
+
+
+def _text_of(page, pattern):
+    import re
+    m = re.search(pattern, page, re.S)
+    assert m, pattern
+    return visible(m.group(1))
+
+
+def build(tmp_path, flags):
+    src = tmp_path / "censored.json"
+    src.write_text(json.dumps({"meta": {"generated_at": z(GEN)}, "flags": flags}, ensure_ascii=False))
+    out = tmp_path / "docs"
+    subprocess.run([sys.executable, os.path.join(TOOLS, "build_deleted_today.py"), str(src), str(out)],
+                   check=True, capture_output=True, text=True)
+    return out, (out / "index.html").read_text(), json.loads((out / "deleted-today.json").read_text())
+
+
+def _cards(page):
+    import re
+    return re.findall(r'<article class="card".*?</article>', page, re.S)
+
+
+def _label(card):
+    return _text_of(card, r'<span class="lab[^"]*">(.*?)</span>')
+
+
+def test_heading_and_subtitles(tmp_path):
+    _, page, _ = build(tmp_path, [flag("某地突发事件通报")])
+    assert _text_of(page, r"<h1>(.*?)</h1>") == "Dropped off today 今日下榜"
+    assert _text_of(page, r'<p class="sub" id="sub-en">(.*?)</p>') == \
+        "Topics that left a hot list abruptly and didn't return. Some may be normal rotation."
+    assert _text_of(page, r'<p class="sub" id="sub-zh" lang="zh">(.*?)</p>') == "今日突然从热榜消失且未再出现的话题。部分可能属于正常轮换。"
+    assert _text_of(page, r"<title>(.*?)</title>").startswith("Dropped off today · 今日下榜")
+
+
+def test_evidence_label_vs_no_evidence_label(tmp_path):
+    hard = flag("某地突发事件通报", trail=(1, 1, 1))
+    hard["hard_evidence"] = ["url_dead"]
+    high = flag("球队客场取胜晋级", lst="weibo", trail=(3, 3, 3), tier="high")
+    plain = flag("另一则热点新闻", lst="toutiao", trail=(5, 5, 5))
+    empty = flag("明星演唱会门票开售", lst="zhihu", trail=(6, 6, 6))
+    empty["hard_evidence"] = []
+    for g, mins_ago in ((high, 130), (plain, 140), (empty, 150)):  # different snapshots: not a batch drop
+        g["censored_at"]["first_missing"] = z(GEN - timedelta(minutes=mins_ago))
+    _, page, d = build(tmp_path, [hard, high, plain, empty])
+    by_title = {i["title_zh"]: i for i in d["items"]}
+    assert set(by_title) == {"某地突发事件通报", "球队客场取胜晋级", "另一则热点新闻", "明星演唱会门票开售"}
+    for t in ("某地突发事件通报", "球队客场取胜晋级"):
+        assert (by_title[t]["label"], by_title[t]["label_zh"]) == ("Likely censored", "疑似被删")
+    for t in ("另一则热点新闻", "明星演唱会门票开售"):
+        assert (by_title[t]["label"], by_title[t]["label_zh"]) == ("Dropped off", "已下榜")
+    labels = {}
+    for c in _cards(page):
+        title = _text_of(c, r'<p class="zh">(.*?)</p>')
+        labels[title] = _label(c)
+        assert "Stronger evidence" not in c and "Standard evidence" not in c and "证据较强" not in c
+        gone = by_title[title]["first_missing_et"]
+        assert _text_of(c, r'<div class="times">(.*?)</div>') == f"Dropped off at: {gone} 下榜时间：{gone}"
+    assert labels == {"某地突发事件通报": "Likely censored 疑似被删", "球队客场取胜晋级": "Likely censored 疑似被删",
+                      "另一则热点新闻": "Dropped off 已下榜", "明星演唱会门票开售": "Dropped off 已下榜"}
+    assert "url_dead" not in visible(page) and "404/410" in visible(page)
+
+
+def test_merged_card_has_evidence_if_any_member_does(tmp_path):
+    a, c = flag("法国多地骚乱持续", trail=(1, 1, 1)), flag("法国骚乱致超市遭抢", trail=(4, 4, 4))
+    c["hard_evidence"] = ["cdt_match"]
+    _, page, d = build(tmp_path, [a, c])
+    assert [i["title_zh"] for i in d["items"]] == ["法国多地骚乱持续"]
+    assert d["items"][0]["label"] == "Likely censored"
+    assert [_label(x) for x in _cards(page)] == ["Likely censored 疑似被删"]
+    _, page2, d2 = build(tmp_path, [flag("法国多地骚乱持续", trail=(1, 1, 1)), flag("法国骚乱致超市遭抢", trail=(4, 4, 4))])
+    assert d2["items"][0]["label"] == "Dropped off" and [_label(x) for x in _cards(page2)] == ["Dropped off 已下榜"]
+
+
+@pytest.mark.parametrize("flags", [
+    [],  # empty page
+    [flag("某地突发事件通报", trail=(1, 1, 1), tier="high")],
+    [flag("某地突发事件通报", trail=(1, 1, 1))],
+])
+def test_no_visible_deleted_text(tmp_path, flags):
+    for f in flags:
+        f["hard_evidence"] = ["url_dead", "censor_notice", "cdt_match", "deleted (not found)", "deleted_other"]
+    _, page, _ = build(tmp_path, flags)
+    text = visible(page)
+    assert "deleted" not in text.lower(), [w for w in text.split() if "delet" in w.lower()]
+    assert "今日被删" not in page
+
+
+def test_filename_url_and_json_keys_unchanged(tmp_path):
+    out, page, d = build(tmp_path, [flag("某地突发事件通报")])
+    assert sorted(p.name for p in out.iterdir()) == [".nojekyll", "deleted-today.json", "index.html"]
+    assert 'href="deleted-today.json"' in page
+    assert set(d) == {"generated_at_et", "window_hours", "label", "note", "count", "cut", "items"}
+    assert set(d["items"][0]) == {"platform", "platform_name", "title_zh", "title_en", "label", "label_zh",
+                                  "evidence_strength", "peak_rank", "first_seen_et", "last_seen_et", "first_missing_et",
+                                  "minutes_on_list", "url", "official_line", "official_line_zh", "evidence"}
+    pub = open(os.path.join(TOOLS, "publish_deleted_today.sh")).read()
+    assert "build_deleted_today.py" in pub and " docs " in pub
+    assert "https://joydai2026-del.github.io/china-news-feed-samples/" in pub
