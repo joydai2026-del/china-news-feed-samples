@@ -1,0 +1,244 @@
+{
+ "meta": {
+  "generated_at_et": "2026-10-19 11:14 ET",
+  "product": "Ownly China News Feed with Deletion Watch",
+  "license": "CC BY 4.0 for Ownly's compilation, labels and summaries; headlines, excerpts and linked articles remain with their publishers.",
+  "note": "Free discovery sample: headlines, short excerpts and links only. English is machine-translated. Deletion-watch flags are not included; see the live page.",
+  "full_feed": "https://apify.com/china.unofficial/china-news-feed",
+  "deleted_today": "https://joydai2026-del.github.io/china-news-feed-samples/"
+ },
+ "topics": [
+  {
+   "topic_id": "c0005",
+   "label_zh": "推动高质量发展，总书记强调因地制宜",
+   "summary_en": "State/official outlets (CCTV News, CQNews, China Daily Chinese, China Radio International, China Youth Daily, Dazhong Daily, Guancha, Guangzhou Daily, Oeeee, People's Daily+, Red Star News, Shanghai Observer, Shenzhen News Net, Sina News, Southern Net, The Paper, Workers' Daily, Xinhua Daily, Yangzi Evening News) cover it. No overseas media coverage matched in this run.",
+   "n_items": 19,
+   "distinct_sources": 19,
+   "source_types": [
+    "State media"
+   ]
+  },
+  {
+   "topic_id": "c0001",
+   "label_zh": "“有高远目标，更有耐心有定力”——习近平总书记在内蒙古乌兰察布考察纪实",
+   "summary_en": "State/official outlets (Beijing News, CAC, CCTV News, China Daily Chinese, China National Radio, China Youth Net, Dazhong Daily, People's Daily app, People's Daily+, Qiushi, Red Star News, Shenzhen News Net, Southern Net, Study Times, Taiwan Affairs Office, UCcLK3j-XWdGBnt5bR9NJHaQ, gov.cn) cover it. Overseas outlets (International Daily News) cover it.",
+   "n_items": 28,
+   "distinct_sources": 18,
+   "source_types": [
+    "Overseas independent",
+    "Party/Gov official",
+    "State media"
+   ]
+  },
+  {
+   "topic_id": "c0007",
+   "label_zh": "学习新语·走好新时代的长征路｜团结之力",
+   "summary_en": "State/official outlets (CCTV News, CQNews, China News Service, China Youth Daily, China Youth Net, Dazhong Daily, Guancha, Guangzhou Daily, Oeeee, Party History & Literature Institute, Red Star News, Shanghai Observer, Shenzhen News Net, Southern Net, The Paper, Workers' Daily, Xinhua Daily) cover it. No overseas media coverage matched in this run.",
+   "n_items": 17,
+   "distinct_sources": 17,
+   "source_types": [
+    "Party/Gov official",
+    "State media"
+   ]
+  },
+  {
+   "topic_id": "c0009",
+   "label_zh": "时习之丨“一定要让老人们有个幸福的晚年”",
+   "summary_en": "State/official outlets (CCTV News, CQNews, China Daily Chinese, China Youth Daily, China Youth Net, Dazhong Daily, Guancha, Guangzhou Daily, Oeeee, Red Star News, Shanghai Observer, Shenzhen News Net, Southern Net, The Paper, Xinhua Daily) cover it. No overseas media coverage matched in this run.",
+   "n_items": 15,
+   "distinct_sources": 15,
+   "source_types": [
+    "State media"
+   ]
+  },
+  {
+   "topic_id": "c0016",
+   "label_zh": "社保基金会原副理事长王文灵被双开",
+   "summary_en": "Trending on Baidu, Weibo (best rank #30 on Weibo). State/official outlets (CCDI, Cailian Press, Jiemian, Kankan News, People's Daily+, Tencent News, The Paper) cover it. Censorship trackers (Weibo trending history) cover it. No overseas media coverage matched in this run.",
+   "n_items": 11,
+   "distinct_sources": 11,
+   "source_types": [
+    "Censorship tracker",
+    "Commercial platform",
+    "Party/Gov official",
+    "State media"
+   ]
+  },
+  {
+   "topic_id": "c0015",
+   "label_zh": "加拿大军事基地发生重大爆炸火灾事故，已致4死数十伤，这场致命事故有哪些关键细节？暴露了什么问题？",
+   "summary_en": "Trending on Zhihu (best rank #4 on Zhihu). State/official outlets (China Daily Chinese, Reference News, XHNews, Yicai) cover it. Overseas outlets (NTD, NTDChinese, Sing Tao Daily Canada, VOA, tnews365) cover it.",
+   "n_items": 12,
+   "distinct_sources": 10,
+   "source_types": [
+    "Commercial platform",
+    "Dissident",
+    "Overseas independent",
+    "State media"
+   ]
+  },
+  {
+   "topic_id": "c0018",
+   "label_zh": "国新办发布会 | 介绍加快推进科技兴商有关情况",
+   "summary_en": "State/official outlets (CCTV News, Caixin, China News Service, Guangming Daily, People's Daily app, Xinhua, Xuexi Qiangguo, Yicai) cover it. Overseas outlets (on.cc) cover it.",
+   "n_items": 11,
+   "distinct_sources": 10,
+   "source_types": [
+    "Commercial platform",
+    "Overseas independent",
+    "State media"
+   ]
+  },
+  {
+   "topic_id": "c0026",
+   "label_zh": "外交部提醒赴法中国公民加强安全防范",
+   "summary_en": "Trending on Toutiao (best rank #10 on Toutiao). State/official outlets (Beijing Daily, CCTV News, Cailian Press, China National Radio, Kankan News, People's Daily+, Tencent News, UCpbfXQsYBJTwq5lCkwGIeuQ) cover it. No overseas media coverage matched in this run.",
+   "n_items": 9,
+   "distinct_sources": 9,
+   "source_types": [
+    "Commercial platform",
+    "State media"
+   ]
+  },
+  {
+   "topic_id": "c0023",
+   "label_zh": "李强将出席第140届广交会",
+   "summary_en": "Trending on Kuaishou (best rank #36 on Kuaishou). State/official outlets (CCTV News, China News Service, China Radio International, China Youth Net, Guangzhou Daily, Qiushi, Southern Net, Yicai) cover it. No overseas media coverage matched in this run.",
+   "n_items": 10,
+   "distinct_sources": 9,
+   "source_types": [
+    "Commercial platform",
+    "State media"
+   ]
+  },
+  {
+   "topic_id": "c0027",
+   "label_zh": "商务部就英方称将共同应对中国汽车产业占主导地位事答问",
+   "summary_en": "State/official outlets (Beijing News, China National Radio, China Youth Net, National Business Daily, People's Daily+, Securities Times, Southern Net, Yangzi Evening News, Yicai) cover it. No overseas media coverage matched in this run.",
+   "n_items": 9,
+   "distinct_sources": 9,
+   "source_types": [
+    "State media"
+   ]
+  },
+  {
+   "topic_id": "c0020",
+   "label_zh": "中方回应日本领导人向靖国神社供奉祭品",
+   "summary_en": "State/official outlets (Beijing Daily, Beijing News, People's Daily app, UCpbfXQsYBJTwq5lCkwGIeuQ, XHNews) cover it. Overseas outlets (RFI Chinese, rfi_cn, voachinese) cover it.",
+   "n_items": 11,
+   "distinct_sources": 8,
+   "source_types": [
+    "Overseas independent",
+    "State media"
+   ]
+  },
+  {
+   "topic_id": "c0034",
+   "label_zh": "习近平出席全国卫生与健康大会并发表重要讲话",
+   "summary_en": "State/official outlets (CAC, Party History & Literature Institute, Study Times, Taiwan Affairs Office, gov.cn) cover it. Overseas outlets (NTDChinese, RFI Chinese, rfi_cn) cover it.",
+   "n_items": 8,
+   "distinct_sources": 8,
+   "source_types": [
+    "Dissident",
+    "Overseas independent",
+    "Party/Gov official",
+    "State media"
+   ]
+  },
+  {
+   "topic_id": "c0033",
+   "label_zh": "金融街论坛年会的4个亮点",
+   "summary_en": "Trending on Bilibili (best rank #43 on Bilibili). State/official outlets (Jiemian, Phoenix, Qiushi, Southern Net, Xuexi Qiangguo, Yicai) cover it. No overseas media coverage matched in this run.",
+   "n_items": 8,
+   "distinct_sources": 8,
+   "source_types": [
+    "Commercial platform",
+    "State media"
+   ]
+  },
+  {
+   "topic_id": "c0035",
+   "label_zh": "“加减乘除”促消费（活力中国调研行）",
+   "summary_en": "State/official outlets (CQNews, Dazhong Daily, Guangzhou Daily, Oeeee, Shanghai Observer, The Paper, Workers' Daily, gov.cn) cover it. No overseas media coverage matched in this run.",
+   "n_items": 8,
+   "distinct_sources": 8,
+   "source_types": [
+    "Party/Gov official",
+    "State media"
+   ]
+  },
+  {
+   "topic_id": "c0031",
+   "label_zh": "法国发生近年来最严重暴力骚乱，约1200人被捕、超150名警察受伤，情况如何？为何此时矛盾进一步激化？",
+   "summary_en": "Trending on Baidu, Zhihu (best rank #1 on Zhihu). State/official outlets (Caixin) cover it. Overseas outlets (DW, NYT Chinese, UCrbQxu0YkoVWu2dw5b1MzNg, zaobaosg) cover it.",
+   "n_items": 8,
+   "distinct_sources": 7,
+   "source_types": [
+    "Commercial platform",
+    "Overseas independent",
+    "State media"
+   ]
+  },
+  {
+   "topic_id": "c0038",
+   "label_zh": "iPhone Duo 溢价从超5万元跌至3000元，首销价格为什么会快速回落？",
+   "summary_en": "Trending on Baidu, Zhihu (best rank #21 on Zhihu). State/official outlets (Phoenix) cover it. Overseas outlets (HK01, Ming Pao, UCLJYH0o60tlyAdy3g5GNrKw) cover it.",
+   "n_items": 7,
+   "distinct_sources": 7,
+   "source_types": [
+    "Commercial platform",
+    "Dissident",
+    "Overseas independent",
+    "State media"
+   ]
+  },
+  {
+   "topic_id": "c0028",
+   "label_zh": "构建完整闭环 人工智能赋能钢铁行业首批标准发布",
+   "summary_en": "State/official outlets (China National Radio, China Youth Net, Securities Times, Study Times, Xuexi Qiangguo) cover it. Overseas outlets (BBC Chinese, VOA) cover it.",
+   "n_items": 9,
+   "distinct_sources": 7,
+   "source_types": [
+    "Overseas independent",
+    "State media"
+   ]
+  },
+  {
+   "topic_id": "c0040",
+   "label_zh": "法国多地将局部宵禁",
+   "summary_en": "Trending on Toutiao (best rank #22 on Toutiao). State/official outlets (CCTV News, China Daily Chinese, China Radio International, Yangzi Evening News) cover it. Overseas outlets (8world News 8视界, NTD) cover it.",
+   "n_items": 7,
+   "distinct_sources": 7,
+   "source_types": [
+    "Commercial platform",
+    "Dissident",
+    "Overseas independent",
+    "State media"
+   ]
+  },
+  {
+   "topic_id": "c0052",
+   "label_zh": "马克龙谴责法国抗议活动中的暴力行为 新华社巴黎10月18日电（记者孙毅）法国总统马克龙18日就法国多地爆发的抗议活动发表电视讲话。他谴责抗议期间出现的暴力行为，…",
+   "summary_en": "State/official outlets (Beijing News, UC4vnLYInDvXtLKGOZieMeMw, XHNews) cover it. Overseas outlets (NTDChinese, Oriental Daily News Malaysia) cover it. Censorship trackers (Weibo trending history) cover it.",
+   "n_items": 6,
+   "distinct_sources": 6,
+   "source_types": [
+    "Censorship tracker",
+    "Dissident",
+    "Overseas independent",
+    "State media"
+   ]
+  },
+  {
+   "topic_id": "c0019",
+   "label_zh": "邓炳强：新皇岗口岸启用后罗湖及落马洲口岸人流减少3至7%",
+   "summary_en": "State/official outlets (RTHK, Wen Wei Po) cover it. Overseas outlets (HK01, Hong Kong Economic Times, Ming Pao, Sing Tao Daily USA) cover it.",
+   "n_items": 11,
+   "distinct_sources": 6,
+   "source_types": [
+    "Overseas independent",
+    "State media"
+   ]
+  }
+ ]
+}

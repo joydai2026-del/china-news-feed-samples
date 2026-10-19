@@ -1,0 +1,13 @@
+{
+ "generated_at_et": "2026-10-19 11:14 ET",
+ "product": "Ownly China News Feed with Deletion Watch",
+ "license": "CC BY 4.0 for Ownly's compilation, labels and summaries; headlines, excerpts and linked articles remain with their publishers.",
+ "note": "Free discovery sample: headlines, short excerpts and links only. English is machine-translated. Deletion-watch flags are not included; see the live page.",
+ "full_feed": "https://apify.com/china.unofficial/china-news-feed",
+ "deleted_today": "https://joydai2026-del.github.io/china-news-feed-samples/",
+ "counts": {
+  "feed_en": 50,
+  "feed_zh": 50,
+  "topics": 20
+ }
+}
