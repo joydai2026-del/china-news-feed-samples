@@ -220,7 +220,7 @@ def render(gen, rows, hours):
     body = "\n".join(cards) if cards else '<div class="empty">No hot-list topics vanished in this window. 本时段暂无疑似被删话题。</div>'
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Deleted today · 今日被删 | China hot-list deletion watch</title>
-<meta name="description" content="Topics that vanished from Chinese hot lists (Weibo 微博, Baidu 百度, Zhihu 知乎, Toutiao 今日头条, Bilibili 哔哩哔哩, Douyin 抖音, Kuaishou 快手) while still trending, labeled likely censored, with evidence. Updated daily.">
+<meta name="description" content="Topics that vanished from Chinese hot lists (Weibo 微博, Baidu 百度, Zhihu 知乎, Toutiao 今日头条, Bilibili 哔哩哔哩) while still trending, labeled likely censored, with evidence. Updated daily.">
 <style>{CSS}</style></head><body>
 <header><div class="wrap"><h1>Deleted today <span>今日被删</span></h1>
 <p class="sub">Topics that vanished from Chinese hot lists while still trending, in the {hours} hours to {e(et(gen, '%a %b %-d, %Y, %-I:%M %p ET'))}. 热榜上仍在热议却突然消失的话题。</p>
