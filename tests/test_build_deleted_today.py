@@ -226,7 +226,7 @@ def test_heading_and_subtitles(tmp_path):
 def test_evidence_label_vs_no_evidence_label(tmp_path):
     hard = flag("某地突发事件通报", trail=(1, 1, 1))
     hard["hard_evidence"] = ["url_dead"]
-    high = flag("球队客场取胜晋级", lst="weibo", trail=(3, 3, 3), tier="high")
+    high = flag("球队客场取胜晋级", lst="weibo", trail=(3, 3, 3), tier="high")  # tier high, no hard_evidence
     plain = flag("另一则热点新闻", lst="toutiao", trail=(5, 5, 5))
     empty = flag("明星演唱会门票开售", lst="zhihu", trail=(6, 6, 6))
     empty["hard_evidence"] = []
@@ -235,9 +235,8 @@ def test_evidence_label_vs_no_evidence_label(tmp_path):
     _, page, d = build(tmp_path, [hard, high, plain, empty])
     by_title = {i["title_zh"]: i for i in d["items"]}
     assert set(by_title) == {"某地突发事件通报", "球队客场取胜晋级", "另一则热点新闻", "明星演唱会门票开售"}
-    for t in ("某地突发事件通报", "球队客场取胜晋级"):
-        assert (by_title[t]["label"], by_title[t]["label_zh"]) == ("Likely censored", "疑似被删")
-    for t in ("另一则热点新闻", "明星演唱会门票开售"):
+    assert (by_title["某地突发事件通报"]["label"], by_title["某地突发事件通报"]["label_zh"]) == ("Likely censored", "疑似被删")
+    for t in ("球队客场取胜晋级", "另一则热点新闻", "明星演唱会门票开售"):
         assert (by_title[t]["label"], by_title[t]["label_zh"]) == ("Dropped off", "已下榜")
     labels = {}
     for c in _cards(page):
@@ -246,7 +245,7 @@ def test_evidence_label_vs_no_evidence_label(tmp_path):
         assert "Stronger evidence" not in c and "Standard evidence" not in c and "证据较强" not in c
         gone = by_title[title]["first_missing_et"]
         assert _text_of(c, r'<div class="times">(.*?)</div>') == f"Dropped off at: {gone} 下榜时间：{gone}"
-    assert labels == {"某地突发事件通报": "Likely censored 疑似被删", "球队客场取胜晋级": "Likely censored 疑似被删",
+    assert labels == {"某地突发事件通报": "Likely censored 疑似被删", "球队客场取胜晋级": "Dropped off 已下榜",
                       "另一则热点新闻": "Dropped off 已下榜", "明星演唱会门票开售": "Dropped off 已下榜"}
     assert "url_dead" not in visible(page) and "404/410" in visible(page)
 
@@ -287,3 +286,90 @@ def test_filename_url_and_json_keys_unchanged(tmp_path):
     pub = open(os.path.join(TOOLS, "publish_deleted_today.sh")).read()
     assert "build_deleted_today.py" in pub and " docs " in pub
     assert "https://joydai2026-del.github.io/china-news-feed-samples/" in pub
+
+
+def test_tier_high_without_hard_evidence_is_dropped_off_and_hard_evidence_is_likely_censored(tmp_path):
+    for tier in ("high", "medium"):
+        f = flag("某地突发事件通报", tier=tier)
+        assert not b.has_evidence(f)
+        f["hard_evidence"] = []
+        assert not b.has_evidence(f)
+        for code in ("url_dead", "censor_notice", "cdt_match"):
+            f["hard_evidence"] = [code]
+            assert b.has_evidence(f)
+    _, page, d = build(tmp_path, [flag("某地突发事件通报", tier="high")])
+    assert d["items"][0]["label"] == "Dropped off" and [_label(c) for c in _cards(page)] == ["Dropped off 已下榜"]
+    f = flag("某地突发事件通报", tier="high")
+    f["hard_evidence"] = ["censor_notice"]
+    _, page, d = build(tmp_path, [f])
+    assert d["items"][0]["label"] == "Likely censored" and [_label(c) for c in _cards(page)] == ["Likely censored 疑似被删"]
+    # merged card: a tier-high member without hard_evidence does not make the card Likely censored
+    a, c = flag("法国多地骚乱持续", trail=(1, 1, 1)), flag("法国骚乱致超市遭抢", trail=(4, 4, 4), tier="high")
+    _, page, d = build(tmp_path, [a, c])
+    assert [i["label"] for i in d["items"]] == ["Dropped off"]
+    assert "tier" not in visible(page).lower()
+
+
+def test_meta_description_and_readme_say_hourly(tmp_path):
+    import re
+    _, page, _ = build(tmp_path, [flag("某地突发事件通报")])
+    desc = re.search(r'<meta name="description" content="([^"]*)">', page).group(1)
+    assert "Updated hourly." in desc and "daily" not in desc.lower()
+    assert "daily" not in visible(page).lower()
+    readme = open(os.path.join(TOOLS, "..", "README.md")).read()
+    assert "rebuilt hourly" in readme and "rebuilt daily" not in readme
+
+
+def test_no_evidence_line_hook(tmp_path, monkeypatch):
+    import re
+    assert hasattr(b, "NO_EVIDENCE_LINE")
+    plain = [flag("某地突发事件通报")]
+    hard = flag("某地突发事件通报")
+    hard["hard_evidence"] = ["url_dead"]
+    gen = GEN
+    def page_for(flags):
+        _, rows = b.select({"meta": {"generated_at": z(gen)}, "flags": flags}, 24, {}, {})
+        return b.render(gen, rows, 24)
+    # empty string (current value until Product Scope sends the wording) renders nothing
+    monkeypatch.setattr(b, "NO_EVIDENCE_LINE", "")
+    assert 'id="no-evidence"' not in page_for(plain) and 'class="no-evidence"' not in page_for([])
+    monkeypatch.setattr(b, "NO_EVIDENCE_LINE", "Test line for zero Likely censored.")
+    for flags in (plain, []):
+        p = page_for(flags)
+        m = re.search(r'<p class="no-evidence" id="no-evidence">(.*?)</p>', p)
+        assert m and m.group(1) == "Test line for zero Likely censored."
+        assert p.index('id="no-evidence"') < p.index('class="note"')  # at the top of the page body
+    assert 'id="no-evidence"' not in page_for([hard])  # hidden when a card is Likely censored
+
+
+NO_EVIDENCE_TEXT = 'No topic met our evidence bar for "likely censored" today. The topics below dropped off abruptly, which is a signal, not proof. 今日没有话题达到"疑似被删"的证据标准。以下话题突然下榜，仅为信号，并非证据。'
+
+
+def test_no_evidence_line_is_the_product_scope_string():
+    assert b.NO_EVIDENCE_LINE == NO_EVIDENCE_TEXT
+
+
+def test_no_evidence_line_shows_when_zero_likely_censored(tmp_path):
+    import re
+    _, page, d = build(tmp_path, [flag("某地突发事件通报", tier="high")])  # tier high alone is not evidence
+    assert d["count"] == 1 and d["items"][0]["label"] == "Dropped off"
+    m = re.search(r'<p class="no-evidence" id="no-evidence">(.*?)</p>', page, re.S)
+    assert m and visible(m.group(1)) == NO_EVIDENCE_TEXT
+    assert "<" not in m.group(1) and ">" not in m.group(1)  # plain, escaped text content
+    assert page.index('id="no-evidence"') < page.index('<section class="grid">')  # above the cards
+    (tmp_path / "e").mkdir()
+    _, empty_page, _ = build(tmp_path / "e", [])
+    assert 'id="no-evidence"' in empty_page
+
+
+@pytest.mark.parametrize("n_hard", [1, 2])
+def test_no_evidence_line_absent_when_any_likely_censored(tmp_path, n_hard):
+    flags = [flag("某地突发事件通报", trail=(1, 1, 1)), flag("球队客场取胜晋级", lst="weibo", trail=(3, 3, 3)),
+             flag("另一则热点新闻", lst="toutiao", trail=(5, 5, 5))]
+    for g, mins_ago in zip(flags[1:], (130, 140)):
+        g["censored_at"]["first_missing"] = z(GEN - timedelta(minutes=mins_ago))
+    for g in flags[:n_hard]:
+        g["hard_evidence"] = ["url_dead"]
+    _, page, d = build(tmp_path, flags)
+    assert sum(i["label"] == "Likely censored" for i in d["items"]) == n_hard
+    assert 'id="no-evidence"' not in page and NO_EVIDENCE_TEXT not in visible(page)
