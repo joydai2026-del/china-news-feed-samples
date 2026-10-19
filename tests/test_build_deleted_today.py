@@ -373,3 +373,10 @@ def test_no_evidence_line_absent_when_any_likely_censored(tmp_path, n_hard):
     _, page, d = build(tmp_path, flags)
     assert sum(i["label"] == "Likely censored" for i in d["items"]) == n_hard
     assert 'id="no-evidence"' not in page and NO_EVIDENCE_TEXT not in visible(page)
+
+
+def test_apify_footer_uses_product_scope_wording():
+    page = b.render(GEN, [], 24)
+    assert "Chinese feed with English where available, plus deletion watch. $8 per 1,000 rows." in page
+    assert "155 sources" not in page
+    assert "7 hot lists" not in page
