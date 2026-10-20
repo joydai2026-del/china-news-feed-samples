@@ -1,21 +1,21 @@
 {
- "generated_at_et": "2026-10-19 23:01 ET",
+ "generated_at_et": "2026-10-20 00:06 ET",
  "window_hours": 24,
  "label": "dropped off (likely censored when there is hard evidence)",
  "note": "Left a hot list from the top 10 without sliding, early for that list, still gone 1 h later. A signal, not proof. Items with hard evidence are labeled Likely censored; the rest Dropped off.",
  "count": 9,
  "cut": {
-  "flagged": 83,
+  "flagged": 94,
   "came back once before": 3,
-  "gone under 60 min": 4,
-  "not in the top 10 when it left": 26,
-  "slid down before leaving": 2,
-  "on the list a normal length of time": 20,
+  "gone under 60 min": 10,
+  "not in the top 10 when it left": 27,
+  "slid down before leaving": 3,
+  "on the list a normal length of time": 23,
   "inside the list's normal rotation": 6,
-  "still on another hot list": 2,
+  "still on another hot list": 1,
   "left with other flagged topics (batch drop)": 4,
   "retitled": 3,
-  "topic still on the list": 3,
+  "topic still on the list": 4,
   "same story as a kept item": 1,
   "kept": 9
  },
@@ -56,23 +56,34 @@
    "first_missing_et": "Oct 19, 2:30 AM ET",
    "minutes_on_list": 143,
    "url": "https://www.baidu.com/s?wd=%E9%A9%AC%E5%85%8B%E9%BE%99%EF%BC%9A%E6%B3%95%E5%9B%BD%E4%BA%BA%E6%80%8E%E4%B9%88%E8%83%BD%E8%BF%99%E6%A0%B7%E5%AF%B9%E5%BE%85%E6%B3%95%E5%9B%BD",
-   "official_line": {
-    "source": "Tencent News 腾讯网",
-    "title": "马克龙一句“谁上街谁就不是法国人”，为何惹怒数十万抗议者？",
-    "url": "https://new.qq.com/rain/a/20261020A051XQ00",
-    "published": "2026-10-20 10:30:37"
-   },
-   "official_line_zh": null,
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
    "evidence": [
     "Dropped off while hot 热度高时突然消失: peak #1, last ranks #1 → #1 → #1 → #1 → #1 → #1",
     "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 2:42 AM ET",
-    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 3:36 AM ET",
-    {
-     "type": "Still covered elsewhere 其他来源仍有报道",
-     "source": "FT Chinese FT中文网",
-     "url": "https://www.ftchinese.com/story/001111085",
-     "published": null
-    }
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 3:36 AM ET"
+   ]
+  },
+  {
+   "platform": "toutiao",
+   "platform_name": "Toutiao 今日头条",
+   "title_zh": "情侣在法国抗议现场附近淡定小酌",
+   "title_en": "",
+   "label": "Dropped off",
+   "label_zh": "已下榜",
+   "evidence_strength": "standard",
+   "peak_rank": 2,
+   "first_seen_et": "Oct 19, 9:50 PM ET",
+   "last_seen_et": "Oct 19, 10:20 PM ET",
+   "first_missing_et": "Oct 19, 10:25 PM ET",
+   "minutes_on_list": 30,
+   "url": "https://www.toutiao.com/trending/7698257512839974442/",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #2, last ranks #9 → #7 → #6 → #6 → #5 → #2",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 10:37 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 11:31 PM ET"
    ]
   },
   {
@@ -154,13 +165,7 @@
    "evidence": [
     "Dropped off while hot 热度高时突然消失: peak #5, last ranks #5 → #5 → #5 → #5 → #5 → #5",
     "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:37 PM ET",
-    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 10:29 PM ET",
-    {
-     "type": "Still covered elsewhere 其他来源仍有报道",
-     "source": "Sing Tao Headline 星島頭條",
-     "url": "https://www.stheadline.com/realtime-china/3627591/浙孕婦被快遞員上門嚇到作流產-圓通致歉已批評教育及調區",
-     "published": null
-    }
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 10:29 PM ET"
    ]
   },
   {
@@ -227,28 +232,6 @@
     "Dropped off while hot 热度高时突然消失: peak #9, last ranks #14 → #14 → #14 → #14 → #9 → #10",
     "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 3:51 AM ET",
     "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 4:44 AM ET"
-   ]
-  },
-  {
-   "platform": "zhihu",
-   "platform_name": "Zhihu 知乎",
-   "title_zh": "为什么不建议在简历上撒谎？",
-   "title_en": "Why is it not recommended to lie on your resume?",
-   "label": "Dropped off",
-   "label_zh": "已下榜",
-   "evidence_strength": "standard",
-   "peak_rank": 10,
-   "first_seen_et": "Oct 18, 8:06 PM ET",
-   "last_seen_et": "Oct 18, 11:50 PM ET",
-   "first_missing_et": "Oct 18, 11:57 PM ET",
-   "minutes_on_list": 224,
-   "url": "https://www.zhihu.com/question/562524801",
-   "official_line": "No official comment found",
-   "official_line_zh": "未找到官方回应",
-   "evidence": [
-    "Dropped off while hot 热度高时突然消失: peak #10, last ranks #10 → #10 → #10 → #10 → #10 → #10",
-    "Re-check after 10 min 复查: still gone from the list; link check inconclusive at Oct 19, 12:08 AM ET",
-    "Re-check after 1 h 复查: still gone from the list; link check inconclusive at Oct 19, 12:59 AM ET"
    ]
   }
  ]
