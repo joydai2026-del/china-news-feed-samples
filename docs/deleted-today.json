@@ -1,23 +1,23 @@
 {
- "generated_at_et": "2026-10-19 19:46 ET",
+ "generated_at_et": "2026-10-19 20:50 ET",
  "window_hours": 24,
  "label": "dropped off (likely censored when there is hard evidence)",
  "note": "Left a hot list from the top 10 without sliding, early for that list, still gone 1 h later. A signal, not proof. Items with hard evidence are labeled Likely censored; the rest Dropped off.",
- "count": 8,
+ "count": 7,
  "cut": {
-  "flagged": 87,
+  "flagged": 88,
   "came back once before": 3,
-  "gone under 60 min": 4,
-  "not in the top 10 when it left": 25,
+  "gone under 60 min": 5,
+  "not in the top 10 when it left": 28,
   "slid down before leaving": 2,
-  "on the list a normal length of time": 21,
+  "on the list a normal length of time": 22,
   "inside the list's normal rotation": 7,
-  "still on another hot list": 4,
+  "still on another hot list": 3,
   "left with other flagged topics (batch drop)": 4,
   "retitled": 3,
-  "topic still on the list": 4,
-  "same story as a kept item": 2,
-  "kept": 8
+  "topic still on the list": 3,
+  "same story as a kept item": 1,
+  "kept": 7
  },
  "items": [
   {
@@ -62,28 +62,6 @@
     "Dropped off while hot 热度高时突然消失: peak #1, last ranks #1 → #1 → #1 → #1 → #1 → #1",
     "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 2:42 AM ET",
     "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 3:36 AM ET"
-   ]
-  },
-  {
-   "platform": "toutiao",
-   "platform_name": "Toutiao 今日头条",
-   "title_zh": "法国公共债务总额占GDP比重为119%",
-   "title_en": "France's total public debt stands at 119 percent of GDP",
-   "label": "Dropped off",
-   "label_zh": "已下榜",
-   "evidence_strength": "standard",
-   "peak_rank": 1,
-   "first_seen_et": "Oct 18, 7:39 PM ET",
-   "last_seen_et": "Oct 18, 8:19 PM ET",
-   "first_missing_et": "Oct 18, 8:25 PM ET",
-   "minutes_on_list": 40,
-   "url": "https://www.toutiao.com/trending/7697758701436043306/",
-   "official_line": "No official comment found",
-   "official_line_zh": "未找到官方回应",
-   "evidence": [
-    "Dropped off while hot 热度高时突然消失: peak #1, last ranks #18 → #1 → #1 → #1 → #1 → #1",
-    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 8:50 PM ET",
-    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 18, 9:40 PM ET"
    ]
   },
   {
