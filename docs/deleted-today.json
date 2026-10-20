@@ -1,23 +1,23 @@
 {
- "generated_at_et": "2026-10-20 00:06 ET",
+ "generated_at_et": "2026-10-20 02:28 ET",
  "window_hours": 24,
  "label": "dropped off (likely censored when there is hard evidence)",
  "note": "Left a hot list from the top 10 without sliding, early for that list, still gone 1 h later. A signal, not proof. Items with hard evidence are labeled Likely censored; the rest Dropped off.",
- "count": 9,
+ "count": 8,
  "cut": {
   "flagged": 94,
   "came back once before": 3,
-  "gone under 60 min": 10,
-  "not in the top 10 when it left": 27,
-  "slid down before leaving": 3,
-  "on the list a normal length of time": 23,
+  "gone under 60 min": 1,
+  "not in the top 10 when it left": 32,
+  "slid down before leaving": 4,
+  "on the list a normal length of time": 28,
   "inside the list's normal rotation": 6,
-  "still on another hot list": 1,
+  "still on another hot list": 4,
   "left with other flagged topics (batch drop)": 4,
-  "retitled": 3,
-  "topic still on the list": 4,
+  "retitled": 2,
+  "topic still on the list": 1,
   "same story as a kept item": 1,
-  "kept": 9
+  "kept": 8
  },
  "items": [
   {
@@ -61,7 +61,19 @@
    "evidence": [
     "Dropped off while hot 热度高时突然消失: peak #1, last ranks #1 → #1 → #1 → #1 → #1 → #1",
     "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 2:42 AM ET",
-    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 3:36 AM ET"
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 3:36 AM ET",
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "NZ Chinese Herald 新西兰中文先驱报",
+     "url": "https://www.chineseherald.co.nz/news/international/trump-france-riots-warning-macron-democrats-us/",
+     "published": null
+    },
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "FT Chinese FT中文网",
+     "url": "https://www.ftchinese.com/story/001111085",
+     "published": null
+    }
    ]
   },
   {
@@ -83,7 +95,13 @@
    "evidence": [
     "Dropped off while hot 热度高时突然消失: peak #2, last ranks #9 → #7 → #6 → #6 → #5 → #2",
     "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 10:37 PM ET",
-    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 11:31 PM ET"
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 11:31 PM ET",
+    {
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "Storm Media 風傳媒",
+     "url": "https://www.storm.mg/article/11174038",
+     "published": null
+    }
    ]
   },
   {
@@ -139,33 +157,6 @@
      "url": "https://www.oushinet.com/static/content/france/2026-10-20/1562043567193599436.html",
      "published": null
     }
-   ]
-  },
-  {
-   "platform": "baidu",
-   "platform_name": "Baidu 百度",
-   "title_zh": "圆通回应孕妇被快递员吓到先兆流产",
-   "title_en": "YTO Express Responds to Report of a Pregnant Woman Being Startled by a Delivery Driver, Leading to a Threatened Miscarriage",
-   "label": "Dropped off",
-   "label_zh": "已下榜",
-   "evidence_strength": "standard",
-   "peak_rank": 5,
-   "first_seen_et": "Oct 19, 7:55 PM ET",
-   "last_seen_et": "Oct 19, 9:18 PM ET",
-   "first_missing_et": "Oct 19, 9:24 PM ET",
-   "minutes_on_list": 83,
-   "url": "https://www.baidu.com/s?wd=%E5%9C%86%E9%80%9A%E5%9B%9E%E5%BA%94%E5%AD%95%E5%A6%87%E8%A2%AB%E5%BF%AB%E9%80%92%E5%91%98%E5%90%93%E5%88%B0%E5%85%88%E5%85%86%E6%B5%81%E4%BA%A7",
-   "official_line": {
-    "source": "Caixin 财新网",
-    "title": "财新闻｜孕妇取消订单后被快递员找上门质问，吓到先兆流产，圆通深夜道歉",
-    "url": "https://mini.caixin.com/2026-10-20/102495060.html",
-    "published": "2026-10-20"
-   },
-   "official_line_zh": null,
-   "evidence": [
-    "Dropped off while hot 热度高时突然消失: peak #5, last ranks #5 → #5 → #5 → #5 → #5 → #5",
-    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:37 PM ET",
-    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 10:29 PM ET"
    ]
   },
   {
