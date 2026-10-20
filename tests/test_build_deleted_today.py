@@ -377,6 +377,7 @@ def test_no_evidence_line_absent_when_any_likely_censored(tmp_path, n_hard):
 
 def test_apify_footer_uses_product_scope_wording():
     page = b.render(GEN, [], 24)
-    assert "Chinese feed with English where available, plus deletion watch. $8 per 1,000 rows." in page
+    assert "The live feed on Apify, with English where available and the deletion watch, costs $8 per 1,000 rows." in page
+    assert "Get today's live data" in page
     assert "155 sources" not in page
     assert "7 hot lists" not in page
