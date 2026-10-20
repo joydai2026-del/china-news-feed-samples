@@ -2,7 +2,8 @@
 
 Free discovery samples from **Ownly's China News Feed with Deletion Watch**, a bilingual (Chinese / English) China news feed plus a deletion watch on Chinese hot-search lists.
 
-**Get the full feed on the Apify Store: https://apify.com/china.unofficial/china-news-feed**
+## Get today's live data
+This sample is frozen: it is a one-time snapshot from 2026-10-19 and is not updated. For today's live feed, run the Apify actor: **https://apify.com/china.unofficial/china-news-feed**. The live feed costs $8 per 1,000 rows ($0.008 per row), and it includes the deletion watch with **likely censored 疑似被删** flags and their evidence.
 
 ## What is in a sample
 Headlines, short excerpts, and links only (not full article text). English text is machine-translated.

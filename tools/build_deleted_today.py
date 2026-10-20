@@ -439,7 +439,7 @@ def render(gen, rows, hours):
 <div class="filters">{''.join(btns)}</div>
 <section class="grid">{body}</section>
 <div class="links">
-<a href="{ACTOR}"><b>Full feed on Apify →</b>Chinese feed with English where available, plus deletion watch. $8 per 1,000 rows.</a>
+<a href="{ACTOR}"><b>Get today's live data →</b>The downloadable samples are frozen snapshots. The live feed on Apify, with English where available and the deletion watch, costs $8 per 1,000 rows.</a>
 <a href="{HF}"><b>Free sample on Hugging Face →</b>Load it with <code>datasets</code>.</a>
 <a href="{X402}"><b>Pay-per-call API (x402) →</b>$0.01 USDC per call on Base; free <code>/sample</code>.</a>
 <a href="deleted-today.json"><b>This page as JSON →</b>Same items, machine-readable.</a>
