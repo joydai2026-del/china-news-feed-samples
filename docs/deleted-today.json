@@ -1,52 +1,30 @@
 {
- "generated_at_et": "2026-10-20 08:07 ET",
+ "generated_at_et": "2026-10-20 09:14 ET",
  "window_hours": 24,
  "label": "dropped off (likely censored when there is hard evidence)",
  "note": "Left a hot list from the top 10 without sliding, early for that list, still gone 1 h later. A signal, not proof. Items with hard evidence are labeled Likely censored; the rest Dropped off.",
- "count": 8,
+ "count": 5,
  "cut": {
-  "flagged": 102,
-  "came back once before": 3,
-  "gone under 60 min": 6,
-  "not in the top 10 when it left": 34,
+  "flagged": 100,
+  "came back once before": 2,
+  "gone under 60 min": 8,
+  "not in the top 10 when it left": 38,
   "slid down before leaving": 2,
-  "on the list a normal length of time": 34,
+  "on the list a normal length of time": 32,
   "inside the list's normal rotation": 5,
-  "still on another hot list": 3,
-  "left with other flagged topics (batch drop)": 3,
-  "retitled": 3,
+  "still on another hot list": 5,
+  "left with other flagged topics (batch drop)": 1,
+  "retitled": 2,
   "topic still on the list": 0,
-  "same story as a kept item": 1,
-  "kept": 8
+  "same story as a kept item": 0,
+  "kept": 5
  },
  "items": [
-  {
-   "platform": "baidu",
-   "platform_name": "Baidu 百度",
-   "title_zh": "绵阳地震",
-   "title_en": "Mianyang Earthquake",
-   "label": "Dropped off",
-   "label_zh": "已下榜",
-   "evidence_strength": "standard",
-   "peak_rank": 1,
-   "first_seen_et": "Oct 19, 7:19 AM ET",
-   "last_seen_et": "Oct 19, 8:45 AM ET",
-   "first_missing_et": "Oct 19, 8:50 AM ET",
-   "minutes_on_list": 86,
-   "url": "https://www.baidu.com/s?wd=%E7%BB%B5%E9%98%B3%E5%9C%B0%E9%9C%87",
-   "official_line": "No official comment found",
-   "official_line_zh": "未找到官方回应",
-   "evidence": [
-    "Dropped off while hot 热度高时突然消失: peak #1, last ranks #1 → #1 → #1 → #1 → #1 → #1",
-    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:05 AM ET",
-    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:52 AM ET"
-   ]
-  },
   {
    "platform": "toutiao",
    "platform_name": "Toutiao 今日头条",
    "title_zh": "情侣在法国抗议现场附近淡定小酌",
-   "title_en": "",
+   "title_en": "A couple calmly enjoys a drink near a protest site in France",
    "label": "Dropped off",
    "label_zh": "已下榜",
    "evidence_strength": "standard",
@@ -122,40 +100,6 @@
   {
    "platform": "baidu",
    "platform_name": "Baidu 百度",
-   "title_zh": "女子被流浪狗咬伤后几分钟狗死亡",
-   "title_en": "",
-   "label": "Dropped off",
-   "label_zh": "已下榜",
-   "evidence_strength": "standard",
-   "peak_rank": 5,
-   "first_seen_et": "Oct 20, 5:22 AM ET",
-   "last_seen_et": "Oct 20, 6:30 AM ET",
-   "first_missing_et": "Oct 20, 6:36 AM ET",
-   "minutes_on_list": 68,
-   "url": "https://www.baidu.com/s?wd=%E5%A5%B3%E5%AD%90%E8%A2%AB%E6%B5%81%E6%B5%AA%E7%8B%97%E5%92%AC%E4%BC%A4%E5%90%8E%E5%87%A0%E5%88%86%E9%92%9F%E7%8B%97%E6%AD%BB%E4%BA%A1",
-   "official_line": "No official comment found",
-   "official_line_zh": "未找到官方回应",
-   "evidence": [
-    "Dropped off while hot 热度高时突然消失: peak #5, last ranks #6 → #6 → #5 → #5 → #5 → #5",
-    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 20, 6:49 AM ET",
-    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 20, 7:40 AM ET",
-    {
-     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
-     "source": "Weibo 微博 trending history 热搜历史 (GitHub, justjavac)",
-     "url": "https://s.weibo.com//weibo?q=%23%E5%A5%B3%E5%AD%90%E8%A2%AB%E6%B5%81%E6%B5%AA%E7%8B%97%E5%92%AC%E4%BC%A4%E5%90%8E%E5%87%A0%E5%88%86%E9%92%9F%E7%8B%97%E6%AD%BB%E4%BA%A1%23&t=31&band_rank=2&Refer=top",
-     "published": "2026-10-20"
-    },
-    {
-     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
-     "source": "Weibo 微博 trending history 热搜历史 (GitHub, bhwa233)",
-     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26t%3D10%26q%3D%23%E8%A2%AB%E7%8B%97%E5%92%AC%E4%BC%A4%E5%90%8E%E7%8B%97%E6%AD%BB%E4%BA%A1%E5%A5%B3%E5%AD%90%E5%B7%B2%E6%89%93%E7%96%AB%E8%8B%97%23&stream_entry_id=31&isnewpage=1&extparam=seat%3D1%26realpos%3D1%26stream_entry_id%3D31%26band_rank%3D1%26q%3D%2523%25E8%25A2%25AB%25E7%258B%2597%25E5%2592%25AC%25E4%25BC%25A4%25E5%2590%258E%25E7%258B%2597%25E6%25AD%25BB%25E4%25BA%25A1%25E5%25A5%25B3%25E5%25AD%2590%25E5%25B7%25B2%25E6%2589%2593%25E7%2596%25AB%25E8%258B%2597%2523%26dgr%3D0%26filter_type%3Drealtimehot%26c_type%3D31%26lcate%3D5001%26pos%3D0%26cate%3D5001%26flag%3D1%26display_time%3D1792495588%26pre_seqid%3D17924955883940175619893&launchid=10000360-page_H5",
-     "published": "2026-10-20"
-    }
-   ]
-  },
-  {
-   "platform": "baidu",
-   "platform_name": "Baidu 百度",
    "title_zh": "圆通回应孕妇被快递员吓到先兆流产",
    "title_en": "YTO Express Responds to Report of a Pregnant Woman Being Startled by a Delivery Driver, Leading to a Threatened Miscarriage",
    "label": "Dropped off",
@@ -194,34 +138,17 @@
    "first_missing_et": "Oct 19, 8:16 PM ET",
    "minutes_on_list": 51,
    "url": "https://www.toutiao.com/trending/7697438251321212970/",
-   "official_line": "No official comment found",
-   "official_line_zh": "未找到官方回应",
+   "official_line": {
+    "source": "Yicai 第一财经",
+    "title": "易主广药后，老牌体外诊断企业达安基因如何走出业绩亏损",
+    "url": "https://www.yicai.com/news/103400990.html",
+    "published": "2026-10-20T20:47:26"
+   },
+   "official_line_zh": null,
    "evidence": [
     "Dropped off while hot 热度高时突然消失: peak #5, last ranks #6 → #5 → #16 → #6 → #10 → #8",
     "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 8:30 PM ET",
     "Re-check after 1 h 复查: still gone from the list; link check inconclusive at Oct 19, 9:23 PM ET"
-   ]
-  },
-  {
-   "platform": "toutiao",
-   "platform_name": "Toutiao 今日头条",
-   "title_zh": "A股还要跌多久才能见底",
-   "title_en": "How much longer will A-shares have to fall before they bottom out?",
-   "label": "Dropped off",
-   "label_zh": "已下榜",
-   "evidence_strength": "standard",
-   "peak_rank": 9,
-   "first_seen_et": "Oct 19, 7:59 AM ET",
-   "last_seen_et": "Oct 19, 8:30 AM ET",
-   "first_missing_et": "Oct 19, 8:35 AM ET",
-   "minutes_on_list": 31,
-   "url": "https://www.toutiao.com/trending/7698321177999052326/",
-   "official_line": "No official comment found",
-   "official_line_zh": "未找到官方回应",
-   "evidence": [
-    "Dropped off while hot 热度高时突然消失: peak #9, last ranks #49 → #42 → #20 → #20 → #16 → #9",
-    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 8:46 AM ET",
-    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:38 AM ET"
    ]
   }
  ]
