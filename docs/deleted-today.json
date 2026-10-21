@@ -1,23 +1,23 @@
 {
- "generated_at_et": "2026-10-20 19:40 ET",
+ "generated_at_et": "2026-10-20 20:43 ET",
  "window_hours": 24,
  "label": "dropped off (likely censored when there is hard evidence)",
  "note": "Left a hot list from the top 10 without sliding, early for that list, still gone 1 h later. A signal, not proof. Items with hard evidence are labeled Likely censored; the rest Dropped off.",
- "count": 5,
+ "count": 4,
  "cut": {
-  "flagged": 96,
+  "flagged": 98,
   "came back once before": 1,
-  "gone under 60 min": 2,
-  "not in the top 10 when it left": 37,
+  "gone under 60 min": 5,
+  "not in the top 10 when it left": 38,
   "slid down before leaving": 2,
   "on the list a normal length of time": 35,
   "inside the list's normal rotation": 5,
-  "still on another hot list": 5,
+  "still on another hot list": 4,
   "left with other flagged topics (batch drop)": 1,
   "retitled": 3,
   "topic still on the list": 0,
   "same story as a kept item": 0,
-  "kept": 5
+  "kept": 4
  },
  "items": [
   {
@@ -78,8 +78,13 @@
    "first_missing_et": "Oct 20, 6:36 AM ET",
    "minutes_on_list": 68,
    "url": "https://www.baidu.com/s?wd=%E5%A5%B3%E5%AD%90%E8%A2%AB%E6%B5%81%E6%B5%AA%E7%8B%97%E5%92%AC%E4%BC%A4%E5%90%8E%E5%87%A0%E5%88%86%E9%92%9F%E7%8B%97%E6%AD%BB%E4%BA%A1",
-   "official_line": "No official comment found",
-   "official_line_zh": "未找到官方回应",
+   "official_line": {
+    "source": "Tencent News 腾讯网",
+    "title": "后怕！女子下车查看流浪狗，不料被狗咬伤，几分钟后狗竟死亡……",
+    "url": "https://new.qq.com/rain/a/20261021A03G2300",
+    "published": "2026-10-21 08:05:30"
+   },
+   "official_line_zh": null,
    "evidence": [
     "Dropped off while hot 热度高时突然消失: peak #5, last ranks #6 → #6 → #5 → #5 → #5 → #5",
     "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 20, 6:49 AM ET",
@@ -111,28 +116,6 @@
     "Dropped off while hot 热度高时突然消失: peak #5, last ranks #5 → #5 → #5 → #5 → #5 → #5",
     "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 9:37 PM ET",
     "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 10:29 PM ET"
-   ]
-  },
-  {
-   "platform": "toutiao",
-   "platform_name": "Toutiao 今日头条",
-   "title_zh": "500家售电企业298家亏损",
-   "title_en": "Of 500 electricity retailers, 298 are operating at a loss",
-   "label": "Dropped off",
-   "label_zh": "已下榜",
-   "evidence_strength": "standard",
-   "peak_rank": 5,
-   "first_seen_et": "Oct 19, 7:20 PM ET",
-   "last_seen_et": "Oct 19, 8:11 PM ET",
-   "first_missing_et": "Oct 19, 8:16 PM ET",
-   "minutes_on_list": 51,
-   "url": "https://www.toutiao.com/trending/7697438251321212970/",
-   "official_line": "No official comment found",
-   "official_line_zh": "未找到官方回应",
-   "evidence": [
-    "Dropped off while hot 热度高时突然消失: peak #5, last ranks #6 → #5 → #16 → #6 → #10 → #8",
-    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 19, 8:30 PM ET",
-    "Re-check after 1 h 复查: still gone from the list; link check inconclusive at Oct 19, 9:23 PM ET"
    ]
   }
  ]
