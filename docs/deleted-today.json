@@ -1,23 +1,23 @@
 {
- "generated_at_et": "2026-10-21 06:56 ET",
+ "generated_at_et": "2026-10-21 08:03 ET",
  "window_hours": 24,
  "label": "dropped off (likely censored when there is hard evidence)",
  "note": "Left a hot list from the top 10 without sliding, early for that list, still gone 1 h later. A signal, not proof. Items with hard evidence are labeled Likely censored; the rest Dropped off.",
- "count": 4,
+ "count": 5,
  "cut": {
-  "flagged": 84,
-  "came back once before": 2,
-  "gone under 60 min": 10,
-  "not in the top 10 when it left": 27,
-  "slid down before leaving": 1,
-  "on the list a normal length of time": 25,
-  "inside the list's normal rotation": 1,
-  "still on another hot list": 6,
-  "left with other flagged topics (batch drop)": 3,
-  "retitled": 3,
+  "flagged": 76,
+  "came back once before": 1,
+  "gone under 60 min": 2,
+  "not in the top 10 when it left": 25,
+  "slid down before leaving": 0,
+  "on the list a normal length of time": 26,
+  "inside the list's normal rotation": 2,
+  "still on another hot list": 3,
+  "left with other flagged topics (batch drop)": 6,
+  "retitled": 4,
   "topic still on the list": 2,
   "same story as a kept item": 0,
-  "kept": 4
+  "kept": 5
  },
  "items": [
   {
@@ -84,6 +84,46 @@
     "Dropped off while hot 热度高时突然消失: peak #5, last ranks #5 → #5 → #5 → #5 → #5 → #5",
     "Re-check after 10 min 复查: still gone from the list; link check inconclusive at Oct 21, 5:29 AM ET",
     "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 21, 6:22 AM ET"
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "重庆坠亡幼童父亲称已将狗处理",
+   "title_en": "",
+   "label": "Dropped off",
+   "label_zh": "已下榜",
+   "evidence_strength": "standard",
+   "peak_rank": 6,
+   "first_seen_et": "Oct 21, 12:10 AM ET",
+   "last_seen_et": "Oct 21, 12:55 AM ET",
+   "first_missing_et": "Oct 21, 12:58 AM ET",
+   "minutes_on_list": 45,
+   "url": "https://www.baidu.com/s?wd=%E9%87%8D%E5%BA%86%E5%9D%A0%E4%BA%A1%E5%B9%BC%E7%AB%A5%E7%88%B6%E4%BA%B2%E7%A7%B0%E5%B7%B2%E5%B0%86%E7%8B%97%E5%A4%84%E7%90%86",
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #6, last ranks #18 → #6 → #7 → #7 → #7 → #7",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 21, 1:09 AM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 21, 2:00 AM ET",
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "Weibo 微博 trending history 热搜历史 (GitHub, justjavac)",
+     "url": "https://s.weibo.com//weibo?q=%23%E7%88%B6%E4%BA%B2%E9%81%9B%E7%8B%97%E5%B9%BC%E7%AB%A5%E5%9D%A0%E4%BA%A1%E4%BB%96%E8%AF%A5%E6%8B%85%E4%BD%95%E8%B4%A3%23&t=31&band_rank=14&Refer=top",
+     "published": "2026-10-21"
+    },
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "Weibo 微博 trending history 热搜历史 (GitHub, bhwa233)",
+     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26t%3D10%26q%3D%23%E5%9D%A0%E4%BA%A1%E5%B9%BC%E7%AB%A5%E7%88%B7%E7%88%B7%E7%A7%B0%E4%B8%80%E5%AE%B6%E4%BA%BA%E4%B8%8D%E8%B0%88%E8%A1%A5%E5%81%BF%E9%97%AE%E9%A2%98%23&stream_entry_id=31&isnewpage=1&extparam=seat%3D1%26filter_type%3Drealtimehot%26c_type%3D31%26flag%3D1%26cate%3D5001%26realpos%3D7%26pos%3D8%26stream_entry_id%3D31%26lcate%3D5001%26band_rank%3D7%26dgr%3D0%26q%3D%2523%25E5%259D%25A0%25E4%25BA%25A1%25E5%25B9%25BC%25E7%25AB%25A5%25E7%2588%25B7%25E7%2588%25B7%25E7%25A7%25B0%25E4%25B8%2580%25E5%25AE%25B6%25E4%25BA%25BA%25E4%25B8%258D%25E8%25B0%2588%25E8%25A1%25A5%25E5%2581%25BF%25E9%2597%25AE%25E9%25A2%2598%2523%26display_time%3D1792557061%26pre_seqid%3D179255706109803792745141&launchid=10000360-page_H5",
+     "published": "2026-10-21"
+    },
+    {
+     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
+     "source": "Weibo 微博 trending history 热搜历史 (GitHub, bhwa233)",
+     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26t%3D10%26q%3D%23%E7%88%B6%E4%BA%B2%E9%81%9B%E7%8B%97%E5%B9%BC%E7%AB%A5%E5%9D%A0%E4%BA%A1%E7%A7%B0%E5%B7%B2%E5%B0%86%E7%8B%97%E5%A4%84%E7%90%86%23&stream_entry_id=31&isnewpage=1&extparam=seat%3D1%26filter_type%3Drealtimehot%26c_type%3D31%26flag%3D1%26cate%3D5001%26realpos%3D12%26pos%3D13%26stream_entry_id%3D31%26lcate%3D5001%26band_rank%3D12%26dgr%3D0%26q%3D%2523%25E7%2588%25B6%25E4%25BA%25B2%25E9%2581%259B%25E7%258B%2597%25E5%25B9%25BC%25E7%25AB%25A5%25E5%259D%25A0%25E4%25BA%25A1%25E7%25A7%25B0%25E5%25B7%25B2%25E5%25B0%2586%25E7%258B%2597%25E5%25A4%2584%25E7%2590%2586%2523%26display_time%3D1792557061%26pre_seqid%3D179255706109803792745141&launchid=10000360-page_H5",
+     "published": "2026-10-21"
+    }
    ]
   },
   {
