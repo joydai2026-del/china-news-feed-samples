@@ -1,3 +1,5 @@
+Moved → https://ownly-network.github.io/china-news-feed-samples/
+
 # China News Feed with Deletion Watch — free samples
 
 Free discovery samples from **Ownly's China News Feed with Deletion Watch**, a bilingual (Chinese / English) China news feed plus a deletion watch on Chinese hot-search lists.
