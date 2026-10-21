@@ -1,23 +1,23 @@
 {
- "generated_at_et": "2026-10-20 23:00 ET",
+ "generated_at_et": "2026-10-21 01:13 ET",
  "window_hours": 24,
  "label": "dropped off (likely censored when there is hard evidence)",
  "note": "Left a hot list from the top 10 without sliding, early for that list, still gone 1 h later. A signal, not proof. Items with hard evidence are labeled Likely censored; the rest Dropped off.",
- "count": 3,
+ "count": 4,
  "cut": {
-  "flagged": 92,
+  "flagged": 90,
   "came back once before": 1,
-  "gone under 60 min": 5,
-  "not in the top 10 when it left": 35,
+  "gone under 60 min": 9,
+  "not in the top 10 when it left": 31,
   "slid down before leaving": 1,
-  "on the list a normal length of time": 31,
+  "on the list a normal length of time": 29,
   "inside the list's normal rotation": 5,
-  "still on another hot list": 5,
-  "left with other flagged topics (batch drop)": 2,
-  "retitled": 3,
+  "still on another hot list": 2,
+  "left with other flagged topics (batch drop)": 3,
+  "retitled": 4,
   "topic still on the list": 1,
   "same story as a kept item": 0,
-  "kept": 3
+  "kept": 4
  },
  "items": [
   {
@@ -56,17 +56,39 @@
    "first_missing_et": "Oct 20, 6:36 AM ET",
    "minutes_on_list": 68,
    "url": "https://www.baidu.com/s?wd=%E5%A5%B3%E5%AD%90%E8%A2%AB%E6%B5%81%E6%B5%AA%E7%8B%97%E5%92%AC%E4%BC%A4%E5%90%8E%E5%87%A0%E5%88%86%E9%92%9F%E7%8B%97%E6%AD%BB%E4%BA%A1",
-   "official_line": {
-    "source": "Tencent News 腾讯网",
-    "title": "后怕！女子下车查看流浪狗，不料被狗咬伤，几分钟后狗竟死亡……",
-    "url": "https://new.qq.com/rain/a/20261021A03G2300",
-    "published": "2026-10-21 08:05:30"
-   },
-   "official_line_zh": null,
+   "official_line": "No official comment found",
+   "official_line_zh": "未找到官方回应",
    "evidence": [
     "Dropped off while hot 热度高时突然消失: peak #5, last ranks #6 → #6 → #5 → #5 → #5 → #5",
     "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 20, 6:49 AM ET",
     "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 20, 7:40 AM ET"
+   ]
+  },
+  {
+   "platform": "baidu",
+   "platform_name": "Baidu 百度",
+   "title_zh": "《征途》央视黄金档收官",
+   "title_en": "",
+   "label": "Dropped off",
+   "label_zh": "已下榜",
+   "evidence_strength": "standard",
+   "peak_rank": 9,
+   "first_seen_et": "Oct 20, 9:49 PM ET",
+   "last_seen_et": "Oct 20, 10:48 PM ET",
+   "first_missing_et": "Oct 20, 10:56 PM ET",
+   "minutes_on_list": 60,
+   "url": "https://www.baidu.com/s?wd=%E3%80%8A%E5%BE%81%E9%80%94%E3%80%8B%E5%A4%AE%E8%A7%86%E9%BB%84%E9%87%91%E6%A1%A3%E6%94%B6%E5%AE%98",
+   "official_line": {
+    "source": "National Business Daily 每经网",
+    "title": "《征途》央视黄金档收官：一部长征剧，见证一座“影视强城”",
+    "url": "https://www.nbd.com.cn/articles/2026-10-20/4609907.html",
+    "published": "2026-10-20"
+   },
+   "official_line_zh": null,
+   "evidence": [
+    "Dropped off while hot 热度高时突然消失: peak #9, last ranks #20 → #20 → #9 → #9 → #9 → #9",
+    "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 20, 11:08 PM ET",
+    "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 21, 12:00 AM ET"
    ]
   },
   {
@@ -90,10 +112,10 @@
     "Re-check after 10 min 复查: still gone from the list; search link still loads (HTTP 200) at Oct 20, 9:50 PM ET",
     "Re-check after 1 h 复查: still gone from the list; search link still loads (HTTP 200) at Oct 20, 10:34 PM ET",
     {
-     "type": "Matching entry on a censorship tracker / archive 审查追踪记录",
-     "source": "Weibo 微博 trending history 热搜历史 (GitHub, bhwa233)",
-     "url": "https://m.weibo.cn/search?containerid=100103type%3D1%26t%3D10%26q%3D%23%E8%94%A1%E5%A4%A9%E5%87%A4%E5%89%8D%E5%85%AC%E5%85%AC%E4%B9%B0%E7%BB%9E%E8%82%89%E6%9C%BA%E7%9B%91%E6%8E%A7%E6%9B%9D%E5%85%89%23&stream_entry_id=31&isnewpage=1&extparam=seat%3D1%26q%3D%2523%25E8%2594%25A1%25E5%25A4%25A9%25E5%2587%25A4%25E5%2589%258D%25E5%2585%25AC%25E5%2585%25AC%25E4%25B9%25B0%25E7%25BB%259E%25E8%2582%2589%25E6%259C%25BA%25E7%259B%2591%25E6%258E%25A7%25E6%259B%259D%25E5%2585%2589%2523%26dgr%3D0%26realpos%3D10%26c_type%3D31%26band_rank%3D10%26pos%3D11%26cate%3D5001%26lcate%3D5001%26stream_entry_id%3D31%26flag%3D1%26filter_type%3Drealtimehot%26display_time%3D1792540236%26pre_seqid%3D17925402363760105671&launchid=10000360-page_H5",
-     "published": "2026-10-21"
+     "type": "Still covered elsewhere 其他来源仍有报道",
+     "source": "The Witness 法庭線",
+     "url": "https://thewitnesshk.com/%e6%8c%81%e7%ba%8c%e6%9b%b4%e6%96%b0-%e8%94%a1%e5%a4%a9%e9%b3%b3%e6%a1%88day19-%e8%94%a1%e5%a4%a9%e9%b3%b3%e5%89%8d/",
+     "published": null
     }
    ]
   }
